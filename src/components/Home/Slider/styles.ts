@@ -35,7 +35,7 @@ export const SliderContainerMobile = styled.div`
     `
 
 export const Container = styled.div`
-margin-top: 7.35rem;
+margin-top: 6.5rem;
 
 width: 100%;
 max-width:1920px;

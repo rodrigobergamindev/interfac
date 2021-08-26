@@ -1,22 +1,22 @@
 export const menu = [
     {
-        title: 'Sobre',
-        url: '#sobre',
+        title: 'Home',
+        url: '/',
         img: '/img/menu/about.png'
     },
     {
-        title: 'Produtos',
-        url: '#produtos',
+        title: 'Sobre',
+        url: '/sobre',
         img: '/img/menu/products.png'
     },
     {
-        title: 'Comprar',
-        url: '#Comprar',
+        title: 'Soluções',
+        url: '/solucoes',
         img: '/img/menu/buy.png'
     },
     {
-        title: 'Dúvidas Frequentes',
-        url: '#faq',
+        title: 'Contato',
+        url: '/contato',
         img: '/img/menu/faq.png'
     }
 

@@ -14,16 +14,16 @@ export function Navbar() {
       <Nav>
 
       
-      <Logo/>
+      <img src='/img/logo.png' alt="" />
 
       <ContainerNav>
         {menu.map((item, index) => {
-          if(item.title === 'Produtos') {
+          if(item.title === 'Soluções') {
             return (
               <DropdownMenu active={active}
               onClick={() => setActive(!active)}
               key={index} 
-              ><span>{item.title}</span><img className="arrow" src="/img/icons/arrowRed.png" alt="submenu"></img>
+              ><span>{item.title}</span><img className="arrow" src="/img/icons/down.png" alt="submenu"></img>
               </DropdownMenu>
             )
           }
@@ -33,10 +33,11 @@ export function Navbar() {
         })}
       </ContainerNav>
 
-      <Contato/>
+   
       </Nav>
 
       <SubMenu active={active} onMouseLeave={() => setActive(false)}>
+
       <SubContainer>
 
       
@@ -62,53 +63,6 @@ export function Navbar() {
       </a>
       </ContainerSubMenu>
 
-      <ContainerSubMenu>
-      <a href="https://drive.google.com/file/d/1Au_1vcOvM_DSm686KKpyBsvuuAg93qyY/view?usp=sharing" target="_blank">
-        <h4>TRAVAS</h4>
-      <ul>
-        <li>Clip Strass</li>
-        <li>Clip Comum</li>
-        <li>Corrente Comum</li>
-        <li>Corrente Coração</li>
-        <li>Clip Corrente Coração</li>
-        <li>Clip Banhada</li>
-        <li>Corrente Banhada</li>
-        <li>Corrente Envernizada</li>
-        <li>Silicone</li>
-      </ul>
-      </a>
-      </ContainerSubMenu>
-
-      <ContainerSubMenu>
-      <a href="https://drive.google.com/file/d/1nOVvjpiTadkdvyIVTMEMWg0UFcNwjlQp/view?usp=sharing" target="_blank">
-        <h4>MURANOS</h4>
-      <ul>
-        <li>Murano</li>
-
-      </ul>
-      </a>
-      </ContainerSubMenu>
-
-      <ContainerSubMenu>
-        <h4>OUTROS</h4>
-      <ul>
-        <li><a href="https://drive.google.com/file/d/1o31OlEgUmgH5Nzh1MEB4F7wfLxNvaKP9/view?usp=sharing" target="_blank">Colar com Pingente</a></li>
-        <li><a href="https://drive.google.com/file/d/1MK9tfPUxSL0F0XDcULc0Skj7zbrYeXZ9/view?usp=sharing" target="_blank">Colar Tiffany</a></li>
-        <li><a href="https://drive.google.com/file/d/1MK9tfPUxSL0F0XDcULc0Skj7zbrYeXZ9/view?usp=sharing" target="_blank">Pulseira Tiffany</a></li>
-
-      </ul>
-      </ContainerSubMenu>
-
-      <ContainerSubMenu>
-        <a href="https://drive.google.com/file/d/14Qts8zYV_0S_lbeXEzH02PD1iXfdXQZm/view?usp=sharing" target="_blank">
-        <h4>ARGOLAS</h4>
-      <ul>
-        <li>Folheadas</li>
-        <li>Cravejadas</li>
-       
-      </ul>
-      </a>
-      </ContainerSubMenu>
       </SubContainer>
 
       </SubMenu>

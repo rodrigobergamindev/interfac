@@ -13,8 +13,7 @@ export const Container = styled.nav`
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   flex-direction: column;
   position: fixed;
-  z-index: 99999;
-
+  z-index: 1;
 
   @media only screen and (max-width: 900px) {
 
@@ -31,10 +30,14 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
   width: 100%;
   max-width:1120px;
+  padding: 1rem;
+ 
 
+  img {
+    width: 25%;
+  }
 
 `
 
@@ -44,16 +47,17 @@ export const ContainerNav = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex: 1;
-  margin-right: 1rem;
-  margin-left: 1rem;
+
   li {
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    font-size: 1.1rem;
     &:hover {
       color: var(--primary);
-      transition: 0.3s ease-in-out;
+      transition: 0.2s ease-in-out;
     }
   }
   
@@ -84,7 +88,6 @@ export const ButtonContato = styled.button`
     background: var(--primary);
     outline: 0;
     border: 0;
-    
     width: 100%;
     max-width: 150px;
 

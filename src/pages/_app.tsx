@@ -3,6 +3,8 @@ import '../styles/globals.scss'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
+import { Navbar } from '../components/Navbar'
+import { Footer } from '../components/Footer/Footer'
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -16,7 +18,15 @@ const App = ({ Component, pageProps }) => {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+  <>
+    <Navbar/>
+    <Component {...pageProps} />
+    <Footer/>
+  </>
+  
+  )
+  
 }
 
 export default App

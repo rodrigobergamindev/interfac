@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle `
          }
 
     :root {
-        --primary: #ff3838;
+        --primary: #051e3c;
         --secondary: #F0F2F5;
         --sub:#333;
     }

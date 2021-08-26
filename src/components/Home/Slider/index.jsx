@@ -10,7 +10,7 @@ export function Slider() {
         
         <SliderContainerDesktop>
         <Swiper
-          style={{'--swiper-navigation-color': '#ff3838','--swiper-pagination-color': '#ff3838', zIndex:0}}
+          style={{'--swiper-navigation-color': 'white','--swiper-pagination-color': 'white', zIndex:0}}
           spaceBetween={0}
           slidesPerView={1}
           pagination={{ clickable: true}}
@@ -20,9 +20,14 @@ export function Slider() {
           >
      
 
-    <SwiperSlide style={{height: '100%'}}><img src="/img/slider/slider02.png"/></SwiperSlide>
-    <SwiperSlide style={{height: '100%'}}><a href="https://t.me/joinchat/KeCpRayleIc5MGMx" target="_blank"><img src="/img/slider/slider03.png"/></a></SwiperSlide>
-    <SwiperSlide style={{height: '100%'}}><img src="/img/slider/slider01.png"/></SwiperSlide>
+    <SwiperSlide style={{height: '50%'}}><div>
+      <h2>SLIDE</h2>
+    <img src="/img/slider/slide.jpg"/>
+      </div>
+      </SwiperSlide>
+      
+    <SwiperSlide style={{height: '50%'}}><img src="/img/slider/slide.jpg"/></SwiperSlide>
+    <SwiperSlide style={{height: '50%'}}><img src="/img/slider/slide.jpg"/></SwiperSlide>
     
     
     </Swiper>
