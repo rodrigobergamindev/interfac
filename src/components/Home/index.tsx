@@ -18,6 +18,7 @@ export function Home() {
         <Sistema/>
         <Solucoes/>
         <Clientes/>
+        <Contact/>
         </Container>
     )
 }
