@@ -50,3 +50,27 @@ max-width:1920px;
 
 
 `
+
+export const Slide = styled.div`
+    height: 100vh;
+    background: url('/img/slider/slide.jpg');
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    .description {
+        width: 100%;
+        max-width: 1120px;
+        border: 1px solid red;
+
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+`

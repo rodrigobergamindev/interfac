@@ -1,6 +1,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {SliderContainerDesktop,SliderContainerMobile, Container} from './styles'
+import {SliderContainerDesktop,SliderContainerMobile, Container, Slide} from './styles'
 
 export function Slider() {
 
@@ -20,14 +20,35 @@ export function Slider() {
           >
      
 
-    <SwiperSlide style={{height: '50%'}}><div>
-      <h2>SLIDE</h2>
-    <img src="/img/slider/slide.jpg"/>
-      </div>
+    <SwiperSlide>
+      <Slide>
+        <div className="description">
+          <span>Conheça a aplicação mais robusta e ágil para o seu negócio</span>
+          <h1>Sistema INterfac</h1>
+
+          <h2>Conheça agora mesmo a aplicação ideal para alavancar o seu negócio</h2>
+
+          
+        </div>
+        
+      </Slide>
       </SwiperSlide>
       
-    <SwiperSlide style={{height: '50%'}}><img src="/img/slider/slide.jpg"/></SwiperSlide>
-    <SwiperSlide style={{height: '50%'}}><img src="/img/slider/slide.jpg"/></SwiperSlide>
+    <SwiperSlide>
+      <Slide>
+      <div className="description">
+          <h2>SLIDE</h2>
+        </div>
+      </Slide>
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <Slide>
+      <div className="description">
+          <h2>SLIDE</h2>
+        </div>
+      </Slide>
+    </SwiperSlide>
     
     
     </Swiper>

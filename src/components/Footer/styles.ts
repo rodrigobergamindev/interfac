@@ -26,7 +26,7 @@ export const Container = styled.footer`
 export const StyledFooter = styled.div`
 
 
-
+        cursor: default;
         width: 100%;
         max-width: 1120px;
         display: flex;
