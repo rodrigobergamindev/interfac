@@ -78,10 +78,15 @@ export const CardProduct = styled.div`
 
         display: flex;
         justify-content:space-around;
+        transition: all 0.3s ease-in-out;
         img {
             max-width: 20px;
             max-height: 20px;
             
+        }
+
+        &:hover {
+            filter: brightness(0.9);
         }
     }
     

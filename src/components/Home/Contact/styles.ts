@@ -46,13 +46,19 @@ export const Container = styled.div`
 
 
             nav {
-                max-width: 115px;
+                max-width: 150px;
                 display: flex;
                 justify-content:space-evenly;
                 align-items: flex-end;
+                
                 a {
                     img {
-                        width:20px;
+                        transform: scale(1.0);
+                        transition: all 0.2s ease-in-out;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                        width:25px;
                     }
                 }
             }
@@ -76,8 +82,13 @@ export const ButtonContato = styled.button`
     border-radius: 5px;
     border: none;
     outline: 0;
+    transition: all 0.3s ease-in-out;
     img {
         
         width: 30px;
+    }
+
+    &:hover {
+        filter: brightness(0.9);
     }
 `

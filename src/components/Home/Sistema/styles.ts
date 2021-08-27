@@ -91,5 +91,12 @@ export const ButtonSaibaMais = styled.button`
     font-size: 0.95rem;
 
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        background: var(--primary);
+        color: var(--secondary);
+    }
 
 `
