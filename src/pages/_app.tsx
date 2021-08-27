@@ -6,6 +6,7 @@ import * as gtag from '../lib/gtag'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer/Footer'
 
+
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
   useEffect(() => {

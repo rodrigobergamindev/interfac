@@ -1,6 +1,7 @@
 import {createGlobalStyle} from 'styled-components';
 
 
+
 export const GlobalStyle = createGlobalStyle `
 
 
@@ -42,6 +43,7 @@ export const GlobalStyle = createGlobalStyle `
         --primary: #051e3c;
         --secondary: #F0F2F5;
         --sub:#333;
+        --grey-100: #a3a3a3;
     }
     * {
         margin:0;

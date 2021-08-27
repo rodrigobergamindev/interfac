@@ -42,19 +42,18 @@ export const Nav = styled.nav`
 `
 
 
-export const ContainerNav = styled.ul`
+export const ContainerNav = styled.nav`
 
   display: flex;
-  list-style: none;
   align-items: center;
   justify-content: space-evenly;
-  flex: 1;
+  flex: 0.97;
 
-  li {
+  a {
     cursor: pointer;
     font-weight: 500;
     transition: 0.2s ease-in-out;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     &:hover {
       color: var(--primary);
       transition: 0.2s ease-in-out;
@@ -64,13 +63,13 @@ export const ContainerNav = styled.ul`
 `
 
 
-export const DropdownMenu = styled.li`
+export const DropdownMenu = styled.a`
 
-  cursor: pointer;
+    cursor: pointer;
     transition: 0.3s ease-in-out;
     .arrow {
       margin-left: 0.5rem;
-      width: 10px;
+      width: 12px;
       transform:${props => props.active ? "rotateZ(180deg)" : "rotateZ(0deg)"};
       transition: all 0.3s ease;
     }

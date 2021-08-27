@@ -1,6 +1,5 @@
 import {Container, Nav, ContainerNav, DropdownMenu, SubMenu, ContainerSubMenu, SubContainer} from './styles'
 import {Logo} from '../Logo/index'
-import {Contato} from './Contato'
 import {useState} from 'react'
 import {menu} from './assets/nav'
 
@@ -28,7 +27,7 @@ export function Navbar() {
             )
           }
             return (
-                <li key={index}><a href={item.url}>{item.title}</a></li>
+                <a key={index} href={item.url}>{item.title}</a>
             )
         })}
       </ContainerNav>

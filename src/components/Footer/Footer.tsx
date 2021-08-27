@@ -1,53 +1,55 @@
-import {StyledFooter} from './styles'
+import {StyledFooter, Container} from './styles'
 
 export function Footer() {
     return (
+        <Container>
+
+        
         <StyledFooter>
         
-            <div className="containerLogo">
+           
+               
 
-            <div className="logo">
-                <img src="/img/logo.png" alt="" />
-                
-                <div className="titleLogo">
-                    
-                <h2>LOJINHA DA MAYUMI</h2>
-                <span>Arigatou Gozaimasu ⛩</span>
-                </div>
-            
-
-                </div>
                 <div className="description">
-                    <h4>FUNCIONAMENTO</h4>
-                    <p>São Paulo - SP</p>
-                    <p>Segunda à Sábado - 09:00 às 17:00</p>
-                    </div>
-            </div>
+                <img src="/img/logo.png" alt="" />
+                    <span>Rua Caraipe das Águas, 1194 - Sobre Loja</span>
+                    <span>Jardim dos Ypês – São Paulo, SP</span>
+                    <span>CEP: 08161-360</span>
+                </div>
+
+            
+                <div className="mapa">
+
+                <h4>MAPA DO SITE</h4>
+                <nav>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#Comprar">Comprar</a>
+                    <a href="#faq">Dúvidas Frequentes</a>
+                    <a href="#contatos">Contatos</a>
+                </nav>
+                </div>
+    
 
             <div className="contatos">
 
                 <h4>CONTATO</h4>
-               <ul>
-                   <li><img src="/img/icons/mail.png" alt="" /> <span>atendimento@lojinhadamayumi.com</span></li>
-                   <li><img src="/img/icons/whatsfooter.png" alt="whatsapp" /> <span>(11) 2963-9226</span></li>
-               </ul>
+               <nav>
+                   <a><img src="/img/icons/mailfooter.png" alt="e-mail" /> <span>interfac@interfac.com.br</span></a>
+                   <a><img src="/img/icons/whatsfooter.png" alt="whatsapp" /> <span>+55 11 97678-9680</span></a>
+                   <a><img src="/img/icons/phonefooter.png" alt="phone" /> <span>+55 11 2058-8586</span></a>
+               </nav>
             </div>
 
-
-            <div className="mapa">
-
-                <h4>MAPA DO SITE</h4>
-               <ul>
-                   <li><a href="#sobre">Sobre</a></li>
-                   <li><a href="#produtos">Produtos</a></li>
-                   <li><a href="#Comprar">Comprar</a></li>
-                   <li><a href="#faq">Dúvidas Frequentes</a></li>
-                   <li><a href="#contatos">Contatos</a></li>
-               </ul>
-            </div>
 
             
+
+           
        
         </StyledFooter>
+
+        <span className="footer">INterfac • Tecnologia e Informática - Todos os direitos reservados </span>
+
+        </Container>
     )
 }

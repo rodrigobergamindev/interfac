@@ -2,21 +2,39 @@ import styled from 'styled-components';
 
 
 
+export const Container = styled.footer`
 
-export const StyledFooter = styled.footer`
-
-
-    
         width:100%;
+        border-top: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+
+        align-items:center;
+
+
+        .footer {
+            color: var(--grey-100);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+`
+
+
+
+
+
+export const StyledFooter = styled.div`
+
+
+
+        width: 100%;
         max-width: 1120px;
-        width:100%;
         display: flex;
 
         align-items: flex-start;
         justify-content: space-between;
         padding: 1rem;
         margin-top: 4rem;
-        border-bottom: 1px solid #ccc;
         padding-bottom: 3rem;
         margin-bottom: 2rem;
 
@@ -26,10 +44,20 @@ export const StyledFooter = styled.footer`
             }
 
         .mapa{
-            ul {
-                list-style: none;
 
-                li {
+            h4 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: var(--primary);
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    
+                    color: var(--grey-100);
+                    font-size: 1.1rem;
                     transition: all 0.3s ease-in-out;
                     margin-top: 0.5rem;
 
@@ -41,20 +69,46 @@ export const StyledFooter = styled.footer`
             }
         }
 
+        .description {
+            display: flex;
+            flex-direction: column;
+    
+            
+            span {
+                font-size: 1.1rem;
+                color: var(--primary);
+            }
+
+            img {
+                margin-bottom: 2rem;
+                max-width: 350px;
+            }
+        }
+
         .contatos{
             @media only screen and (max-width: 900px) {
                     margin-bottom: 2rem;
                 
        
             }
-            ul {
-                list-style: none;
 
-                li {
+            h4 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: var(--primary);
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    font-size: 1.1rem;
+                    color: var(--grey-100);
+                   
+                    display: flex;
                     margin-top: 0.5rem;
                     display: flex;
                     align-items: center;
-                
                     img {
                         margin-right: 0.3rem;
                         max-width:20px;
@@ -63,69 +117,7 @@ export const StyledFooter = styled.footer`
             }
         }
 
-        .containerLogo {
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
 
-            .logo {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-
-
-            @media only screen and (max-width: 900px) {
-                    margin-bottom: 2rem;
-                
-       
-            }
-
-            .titleLogo {
-                display: flex;
-                flex-direction: column;
-
-                span {
-                    margin-left: 1rem;
-                }
-            }
-  
-            img {
-                max-width:90px;
-
-                @media only screen and (max-width: 900px) {
-                    max-width:50px;
-                
-       
-            }
-            }
-
-            h2 {
-                margin-left: 1rem;
-                font-size: 1.5rem;
-            }
-        }
-
-
-        .description {
-            margin-top: 1rem;
-            padding: 1rem;
-            font-weight: 400;
-
-            @media only screen and (max-width: 900px) {
-                padding:0;
-                margin-bottom: 2rem;
-                
-       
-            }
-            h4 {
-                margin-bottom: 0.5rem;
-            }
-            p {
-                line-height: 1.5rem;
-            }
-            }
-        }
 
         
     
