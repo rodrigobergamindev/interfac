@@ -1,5 +1,5 @@
 
-import {Container, Header} from '../styles/styles.sobre'
+import {Container, Header, SectionDesc, CardPerson} from '../styles/styles.sobre'
 
 
 
@@ -53,6 +53,27 @@ export default function Sobre() {
             </Header>
         
 
+        <SectionDesc>
+
+            <div className="containerColaboradores">
+                <h1>NOSSOS COLABORADORES</h1>
+
+                <div className="containerCards">
+
+                    <CardPerson>
+                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+
+                        <h3>Marcio</h3>
+                        <h5>CEO</h5>
+                        <span>interfac@interfac.com.br</span>
+                    </CardPerson>
+
+                </div>
+            </div>
+            
+
+
+        </SectionDesc>
  
 
         </Container>

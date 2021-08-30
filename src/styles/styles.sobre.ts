@@ -1,6 +1,69 @@
 import styled from 'styled-components';
 
+export const SectionDesc = styled.section`
 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .containerColaboradores {
+        width: 100%;
+        max-width: 1120px;
+        
+        h1 {
+            background-color: var(--primary);
+            padding: 0.75rem;
+            color: var(--secondary);
+            font-weight: 500;
+            font-size: 2rem;
+        }
+    }
+
+    .containerCards {
+        border: 1px solid red;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 5rem;
+        gap: 1rem;
+    }
+
+
+`
+
+
+export const CardPerson = styled.div `
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    border: 1px solid red;
+    height: 250px;
+    position: relative;
+
+    .avatar {
+        position: absolute;
+        top: -60px;
+        object-fit: cover;
+        width: 120px;
+        border-radius: 100%;
+    }
+
+    .bar {
+        height: 3px;
+        width: 100px;
+        background: var(--primary);
+        
+    }
+    border: 1px solid var(--grey-100);
+    border-radius: 5px;
+`
 
 
 export const Header = styled.header`
