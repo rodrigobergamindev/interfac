@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabPagamento() {
+export function TabPesquisa() {
 
   const [active, setActive] = useState(false);
  
@@ -16,8 +16,8 @@ export function TabPagamento() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span>Quais as formas de pagamento?</span>
-      <img src="/img/icons/arrowRed.png" alt=""/>
+      <span> <img src="/img/topics/codigo.png" alt="codigo" className="icon"/> PESQUISA POR CÓDIGOS</span>
+      <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
      <ContainerTable active={active}>

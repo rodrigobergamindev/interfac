@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabComposicao() {
+export function TabVendas() {
 
   const [active, setActive] = useState(false);
  
@@ -16,8 +16,8 @@ export function TabComposicao() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span>Qual é a composição das peças?</span>
-      <img src="/img/icons/arrowRed.png" alt=""/>
+      <span><img src="/img/topics/vendas.png" alt="vendas" className="icon"/>VENDAS</span>
+      <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
      <ContainerTable active={active}>

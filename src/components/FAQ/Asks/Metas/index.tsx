@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabTroca() {
+export function TabMetas() {
 
   const [active, setActive] = useState(false);
  
@@ -16,8 +16,8 @@ export function TabTroca() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span>Vocês efetuam troca?</span>
-      <img src="/img/icons/arrowRed.png" alt=""/>
+      <span> <img src="/img/topics/metas.png" alt="codigo" className="icon"/> CONTROLE DE METAS</span>
+      <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
      <ContainerTable active={active}>

@@ -5,8 +5,8 @@ export const Tab = styled.div`
 
    
     border-radius:5px;
-    border-bottom: ${props => props.active ? "1px solid #FF3838" : "1px solid #ccc"};
-    color: ${props => props.active ? "#FF3838" : "#333"};
+    border-bottom: ${props => props.active ? "1px solid var(--primary)" : "1px solid #ccc"};
+    color: ${props => props.active ? "var(--primary)" : "#333"};
     transition: all 0.5s ease;
     padding: 1rem;
 
@@ -17,6 +17,21 @@ export const Tab = styled.div`
     margin-top: 1rem;  
     
     font-size:1.2rem;
+
+    span {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-size: 1.5rem;
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+        transform:none;
+    }
+    }
+
 
     img {
         align-self: center;
@@ -47,16 +62,15 @@ export const ContainerTable = styled.div`
     height: ${props => props.active ? "70px" : "0px"};
     display: flex;
     flex-direction: column;
-    transition: height 1s;
+    transition: height 0.5s;
     margin-bottom: ${props => props.active ? "2rem" : "auto"};
     overflow-y: hidden;
     
+
     @media only screen and (max-width: 900px) {
-        height: ${props => props.active ? "170px" : "0px"};
+        height: ${props => props.active ? "100px" : "0px"};
        
         }
-
-
 `
 
 

@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabDurabilidade() {
+export function TabSuporte() {
 
   const [active, setActive] = useState(false);
  
@@ -16,8 +16,8 @@ export function TabDurabilidade() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span>Qual a durabilidade? Pode molhar? Treinar? Entrar na Psicina?</span>
-      <img src="/img/icons/arrowRed.png" alt=""/>
+      <span> <img src="/img/topics/suporte.png" alt="suporte" className="icon"/> SUPORTE TÉCNICO ESPECIALIZADO</span>
+      <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
      <ContainerTable active={active}>

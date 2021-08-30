@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabGarantia() {
+export function TabCotacao() {
 
   const [active, setActive] = useState(false);
  
@@ -16,8 +16,8 @@ export function TabGarantia() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span>Vocês oferecem garantia?</span>
-      <img src="/img/icons/arrowRed.png" alt=""/>
+      <span> <img src="/img/topics/cotacao.png" alt="cotacao" className="icon"/> COTAÇÃO</span>
+      <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
      <ContainerTable active={active}>

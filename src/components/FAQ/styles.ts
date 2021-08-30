@@ -14,7 +14,11 @@ export const Container = styled.div`
             width: 100%;
             h2 {
                 font-size: 2.1rem;
-                color: var(--primary);
+                width: 100%;
+                padding: 1rem;
+                background: var(--primary);
+                color: var(--secondary);
+                border-radius: 4px;
 
                 @media only screen and (max-width: 900px) {
                     font-size: 1.5rem;

@@ -105,17 +105,11 @@ export const Description = styled.section`
 
     }
 
-    article {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            align-items: center;
-            gap: 3rem;
-
-            p {
-                text-align:justify;
-                line-height: 1.9rem;
-                padding: 2rem;
+        p {
+            text-align:justify;
+            line-height: 1.9rem;
+            padding: 2rem;
+            
             }
             img {
                 width: 100%;
@@ -124,7 +118,7 @@ export const Description = styled.section`
                 
             }
 
-    }
+    
 
 `
 
@@ -136,7 +130,7 @@ export const Header = styled.header`
        width: 100%;
        height: calc(60vh - 5rem);
 
-       background-image: url("/img/headersistema.png");
+       background: url("/img/headersistema.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
@@ -162,7 +156,7 @@ export const Header = styled.header`
            h3 {
                color: var(--secondary);
                font-weight: 400;
-               border: 1px solid var(--secondary);
+               background: var(--primary);
                padding: 1rem;
                text-align: center;
                box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);

@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabCompatibilidade() {
+export function TabEstoque() {
 
   const [active, setActive] = useState(false);
  
@@ -16,8 +16,8 @@ export function TabCompatibilidade() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span>São compatíveis com as pulseiras Vivara e Pandora?</span>
-      <img src="/img/icons/arrowRed.png" alt=""/>
+      <span> <img src="/img/topics/estoque.png" alt="" className="icon"/> CONTROLE DE ESTOQUE</span>
+      <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
      <ContainerTable active={active}>
