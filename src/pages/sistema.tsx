@@ -1,5 +1,6 @@
 import { Faq } from '../components/FAQ'
-import {Container, Header, Description, Contato, ButtonContato} from '../styles/styles.servicos'
+import { Clientes } from '../components/Home/Clientes'
+import {Container, Header, Description, Contato, ButtonContato, Tab} from '../styles/styles.sistema'
 
 
 
@@ -36,7 +37,46 @@ export default function Sistema() {
 
         <Faq/>
 
-        
+        <Clientes/>
+
+
+        <Tab>
+            <div className="containerTab">
+                <div className="title">
+                    <h2>0%</h2>
+                </div>
+
+                <ul>
+                    <li> <img src="/img/icons/check.png" alt=""/> Taxa de cancelamento </li>
+                    <li> <img src="/img/icons/check.png" alt=""/> Cobrança por atendimento telefônico </li>
+                    <li> <img src="/img/icons/check.png" alt=""/> Cobrança por atendimento por conexão remota</li>
+                </ul>
+
+
+                
+                </div>
+        </Tab>
+
+        <Tab>
+            <div className="containerTab">
+                <div className="title">
+                    <h2 className="limite">SEM</h2>
+                    <h2 className="limite">LIMITE</h2>
+                </div>
+
+                <ul>
+                    <li> <img src="/img/icons/check.png" alt=""/> Treinamento horário de início e término pré-agendado </li>
+                    <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico via telefone </li>
+                    <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico via acesso remoto</li>
+                </ul>
+
+
+                
+                </div>
+        </Tab>
+
+
+
         <Contato>
             <div className="containerContato">
                 <div className="title">
@@ -60,6 +100,7 @@ export default function Sistema() {
                 
                 </div>
         </Contato>
+
 
 
         </Container>

@@ -1,6 +1,85 @@
 import styled from 'styled-components';
 
 
+
+export const Tab = styled.div`
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+    
+    
+    
+
+    .containerTab {
+        cursor: default;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+        background: var(--primary);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width:100%;
+        max-width: 1120px;
+        background-color: var(--primary);
+        border-radius: 7px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        
+        padding: 1rem;
+        
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+
+            li {
+                font-size: 1.1rem;
+                color: var(--secondary);
+                display: flex;
+                align-items: center;
+               
+                img {
+                    padding: 0.5rem;
+                    width: 35px;
+                }
+            }
+        }
+
+
+        .title {
+           
+            text-align:center;
+            h2 {
+                
+                font-weight: 600;
+                color:var(--secondary);
+                font-size: 7rem;
+                align-self: flex-end;
+            }
+
+            .limite {
+                font-size: 4rem;
+            }
+
+        }
+    }
+   
+    :last-child {
+        margin-bottom: 5rem;
+    }
+
+
+`
+
+
+
+
 export const Contato = styled.div`
 
     width: 100%;
@@ -156,7 +235,7 @@ export const Header = styled.header`
            h3 {
                color: var(--secondary);
                font-weight: 400;
-               background: var(--primary);
+               border: 1px solid var(--secondary);
                padding: 1rem;
                text-align: center;
                box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);

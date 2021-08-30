@@ -25,7 +25,7 @@ export const Container = styled.div`
         }
             }
         }
-        margin-bottom: 4rem;
+        
 `
 
 export const ContainerAsks = styled.div`
