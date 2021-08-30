@@ -25,12 +25,12 @@ export const SectionDesc = styled.section`
     }
 
     .containerCards {
-        border: 1px solid red;
+        
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding-top: 5rem;
-        gap: 1rem;
+        gap: 5rem;
     }
 
 
@@ -43,9 +43,40 @@ export const CardPerson = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
-    border: 1px solid red;
     height: 250px;
     position: relative;
+
+    .descriptionCard {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        h5 {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .bar {
+        height: 3px;
+        width: 100px;
+        background: var(--primary);
+        border-radius: 20px;
+        margin-top: 5rem;
+        
+    }
+
+    span {
+        border-top: 1px solid var(--grey-100);
+        color: var(--grey-100);
+        margin-top: 2rem;
+    }
+
+    }
 
     .avatar {
         position: absolute;
@@ -55,14 +86,9 @@ export const CardPerson = styled.div `
         border-radius: 100%;
     }
 
-    .bar {
-        height: 3px;
-        width: 100px;
-        background: var(--primary);
-        
-    }
+    
     border: 1px solid var(--grey-100);
-    border-radius: 5px;
+    border-radius: 2px;
 `
 
 

@@ -62,10 +62,74 @@ export default function Sobre() {
 
                     <CardPerson>
                         <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+                        
+                        <div className="descriptionCard">
+                        <div className="bar"/>
+                            <h3>Marcio</h3>
+                            <h5>CEO</h5>
+                            <span>interfac@interfac.com.br</span>
+                        </div>
+                       
+                    </CardPerson>
 
-                        <h3>Marcio</h3>
-                        <h5>CEO</h5>
-                        <span>interfac@interfac.com.br</span>
+                    <CardPerson>
+                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+                        
+                        <div className="descriptionCard">
+                        <div className="bar"/>
+                            <h3>Marcio</h3>
+                            <h5>CEO</h5>
+                            <span>interfac@interfac.com.br</span>
+                        </div>
+                       
+                    </CardPerson>
+
+                    <CardPerson>
+                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+                        
+                        <div className="descriptionCard">
+                        <div className="bar"/>
+                            <h3>Marcio</h3>
+                            <h5>CEO</h5>
+                            <span>interfac@interfac.com.br</span>
+                        </div>
+                       
+                    </CardPerson>
+
+                    <CardPerson>
+                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+                        
+                        <div className="descriptionCard">
+                        <div className="bar"/>
+                            <h3>Marcio</h3>
+                            <h5>CEO</h5>
+                            <span>interfac@interfac.com.br</span>
+                        </div>
+                       
+                    </CardPerson>
+
+                    <CardPerson>
+                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+                        
+                        <div className="descriptionCard">
+                        <div className="bar"/>
+                            <h3>Marcio</h3>
+                            <h5>CEO</h5>
+                            <span>interfac@interfac.com.br</span>
+                        </div>
+                       
+                    </CardPerson>
+
+                    <CardPerson>
+                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
+                        
+                        <div className="descriptionCard">
+                        <div className="bar"/>
+                            <h3>Marcio</h3>
+                            <h5>CEO</h5>
+                            <span>interfac@interfac.com.br</span>
+                        </div>
+                       
                     </CardPerson>
 
                 </div>
