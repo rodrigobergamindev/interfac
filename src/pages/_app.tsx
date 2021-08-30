@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer/Footer'
+import { GlobalStyle } from '../global'
 
 
 const App = ({ Component, pageProps }) => {
@@ -22,6 +23,7 @@ const App = ({ Component, pageProps }) => {
   return (
   <>
     <Navbar/>
+    <GlobalStyle/>
     <Component {...pageProps} />
     <Footer/>
   </>

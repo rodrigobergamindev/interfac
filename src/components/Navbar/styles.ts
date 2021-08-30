@@ -15,6 +15,7 @@ export const Container = styled.nav`
   position: fixed;
   z-index: 99999;
 
+
   @media only screen and (max-width: 900px) {
 
     display: none;

@@ -2,7 +2,7 @@ import {Container, Header, Description, Contato, ButtonContato} from '../styles/
 
 
 
-export default function Servidores() {
+export default function Virtualizacao() {
 
 
 
@@ -11,7 +11,7 @@ export default function Servidores() {
            
             <Header>
                 <div>
-                <h1>SERVIDORES LINUX</h1>
+                <h1>VIRTUALIZAÇÃO</h1>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
                 </div>
             </Header>
@@ -21,7 +21,7 @@ export default function Servidores() {
             <header>
                 <div></div>
 
-                <h1>SERVIDORES LINUX</h1>
+                <h1>VIRUTALIZAÇÃO DE MÁQUINAS</h1>
             </header>
 
             <article>
