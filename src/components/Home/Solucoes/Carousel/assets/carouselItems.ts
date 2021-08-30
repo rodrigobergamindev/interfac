@@ -2,44 +2,38 @@ export const carouselItems = [
     {   
         url: '/solucoes',
         title: 'Bacula (Backup)',
-        subtitle: '',
-        description: '',
-        iconWhite: '/img/solucoes/backup.png'
+        iconWhite: '/img/solucoes/backup.png',
+        iconColor: '/img/solucoes/backup-color.png'
     },
     {   
         url: '/solucoes',
         title: 'Gateway',
-        subtitle: '',
-        description: '',
-        iconWhite: '/img/solucoes/gateway.png'
+        iconWhite: '/img/solucoes/gateway.png',
+        iconColor: '/img/solucoes/gateway-color.png'
     },
     {   
         url: '/solucoes',
         title: 'Servidores Linux',
-        subtitle: '',
-        description: '',
-        iconWhite: '/img/solucoes/servidores.png'
+        iconWhite: '/img/solucoes/servidores.png',
+        iconColor: '/img/solucoes/servidores-color.png'
     },
     {   
         url: '/solucoes',
         title: 'Virtualização',
-        subtitle: '',
-        description: '',
-        iconWhite: '/img/solucoes/virtualizacao.png'
+        iconWhite: '/img/solucoes/virtualizacao.png',
+        iconColor: '/img/solucoes/virtualizacao-color.png'
     },
     {   
         url: '/solucoes',
         title: 'Proxy',
-        subtitle: '',
-        description: '',
-        iconWhite: '/img/solucoes/proxy.png'
+        iconWhite: '/img/solucoes/proxy.png',
+        iconColor: '/img/solucoes/proxy-color.png'
     },
     {   
         url: '/solucoes',
         title: 'Redundância',
-        subtitle: '',
-        description: '',
-        iconWhite: '/img/solucoes/redundancia.png'
+        iconWhite: '/img/solucoes/redundancia.png',
+        iconColor: '/img/solucoes/redundancia-color.png'
     },
 
 ]

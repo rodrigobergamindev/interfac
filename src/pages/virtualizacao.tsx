@@ -21,7 +21,7 @@ export default function Virtualizacao() {
             <header>
                 <div></div>
 
-                <h1>VIRUTALIZAÇÃO DE MÁQUINAS</h1>
+                <h1>VIRTUALIZAÇÃO DE MÁQUINAS</h1>
             </header>
 
             <article>

@@ -94,7 +94,7 @@ export const Description = styled.section`
         h1 {
             font-weight: 400;
             margin-left: 2rem;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
 
         div {
