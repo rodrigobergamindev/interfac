@@ -13,7 +13,7 @@ export const Container = styled.nav`
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   flex-direction: column;
   position: fixed;
-  z-index: 1;
+  z-index: 99999;
 
   @media only screen and (max-width: 900px) {
 
@@ -33,7 +33,6 @@ export const Nav = styled.nav`
   width: 100%;
   max-width:1120px;
   padding: 1rem;
- 
 
   img {
     width: 25%;

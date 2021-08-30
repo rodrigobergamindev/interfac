@@ -8,7 +8,7 @@ export const Container = styled.div`
         padding:3rem;
         display: flex;
         justify-content:center;
-        border-top: 10px solid var(--primary);
+       
 
         .clientesContainer {
             width: 100%;
