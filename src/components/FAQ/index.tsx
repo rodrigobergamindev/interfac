@@ -2,11 +2,15 @@ import {Container, ContainerAsks} from './styles'
 import {TabTwo} from './Asks/TabTwo/index'
 import {TabFive} from './Asks/TabFive/index'
 import {TabThree} from './Asks/TabThree/index'
-import {TabSeven} from './Asks/Vendas/index'
+import {TabSeven} from './Asks/TabSeven/index'
 import {TabOne} from './Asks/TabOne/index'
 import { TabSix } from './Asks/TabSix'
 import { TabFour } from './Asks/TabFour'
 import { TabEight } from './Asks/TabEight'
+import { TabNine } from './Asks/TabNine'
+import { TabTen } from './Asks/TabTen'
+import { TabEleven } from './Asks/TabEleven'
+
 
 export function Faq() {
 
@@ -34,6 +38,10 @@ export function Faq() {
                 <TabSix/>
                 <TabFour/>
                 <TabEight/>
+                <TabNine/>
+                <TabTen/>
+                <TabEleven/>
+               
             </ContainerAsks>
         </Container>
     )

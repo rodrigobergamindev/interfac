@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabSeven() {
+export function TabTwelve() {
 
   const [active, setActive] = useState(false);
  
@@ -16,7 +16,7 @@ export function TabSeven() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span><img src="/img/topics/vendas.png" alt="vendas" className="icon"/>E-COMMERCE</span>
+      <span><img src="/img/topics/vendadireta.png" alt="vendas" className="icon"/>PONTO DE VENDA DIRETA E BALCÃO</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 

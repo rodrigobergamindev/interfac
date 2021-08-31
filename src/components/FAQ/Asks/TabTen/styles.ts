@@ -59,7 +59,7 @@ export const Container = styled.div`
 
 export const ContainerTable = styled.div`
 
-    height: ${props => props.active ? "70px" : "0px"};
+    height: ${props => props.active ? "250px" : "0px"};
     display: flex;
     flex-direction: column;
     transition: height 0.5s;
@@ -67,7 +67,7 @@ export const ContainerTable = styled.div`
     overflow-y: hidden;
 
     @media only screen and (max-width: 900px) {
-        height: ${props => props.active ? "100px" : "0px"};
+        height: ${props => props.active ? "250px" : "0px"};
        
         }
     
@@ -78,7 +78,7 @@ export const ContainerTable = styled.div`
 
 export const Ask = styled.div`
 
-    padding: 1rem;
+    padding: 3rem;
 
 
    

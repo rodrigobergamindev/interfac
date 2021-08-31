@@ -261,6 +261,98 @@ export const Header = styled.header`
 
 `
 
+export const HeaderAutoPecas = styled.header`
+
+       
+       margin-top: 6.7rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+
+       background: url("/img/topics/autopecas.jpg");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
+
+export const HeaderConstrucao = styled.header`
+
+       
+       margin-top: 6.7rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+
+       background: url("/img/topics/construcao.jpg");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
+
 
 
 export const Container = styled.section`

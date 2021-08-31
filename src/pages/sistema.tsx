@@ -35,7 +35,7 @@ export default function Sistema() {
 
              <section>
 
-                 <h1>SEGMENTOS</h1>
+                 <h1>MODELOS DE NEGÓCIO</h1>
                  <Card>
                     <img src="/img/topics/centroauto.png" alt="icon" className="icon"/>
 
