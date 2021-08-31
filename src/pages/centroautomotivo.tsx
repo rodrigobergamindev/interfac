@@ -27,11 +27,10 @@ export default function Centro() {
             </header>
 
             
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic 
-             typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-             desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-             </p>
+            <p>Buscamos oferecer a melhoria de processos da sua empresa através do nosso sistema. O sistema INterfac é o sistema mais robusto e ágil para o gerenciamento de processos do seu negócio, 
+        contamos com uma gama de serviços automatizados, como controle de estoque, venda direta, emissão de nota fiscal, importação das informações, cotação dentre outros.
+        
+        Confira a baixo alguns dos setores em que atuamos e também as funcionalidades do sistema em cada segmento:</p>
 
             
           

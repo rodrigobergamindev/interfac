@@ -3,86 +3,9 @@ import styled from 'styled-components';
 
 
 
-export const Contato = styled.div`
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    justify-content: center;
-    margin-bottom: 5rem;
-    
-
-    .containerContato {
-        
-        box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
-        background-image: url("/img/solucoes/contato.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        width:100%;
-        max-width: 1120px;
-        background-color: var(--primary);
-        border-radius: 7px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-        gap: 1rem;
-        padding: 2rem;
-
-
-        .title {
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-
-            
-            
-
-            h2 {
-                font-weight: 600;
-                color:var(--secondary);
-                font-size: 3rem;
-            }
-
-            h4 {
-                font-weight: 400;
-                color: var(--secondary);
-                margin-bottom: 1rem;
-            }
-
-
-            nav {
-                max-width: 150px;
-                display: flex;
-                justify-content:space-evenly;
-                align-items: flex-end;
-                
-                a {
-                    img {
-                        transform: scale(1.0);
-                        transition: all 0.2s ease-in-out;
-                        &:hover {
-                            transform: scale(1.2);
-                        }
-                        width:25px;
-                    }
-                }
-            }
-        }
-    }
-   
-
-
-
-`
-
-
 export const Description = styled.section`
 
-
+    
     width: 100%;
     max-width:1120px;
     margin-top: 3rem;
@@ -108,22 +31,29 @@ export const Description = styled.section`
     }
 
     article {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            align-items: center;
-            gap: 3rem;
+            display: flex;
+            flex-direction: column;
 
-            p {
-                text-align:justify;
-                line-height: 1.9rem;
-                padding: 2rem;
+            p{
+                text-align: justify;
+                padding: 0.25rem;
             }
-            img {
-                width: 100%;
 
-                
-                
+            h2 {
+                text-align:justify;
+                padding: 0.75rem;
+                font-size: 1.8rem;
+                background-color: var(--primary);
+                color: var(--secondary);
+                border-radius: 5px;
+            }
+            
+            ul {
+                padding: 3rem;
+
+                li {
+                    padding: 0.25rem;
+                }
             }
 
     }
@@ -134,7 +64,7 @@ export const Description = styled.section`
 export const Header = styled.header`
 
        
-       margin-top: 6.7rem;
+       margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
 
@@ -160,21 +90,9 @@ export const Header = styled.header`
                text-align: center;
                margin-bottom: 1.5rem;
                letter-spacing: 2px;
-           }
-           h3 {
-               color: var(--secondary);
-               font-weight: 400;
-               background-color: var(--primary);
-               padding: 1rem;
-               text-align: center;
-               box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
-               cursor: pointer;
-               transition: all 0.3s ease-in-out;
+               border: 1px solid var(--secondary);
+               cursor: default;
 
-               &:hover{
-                
-                   transform: scale(1.04);
-       }
            }
        }
    
