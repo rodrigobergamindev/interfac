@@ -8,7 +8,17 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+`
 
+export const ContainerContato = styled.section`
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 10rem;
     
 `
 

@@ -1,6 +1,6 @@
 
 import FormContato from '../components/Contato'
-import {Container, SectionMap} from '../styles/styles.contato'
+import {Container, SectionMap, ContainerContato} from '../styles/styles.contato'
 
 
 
@@ -10,6 +10,9 @@ export default function Contato() {
 
     return (
         <Container>
+           
+           <ContainerContato>
+
            
         
         <FormContato/>
@@ -22,8 +25,11 @@ export default function Contato() {
             </iframe>
         </SectionMap>
 
+        </ContainerContato>
 
         </Container>
+
+        
     )
 }
 

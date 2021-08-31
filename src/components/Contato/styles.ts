@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
 
-    margin-top: 15rem;
-    
+ 
+    margin-top: 5rem;
     width: 100%;
     max-width:1120px;
 
