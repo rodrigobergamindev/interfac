@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {Form, Card} from './styles'
+import {Form, Card, Section} from './styles'
 import { useState } from 'react'
 
 
@@ -12,11 +12,13 @@ const [sent, setSent] = useState(false)
 const [campos, setCampos] = useState({
     nome: '',
     email: '',
+    telefone: '',
+    empresa: '',
+    segmento: '',
     mensagem: '',
 });
 
 function handleInputChange(event){
-    event.preventDefault();
     campos[event.target.name] = event.target.value;
     setCampos(campos);
 }
@@ -75,9 +77,45 @@ function handleInputChange(event){
                 </header>
                 <label htmlFor="email">E-mail</label>
                  <input type="text" id="email" name="email" placeholder="Seu e-mail..." onChange={handleInputChange}/>
+
+                 <label htmlFor="telefone">Telefone</label>
+                 <input type="text" id="telefone" name="telefone" placeholder="Seu telefone..." onChange={handleInputChange}/>
   
                  <label htmlFor="nome">Nome</label>
                  <input type="text" id="nome" name="nome" placeholder="Seu nome..." onChange={handleInputChange} />
+
+                 <label htmlFor="empresa">Empresa</label>
+                 <input type="text" id="empresa" name="empresa" placeholder="Seu empresa..." onChange={handleInputChange} />
+
+
+                 <span className="segmento">Selecione seu segmento: </span>
+                <div className="radio">
+
+                
+                 <div className="option">
+                 <input type="radio" id="autopecas" name="segmento" value="Autopeças" onChange={handleInputChange}/>
+                 <label htmlFor="autopecas">Autopecas</label>
+                 </div>
+                 
+                 <div className="option">
+                 <input type="radio" id="industria" name="segmento" value="Indústria" onChange={handleInputChange}/>
+                 <label htmlFor="industria">Industria</label>
+                </div>
+                 
+                <div className="option">
+                 <input type="radio" id="construcao" name="segmento" value="Construção" onChange={handleInputChange}/>
+                 <label htmlFor="construcao">Construção</label>
+                </div>
+
+                <div className="option">
+                 <input type="radio" id="outro" name="segmento" value="Outro" onChange={handleInputChange}/>
+                 <label htmlFor="outro">Outro</label>
+                </div>
+
+                </div>
+                
+
+
   
                  <label htmlFor="mensagem">Mensagem</label>
                  <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." className="textArea" onChange={handleInputChange}></textarea>
@@ -87,7 +125,11 @@ function handleInputChange(event){
                 
                  </Form>
             ) : (
-                <h1>Email sent</h1>
+                <Section>
+                    <h1>Mensagem enviada, agradecemos seu contato!</h1>
+
+                    <span>INterfac • Tecnologia e Informática</span>
+                </Section>
             )
 
             }

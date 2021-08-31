@@ -82,6 +82,77 @@ export const Form = styled.form`
                 font-weight: 600;
             }
         }
+
+
+        .segmento {
+            color: var(--secondary);
+            font-size: 1.04rem;
+            margin-bottom: 1rem;
+        }
+
+        .radio {
+        display: flex; 
+        margin-bottom: 1rem;
+        width: 100%;
+
+        justify-content:space-around;
+        align-items: center;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        }
+
+        input[type="radio"]+label {
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        }
+
+        input[type="radio"]+label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border: 2px solid #adb5bd;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        }
+
+        input[type="radio"].disabled+label,
+        input[type="radio"]:disabled+label {
+        background-color: #f8f9fa;
+        opacity: 0.5;
+        cursor: not-allowed;
+        }
+
+        input[type="radio"]:checked+label:before {
+        background-color: #007a9d;
+        border-color: #007a9d;
+        }
+
+        input[type="radio"]:checked+label:after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: white;
+        }
+
+ 
+        }
+
+  
+
     }
 
 
@@ -120,5 +191,40 @@ export const Card = styled.div`
         max-width: 60px;
     }
 
+
+`
+
+export const Section = styled.section`
+
+    margin-top: 15rem;
+    
+    width: 100%;
+    max-width:1120px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+    background: var(--primary);
+    
+
+    border-radius: 10px;
+    margin-bottom: 7rem;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    padding: 1.5rem;
+
+    h1 {
+        color: var(--secondary);
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+    }
+
+    span {
+        padding: 1.5rem;
+        color: var(--grey-100);
+        border-top: 1px solid var(--grey-100);
+    }
 
 `

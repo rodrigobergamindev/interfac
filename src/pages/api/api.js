@@ -8,6 +8,10 @@ export default function sendMail(req,res) {
     const {email} = req.body.campos
     const {mensagem} = req.body.campos
 
+    const {telefone} = req.body.campos
+    const {empresa} = req.body.campos
+    const {segmento} = req.body.campos
+
 
     const transport = nodemailer.createTransport({
 
@@ -35,13 +39,14 @@ export default function sendMail(req,res) {
                 to: process.env.MAIL_FROM,
                 replyTo: email,
                 subject: 'CONTATO ATRAVÉS DO SITE ✔️ ',
-                html: `<h1>Olá, meu nome é <strong>${nome}</strong>, e-mail: <strong>${email}</strong>, <br /> ${mensagem}</p>`
+                html: `<h1>Olá, meu nome é <strong>${nome}</strong>, e-mail: <strong>${email}</strong>, telefone: ${telefone}, empresa: ${empresa}, segmento: ${segmento}  <br /> <p>${mensagem}</p>`
             })
         }
         res.send(response)
     }).catch(error => [
         res.send(error)
     ])
+  
 
 }
 
