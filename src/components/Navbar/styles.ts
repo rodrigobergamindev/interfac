@@ -36,7 +36,7 @@ export const Nav = styled.nav`
   padding: 1rem;
 
   img {
-    width: 25%;
+    width: 20%;
   }
 
 `

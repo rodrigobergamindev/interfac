@@ -7,12 +7,6 @@ export const carouselItems = [
     },
     {   
         url: '/solucoes',
-        title: 'Gateway',
-        iconWhite: '/img/solucoes/gateway.png',
-        iconColor: '/img/solucoes/gateway-color.png'
-    },
-    {   
-        url: '/solucoes',
         title: 'Servidores Linux',
         iconWhite: '/img/solucoes/servidores.png',
         iconColor: '/img/solucoes/servidores-color.png'
@@ -22,12 +16,6 @@ export const carouselItems = [
         title: 'Virtualização',
         iconWhite: '/img/solucoes/virtualizacao.png',
         iconColor: '/img/solucoes/virtualizacao-color.png'
-    },
-    {   
-        url: '/solucoes',
-        title: 'Proxy',
-        iconWhite: '/img/solucoes/proxy.png',
-        iconColor: '/img/solucoes/proxy-color.png'
     },
     {   
         url: '/solucoes',

@@ -1,6 +1,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {SliderContainerDesktop,SliderContainerMobile, Container, Slide} from './styles'
+import {SliderContainerDesktop,SliderContainerMobile, Container, Slide, SlideTwo, ButtonSaibaMais} from './styles'
 
 export function Slider() {
 
@@ -16,38 +16,52 @@ export function Slider() {
           pagination={{ clickable: true}}
           scrollbar={{ draggable: true }}
           autoplay={{delay: 4000,  disableOnInteraction: false}}
-          speed={2000}
+          speed={5000}
           >
      
 
     <SwiperSlide>
       <Slide>
-        <div className="description">
-          <span>Conheça a aplicação mais robusta e ágil para o seu negócio</span>
+
+
+      <div className="description">
+          <div className="text">
+          <span>Conheça a aplicação mais robusta e <strong>ágil</strong> para o seu negócio</span>
           <h1>Sistema INterfac</h1>
 
-          <h2>Conheça agora mesmo a aplicação ideal para alavancar o seu negócio</h2>
+          <h2>Atuamos nos seguintes segmentos:</h2>
 
+          <h3>AUTO PEÇAS</h3>
+          <h3>INDUSTRIAL</h3>
+          <h3>CONSTRUÇÃO</h3>
+
+          <ButtonSaibaMais>Saiba Mais <img src="/img/icons/right.png" alt=""/> </ButtonSaibaMais>
+          </div>
           
         </div>
+
         
       </Slide>
       </SwiperSlide>
       
     <SwiperSlide>
-      <Slide>
+      <SlideTwo>
       <div className="description">
-          <h2>SLIDE</h2>
-        </div>
-      </Slide>
-    </SwiperSlide>
+          <div className="text">
+          <span>Contamos com uma gama de <strong>produtos</strong> para atender as necessidades da sua empresa</span>
+          <h1>SOLUÇÕES</h1>
 
-    <SwiperSlide>
-      <Slide>
-      <div className="description">
-          <h2>SLIDE</h2>
+          <h2>Conheça nossos serviços:</h2>
+
+          <h3>SERVIDOR DE BACKUP BACULA</h3>
+          <h3>SERVIDOR LINUX</h3>
+          <h3>VIRTUALIZAÇÃO</h3>
+
+          <ButtonSaibaMais>Saiba Mais <img src="/img/icons/right.png" alt=""/> </ButtonSaibaMais>
+          </div>
+          
         </div>
-      </Slide>
+      </SlideTwo>
     </SwiperSlide>
     
     

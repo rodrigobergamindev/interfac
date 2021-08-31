@@ -11,7 +11,7 @@ export function Footer() {
                
 
                 <div className="description">
-                <img src="/img/logo.png" alt="" />
+                <img src="/img/logo.jpeg" alt="" />
                     <span>Rua Caraipe das Águas, 1194 - Sobre Loja</span>
                     <span>Jardim dos Ypês – São Paulo, SP</span>
                     <span>CEP: 08161-360</span>

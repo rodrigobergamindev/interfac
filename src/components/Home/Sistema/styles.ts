@@ -28,7 +28,7 @@ export const Content = styled.section`
             flex-direction: column;
             align-items: center;
             text-align: center;
-      
+            cursor: default;
             padding: 1rem;
 
             h1 {
@@ -78,7 +78,7 @@ export const Topic = styled.div`
 
 
 export const ButtonSaibaMais = styled.button`
-
+   
     outline: none;
     border: none;
     padding: 0.2rem;

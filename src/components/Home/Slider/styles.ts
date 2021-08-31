@@ -53,7 +53,7 @@ max-width:1920px;
 
 export const Slide = styled.div`
     height: 100vh;
-    background: url('/img/slider/slide.jpg');
+    background: url('/img/slider/slide02.png');
  
     background-position: center;
     background-repeat: no-repeat;
@@ -66,11 +66,144 @@ export const Slide = styled.div`
     .description {
         width: 100%;
         max-width: 1120px;
-        border: 1px solid red;
+        border-left: 5px solid var(--secondary);
+        border-radius: 10px;
+        padding-left: 1rem;
+        
+       
+        .text {
+            max-width:700px;
+            display: flex;
+            flex-direction: column;
+            
+            padding: 1rem;
+            cursor: default;
 
-        h1 {
-            font-size: 5rem;
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #fbc531;
+                padding: 0.5rem;
+            }
+
+            h2 {
+                margin-bottom: 2rem;
+                color: var(--secondary);
+                font-weight: 400;
+            }
+
+            h1 {
+            font-size: 7rem;
+            color: var(--secondary);
+            font-weight: 600;
         }
+
+        span {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--secondary);
+
+            strong {
+                color: #fbc531;
+            }
+        }
+        }
+        
+    }
+
+`
+
+export const SlideTwo = styled.div`
+    height: 100vh;
+    background: url('/img/slider/slide04.png');
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    .description {
+        width: 100%;
+        max-width: 1120px;
+        border-left: 5px solid var(--secondary);
+        border-radius: 10px;
+        padding-left: 1rem;
+        
+       
+        .text {
+            max-width:700px;
+            display: flex;
+            flex-direction: column;
+            
+            padding: 1rem;
+            cursor: default;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #fbc531;
+                padding: 0.5rem;
+            }
+
+            h2 {
+                margin-bottom: 2rem;
+                color: var(--secondary);
+                font-weight: 400;
+            }
+
+            h1 {
+            font-size: 7rem;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--secondary);
+
+            strong {
+                color: #fbc531;
+            }
+        }
+        }
+        
+    }
+
+`
+
+
+
+export const ButtonSaibaMais = styled.button`
+     margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    max-width: 200px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+        max-width: 30px;
+    }
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        filter: brightness(0.9);
+
     }
 
 `

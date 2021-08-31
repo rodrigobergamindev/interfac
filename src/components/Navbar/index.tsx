@@ -1,5 +1,4 @@
 import {Container, Nav, ContainerNav, DropdownMenu, SubMenu, ContainerSubMenu, SubContainer} from './styles'
-import {Logo} from '../Logo/index'
 import {useState} from 'react'
 import {menu} from './assets/nav'
 
@@ -13,19 +12,10 @@ export function Navbar() {
       <Nav>
 
       
-      <img src='/img/logo.png' alt="" />
+      <img src='/img/logo.jpeg' alt="" />
 
       <ContainerNav>
         {menu.map((item, index) => {
-          if(item.title === 'Soluções') {
-            return (
-              <DropdownMenu active={active}
-              onClick={() => setActive(!active)}
-              key={index} 
-              ><span>{item.title}</span><img className="arrow" src="/img/icons/down.png" alt="submenu"></img>
-              </DropdownMenu>
-            )
-          }
             return (
                 <a key={index} href={item.url}>{item.title}</a>
             )

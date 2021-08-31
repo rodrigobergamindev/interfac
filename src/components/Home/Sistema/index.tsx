@@ -1,10 +1,14 @@
 import {Container, Content, Topic, ButtonSaibaMais} from './styles'
 import {topics} from './assets/topics'
+import Typical from 'react-typical'
 
 
 
 export function Sistema() {
 
+    
+
+    const frase = 'Atuamos no mercado a mais de dez anos no segmento automotivo, industrial e de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
 
 
     return (
@@ -13,8 +17,11 @@ export function Sistema() {
            <Content>
                 <div className="title">
                     <h1>Sistema INterfac</h1>
-                    <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</h4>
+                    <Typical
+                    steps={[frase, 5000, frase, 5000]}
+                    loop={Infinity}
+                    wrapper="h4"
+                    />
                 </div>
 
                 <div className="topics">
