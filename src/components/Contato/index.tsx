@@ -24,10 +24,9 @@ function handleInputChange(event){
 
    async function handleFormSubmit(event){
         event.preventDefault();
-       
 
         try {
-            await axios.post("http://localhost:3030/send", {
+            await axios.post('/api/api', {
                 campos
             })
             setSent(true)
@@ -40,12 +39,16 @@ function handleInputChange(event){
 
     return (
         
-        
-            
             <>
 
             {!sent ? (
                 <Form onSubmit={handleFormSubmit}>
+
+                <div className="information">
+                    <span>hey</span>
+                </div>
+                
+                <div className="campos">
                 <label htmlFor="email">E-mail</label>
                  <input type="text" id="email" name="email" placeholder="E-mail de destino.." onChange={handleInputChange}/>
   
@@ -56,6 +59,8 @@ function handleInputChange(event){
                  <textarea id="mensagem" name="mensagem" placeholder="Escreva algo.." className="textArea" onChange={handleInputChange}></textarea>
   
                  <input type="submit" value="Enviar" />
+                </div>
+                
                  </Form>
             ) : (
                 <h1>Email sent</h1>
@@ -63,12 +68,6 @@ function handleInputChange(event){
 
             }
             </>
-               
-                
-    
-            
-            
-
 
       
     )
