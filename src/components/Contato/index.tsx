@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {Form} from './styles'
+import {Form, Card} from './styles'
 import { useState } from 'react'
 
 
@@ -45,18 +45,42 @@ function handleInputChange(event){
                 <Form onSubmit={handleFormSubmit}>
 
                 <div className="information">
-                    <span>hey</span>
+                    <Card>
+                        <img src="/img/contato/address.png" alt="icon"/>
+                        <span>Rua Caraipe das Águas, 1194 - São Paulo, SP</span>
+
+                    </Card>
+
+                    <Card>
+                        <img src="/img/contato/phone.png" alt="icon"/>
+                        <span>+55 11 2058-8586</span>
+                    </Card>
+
+                    <Card>
+                        <img src="/img/contato/mail.png" alt="icon"/>
+                        <span>interfac@interfac.com.br</span>
+                    </Card>
+
+                    <Card>
+                        <img src="/img/contato/whatsapp.png" alt="icon"/>
+                        <span>+55 11 97678-9680</span>
+                    </Card>
                 </div>
+
                 
                 <div className="campos">
+
+                <header>
+                    <h2>Entre em contato</h2>
+                </header>
                 <label htmlFor="email">E-mail</label>
-                 <input type="text" id="email" name="email" placeholder="E-mail de destino.." onChange={handleInputChange}/>
+                 <input type="text" id="email" name="email" placeholder="Seu e-mail..." onChange={handleInputChange}/>
   
                  <label htmlFor="nome">Nome</label>
-                 <input type="text" id="nome" name="nome" placeholder="Nome da pessoa.." onChange={handleInputChange} />
+                 <input type="text" id="nome" name="nome" placeholder="Seu nome..." onChange={handleInputChange} />
   
                  <label htmlFor="mensagem">Mensagem</label>
-                 <textarea id="mensagem" name="mensagem" placeholder="Escreva algo.." className="textArea" onChange={handleInputChange}></textarea>
+                 <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." className="textArea" onChange={handleInputChange}></textarea>
   
                  <input type="submit" value="Enviar" />
                 </div>
