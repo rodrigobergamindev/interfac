@@ -39,11 +39,28 @@ export const Form = styled.form`
             padding: 0.5rem;
         }
 
-        input[type=submit] {
+        button {
             margin-top: 2rem;
-            width: 15rem;
+            width: 8rem;
             font-size: 1.2rem;
             color: var(--primary);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-evenly;
+            border: 0;
+            outline: 0;
+            padding: 0.3rem;
+
+            border-radius: 5px;
+            img {
+                width: 30px;
+            }
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                filter: brightness(0.9);
+            }
 
         }
 

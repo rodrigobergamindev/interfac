@@ -82,7 +82,7 @@ function handleInputChange(event){
                  <label htmlFor="mensagem">Mensagem</label>
                  <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." className="textArea" onChange={handleInputChange}></textarea>
   
-                 <input type="submit" value="Enviar" />
+                 <button type="submit" value="Enviar">ENVIAR <img src="/img/icons/right.png" alt="enviar"/> </button>
                 </div>
                 
                  </Form>
