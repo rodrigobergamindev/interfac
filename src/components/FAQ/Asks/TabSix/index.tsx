@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabNfe() {
+export function TabSix() {
 
   const [active, setActive] = useState(false);
  
@@ -16,7 +16,7 @@ export function TabNfe() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span> <img src="/img/topics/nfe.png" alt="nfe" className="icon"/> NOTA FISCAL ELETRÔNICA</span>
+      <span> <img src="/img/topics/nfe.png" alt="nfe" className="icon"/> SERVIÇOS</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 

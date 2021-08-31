@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabImportacao() {
+export function TabEight() {
 
   const [active, setActive] = useState(false);
  
@@ -16,7 +16,7 @@ export function TabImportacao() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span><img src="/img/topics/importacao.png" alt="importacao" className="icon"/> IMPORTAÇÃO DAS INFORMAÇÕES</span>
+      <span> <img src="/img/topics/metas.png" alt="codigo" className="icon"/> CAIXA</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 

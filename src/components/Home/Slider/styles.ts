@@ -80,10 +80,15 @@ export const Slide = styled.div`
             cursor: default;
 
             h3 {
-                font-size: 1.5rem;
+                background: var(--secondary);
+                margin-top: 0.7rem;
+                max-width: 200px;
+                font-size: 1.2rem;
                 font-weight: 600;
-                color: #fbc531;
+                color: black;
                 padding: 0.5rem;
+                border-radius: 5px;
+                text-align:center;
             }
 
             h2 {
@@ -142,10 +147,15 @@ export const SlideTwo = styled.div`
             cursor: default;
 
             h3 {
-                font-size: 1.5rem;
+                background: var(--secondary);
+                margin-top: 0.7rem;
+                max-width: 320px;
+                font-size: 1.2rem;
                 font-weight: 600;
-                color: #fbc531;
+                color: black;
                 padding: 0.5rem;
+                border-radius: 5px;
+                text-align:center;
             }
 
             h2 {
@@ -181,9 +191,8 @@ export const ButtonSaibaMais = styled.button`
      margin-top: 2rem;
     outline: none;
     border: none;
-    padding: 1rem;
-    padding-right: 0.6rem;
-    padding-left: 0.6rem;
+    padding: 0.5rem;
+    
 
     color: var(--primary);
     font-weight: 600;

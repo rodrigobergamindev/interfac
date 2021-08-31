@@ -1,12 +1,12 @@
 import {Container, ContainerAsks} from './styles'
-import {TabEstoque} from './Asks/Estoque/index'
-import {TabPesquisa} from './Asks/Pesquisa/index'
-import {TabImportacao} from './Asks/Importacao/index'
-import {TabVendas} from './Asks/Vendas/index'
-import {TabCotacao} from './Asks/Cotacao/index'
-import { TabNfe } from './Asks/NFE'
-import { TabSuporte } from './Asks/Suporte'
-import { TabMetas } from './Asks/Metas'
+import {TabTwo} from './Asks/TabTwo/index'
+import {TabFive} from './Asks/TabFive/index'
+import {TabThree} from './Asks/TabThree/index'
+import {TabSeven} from './Asks/Vendas/index'
+import {TabOne} from './Asks/TabOne/index'
+import { TabSix } from './Asks/TabSix'
+import { TabFour } from './Asks/TabFour'
+import { TabEight } from './Asks/TabEight'
 
 export function Faq() {
 
@@ -26,14 +26,14 @@ export function Faq() {
             <ContainerAsks>
 
             
-                <TabEstoque/>
-                <TabPesquisa/>
-                <TabImportacao/>
-                <TabVendas/>
-                <TabCotacao/>
-                <TabNfe/>
-                <TabSuporte/>
-                <TabMetas/>
+                <TabTwo/>
+                <TabFive/>
+                <TabThree/>
+                <TabSeven/>
+                <TabOne/>
+                <TabSix/>
+                <TabFour/>
+                <TabEight/>
             </ContainerAsks>
         </Container>
     )

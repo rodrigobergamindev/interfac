@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabPesquisa() {
+export function TabFive() {
 
   const [active, setActive] = useState(false);
  
@@ -16,7 +16,7 @@ export function TabPesquisa() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span> <img src="/img/topics/codigo.png" alt="codigo" className="icon"/> PESQUISA POR CÓDIGOS</span>
+      <span> <img src="/img/topics/codigo.png" alt="codigo" className="icon"/> PEDIDO EMITIDO E ORÇAMENTO</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 

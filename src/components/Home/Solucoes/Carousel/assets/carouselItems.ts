@@ -11,17 +11,5 @@ export const carouselItems = [
         iconWhite: '/img/solucoes/servidores.png',
         iconColor: '/img/solucoes/servidores-color.png'
     },
-    {   
-        url: '/solucoes',
-        title: 'Virtualização',
-        iconWhite: '/img/solucoes/virtualizacao.png',
-        iconColor: '/img/solucoes/virtualizacao-color.png'
-    },
-    {   
-        url: '/solucoes',
-        title: 'Redundância',
-        iconWhite: '/img/solucoes/redundancia.png',
-        iconColor: '/img/solucoes/redundancia-color.png'
-    },
 
 ]

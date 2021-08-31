@@ -222,7 +222,7 @@ export const Header = styled.header`
        width: 100%;
        height: calc(60vh - 5rem);
 
-       background: url("/img/headersistema.png");
+       background: url("/img/topics/centroautomotivo.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;

@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabMetas() {
+export function TabThree() {
 
   const [active, setActive] = useState(false);
  
@@ -16,7 +16,7 @@ export function TabMetas() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span> <img src="/img/topics/metas.png" alt="codigo" className="icon"/> CONTROLE DE METAS</span>
+      <span><img src="/img/topics/importacao.png" alt="importacao" className="icon"/> CADASTRO DE PRODUTOS</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 

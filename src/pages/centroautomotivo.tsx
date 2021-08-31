@@ -1,11 +1,11 @@
 import FormContato from '../components/Contato'
 import { Faq } from '../components/FAQ'
 import { Clientes } from '../components/Home/Clientes'
-import {Container, Header, Description, Tab, Card} from '../styles/styles.sistema'
+import {Container, Header, Description, Tab, Card} from '../styles/styles.segmento'
 
 
 
-export default function Sistema() {
+export default function Centro() {
 
 
 
@@ -14,7 +14,7 @@ export default function Sistema() {
            
             <Header>
                 <div>
-                <h1>INterfac</h1>
+                <h1>CENTRO AUTOMOTIVO</h1>
                 </div>
             </Header>
         
@@ -33,42 +33,12 @@ export default function Sistema() {
              desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
              </p>
 
-             <section>
-
-                 <h1>SEGMENTOS</h1>
-                 <Card>
-                    <img src="/img/topics/centroauto.png" alt="icon" className="icon"/>
-
-                    
-                    <div className="description">
-                        <h3>Centro Automotivo</h3>
-                        <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
-                    </div>
-                 </Card>
-
-                 <Card>
-                    <img src="/img/topics/autopecas.png" alt="icon" className="icon"/>
-
-                    
-                    <div className="description">
-                        <h3>Auto Peças</h3>
-                        <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
-                    </div>
-                 </Card>
-
-                 <Card>
-                    <img src="/img/topics/construcao.png" alt="icon" className="icon"/>
-
-                    
-                    <div className="description">
-                        <h3>Construção</h3>
-                        <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
-                    </div>
-                 </Card>
-             </section>
+            
           
         </Description>
 
+
+        <Faq/>
         
 
         <Clientes/>

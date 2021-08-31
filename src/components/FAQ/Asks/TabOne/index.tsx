@@ -7,7 +7,7 @@ import {AskArea} from './ask'
 
 
 
-export function TabEstoque() {
+export function TabOne() {
 
   const [active, setActive] = useState(false);
  
@@ -16,7 +16,7 @@ export function TabEstoque() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span> <img src="/img/topics/estoque.png" alt="" className="icon"/> CONTROLE DE ESTOQUE</span>
+      <span> <img src="/img/topics/cotacao.png" alt="cotacao" className="icon"/> CADASTRO DE COLABORADORES</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
