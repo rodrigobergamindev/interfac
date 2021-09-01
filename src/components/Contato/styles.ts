@@ -37,6 +37,13 @@ export const Form = styled.form`
             border: 0;
             font-size: 1.05rem;
             padding: 0.5rem;
+            border: 2px solid transparent;
+        }
+        
+        transition: all 0.3s ease-in-out;
+
+        input:focus {
+            border: 2px solid #4bcffa;
         }
 
         button {
@@ -69,6 +76,12 @@ export const Form = styled.form`
             border-radius: 2px;
             font-size: 1.05rem;
             padding: 0.5rem;
+            transition: all 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+
+        textarea:focus {
+            border: 2px solid #4bcffa;
         }
 
         label {
@@ -139,8 +152,8 @@ export const Form = styled.form`
         }
 
         input[type="radio"]:checked+label:before {
-        background-color: #007a9d;
-        border-color: #007a9d;
+        background-color: #4bcffa;
+        border-color: #4bcffa;
         }
 
         input[type="radio"]:checked+label:after {
