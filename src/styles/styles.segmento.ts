@@ -264,7 +264,7 @@ export const Header = styled.header`
 export const HeaderAutoPecas = styled.header`
 
        
-       margin-top: 6.7rem;
+       margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
 
@@ -310,7 +310,7 @@ export const HeaderAutoPecas = styled.header`
 export const HeaderConstrucao = styled.header`
 
        
-       margin-top: 6.7rem;
+       margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
 

@@ -71,7 +71,7 @@ export const Slide = styled.div`
         
        
         .text {
-            max-width:700px;
+            max-width:1000px;
             display: flex;
             flex-direction: column;
             

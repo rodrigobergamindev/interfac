@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 
+
+
 export const Container = styled.div`
 
     width: 100%;
@@ -12,6 +14,10 @@ export const Container = styled.div`
     padding: 2rem;
     margin-bottom: 2rem;
 
+    -webkit-animation: bounceInDown 4s ease-in-out;
+        -moz-animation: bounceInDown 4s ease-in-out;
+        -o-animation: bounceInDown 4s ease-in-out;
+        animation: bounceInDown 4s ease-in-out;
 
 `
 

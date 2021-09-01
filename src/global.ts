@@ -58,10 +58,10 @@ export const GlobalStyle = createGlobalStyle `
         
     }
     html {
-        -webkit-animation: bounceInDown 3s ease-in-out;
-        -moz-animation: bounceInDown 3s ease-in-out;
-        -o-animation: bounceInDown 3s ease-in-out;
-        animation: bounceInDown 3s ease-in-out;
+        -webkit-animation: bounceInDown 5s ease-in-out;
+        -moz-animation: bounceInDown 5s ease-in-out;
+        -o-animation: bounceInDown 5s ease-in-out;
+        animation: bounceInDown 5s ease-in-out;
         
         @media(max-width:1080px) {
             font-size: 93.75%;
