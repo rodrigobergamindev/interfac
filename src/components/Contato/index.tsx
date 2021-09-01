@@ -107,8 +107,8 @@ function handleInputChange(event){
                  </div>
                  
                  <div className="option">
-                 <input type="radio" id="industria" name="segmento" value="Indústria" onChange={handleInputChange}/>
-                 <label htmlFor="industria">Industria</label>
+                 <input type="radio" id="industria" name="segmento" value="Centro Automotivo" onChange={handleInputChange}/>
+                 <label htmlFor="industria">Centro Automotivo</label>
                 </div>
                  
                 <div className="option">

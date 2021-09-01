@@ -90,6 +90,11 @@ export const Form = styled.form`
             margin-bottom: 1rem;
         }
 
+        .option {
+            padding: 0.75rem;
+            
+        }
+
         .radio {
         display: flex; 
         margin-bottom: 1rem;
