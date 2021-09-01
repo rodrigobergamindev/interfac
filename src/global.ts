@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle `
          }
 
     :root {
-        --primary: #051e3c;
+        --primary: #130f40;
         --secondary: #FFFFFF;
         --sub:#333;
         --grey-100: #a3a3a3;

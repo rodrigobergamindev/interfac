@@ -218,7 +218,7 @@ export const Description = styled.section`
 export const Header = styled.header`
 
        
-       margin-top: 6.7rem;
+       margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
 

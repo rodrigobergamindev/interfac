@@ -2,6 +2,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {SliderContainerDesktop,SliderContainerMobile, Container, Slide, SlideTwo, ButtonSaibaMais} from './styles'
 
+import Link from 'next/link'
+
 export function Slider() {
 
     return (
@@ -31,11 +33,15 @@ export function Slider() {
 
           <h2>Atuamos nos seguintes segmentos:</h2>
 
-          <h3>AUTO PEÇAS</h3>
-          <h3>INDUSTRIAL</h3>
-          <h3>CONSTRUÇÃO</h3>
+          <ul>
+            <li>AUTO PEÇAS</li>
+            <li>CENTRO AUTOMOTIVO</li>
+            <li>CONSTRUÇÃO</li>
+          </ul>
 
+          <Link href="/sistema">
           <ButtonSaibaMais>Saiba Mais <img src="/img/icons/right.png" alt=""/> </ButtonSaibaMais>
+          </Link>
           </div>
           
         </div>
@@ -53,11 +59,17 @@ export function Slider() {
 
           <h2>Conheça nossos serviços:</h2>
 
-          <h3>SERVIDOR DE BACKUP BACULA</h3>
-          <h3>SERVIDOR LINUX</h3>
-          <h3>VIRTUALIZAÇÃO</h3>
+          <ul>
+            <li>SERVIDOR LINUX (DEBIAN)</li>
+            <li>SERVIDOR DE BACKUP BACULA</li>
+          </ul>
 
+          <Link href="/solucoes">
+
+        
           <ButtonSaibaMais>Saiba Mais <img src="/img/icons/right.png" alt=""/> </ButtonSaibaMais>
+
+          </Link>
           </div>
           
         </div>

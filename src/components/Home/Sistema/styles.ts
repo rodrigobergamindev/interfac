@@ -86,6 +86,7 @@ export const ButtonSaibaMais = styled.button`
     padding-left: 0.6rem;
 
     color: var(--primary);
+    background: var(--secondary);
     border: 1px solid var(--primary);
     font-weight: 600;
     font-size: 0.95rem;

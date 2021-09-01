@@ -171,7 +171,7 @@ export const Form = styled.form`
 
 
 export const Card = styled.div`
-
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items:center;

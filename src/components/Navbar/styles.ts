@@ -35,8 +35,14 @@ export const Nav = styled.nav`
   max-width:1120px;
   padding: 1rem;
 
-  img {
-    width: 20%;
+  .logo {
+    cursor: pointer;
+    img {
+      width: 100%;
+      object-fit: cover;
+      
+    }
+    
   }
 
 `

@@ -95,7 +95,7 @@ export const CardPerson = styled.div `
 export const Header = styled.header`
 
        
-       margin-top: 6.7rem;
+       margin-top: 6rem;
        width: 100%;
        display: flex;
        flex-direction: column;

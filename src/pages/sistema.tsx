@@ -1,8 +1,7 @@
 import FormContato from '../components/Contato'
-import { Faq } from '../components/FAQ'
 import { Clientes } from '../components/Home/Clientes'
 import {Container, Header, Description, Tab, Card} from '../styles/styles.sistema'
-
+import Link from 'next/link'
 
 
 export default function Sistema() {
@@ -45,7 +44,9 @@ export default function Sistema() {
                     
                     <div className="description">
                         <h3>Centro Automotivo</h3>
-                        <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        <Link href="/centroautomotivo">
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        </Link>
                     </div>
                  </Card>
 
@@ -55,7 +56,9 @@ export default function Sistema() {
                     
                     <div className="description">
                         <h3>Auto Peças</h3>
-                        <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        <Link href="/autopecas">
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        </Link>
                     </div>
                  </Card>
 
@@ -65,7 +68,11 @@ export default function Sistema() {
                     
                     <div className="description">
                         <h3>Construção</h3>
-                        <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        <Link href="/construcao">
+
+                        
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        </Link>
                     </div>
                  </Card>
              </section>

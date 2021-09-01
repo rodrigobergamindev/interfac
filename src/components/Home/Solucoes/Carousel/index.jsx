@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
+import Link from 'next/link'
 
 
 export function CarouselProducts() {
@@ -36,8 +37,9 @@ export function CarouselProducts() {
                             <h3>
                               {item.title.toUpperCase()}
                             </h3>
+                            <Link href={item.url}>
                             <button>Saiba Mais <img src="img/icons/right.png"/></button>
-
+                            </Link>
                             </div>
                         
                       

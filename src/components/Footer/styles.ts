@@ -72,14 +72,16 @@ export const StyledFooter = styled.div`
         .description {
             display: flex;
             flex-direction: column;
-    
+            
             
             span {
                 font-size: 1.1rem;
                 color: var(--primary);
             }
+            
 
             img {
+                cursor: pointer;
                 margin-bottom: 2rem;
                 max-width: 350px;
             }
@@ -101,10 +103,10 @@ export const StyledFooter = styled.div`
                 display: flex;
                 flex-direction: column;
 
-                a {
+                div {
                     font-size: 1.1rem;
                     color: var(--grey-100);
-                   
+                    cursor: pointer;
                     display: flex;
                     margin-top: 0.5rem;
                     display: flex;

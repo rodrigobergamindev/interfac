@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {Form, Card, Section} from './styles'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 
@@ -47,26 +48,34 @@ function handleInputChange(event){
                 <Form onSubmit={handleFormSubmit}>
 
                 <div className="information">
+                    <Link href="https://goo.gl/maps/NH9ngnasmSPZr7e57">
                     <Card>
                         <img src="/img/contato/address.png" alt="icon"/>
                         <span>Rua Caraipe das Águas, 1194 - São Paulo, SP</span>
 
                     </Card>
-
+                    </Link>
+                    
+                    <Link href="tel:551120588586">
                     <Card>
                         <img src="/img/contato/phone.png" alt="icon"/>
                         <span>+55 11 2058-8586</span>
                     </Card>
+                    </Link>
 
+                    <Link href="mailto: interfac@interfac.com.br">
                     <Card>
                         <img src="/img/contato/mail.png" alt="icon"/>
                         <span>interfac@interfac.com.br</span>
                     </Card>
+                    </Link>
 
+                    <Link href="https://api.whatsapp.com/send?phone=5511976789680&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20para%20minha%20empresa.">
                     <Card>
                         <img src="/img/contato/whatsapp.png" alt="icon"/>
                         <span>+55 11 97678-9680</span>
                     </Card>
+                    </Link>
                 </div>
 
                 

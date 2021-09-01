@@ -35,7 +35,7 @@ export const SliderContainerMobile = styled.div`
     `
 
 export const Container = styled.div`
-margin-top: 6.5rem;
+margin-top: 6rem;
 
 width: 100%;
 max-width:1920px;
@@ -66,7 +66,6 @@ export const Slide = styled.div`
     .description {
         width: 100%;
         max-width: 1120px;
-        border-left: 5px solid var(--secondary);
         border-radius: 10px;
         padding-left: 1rem;
         
@@ -89,6 +88,15 @@ export const Slide = styled.div`
                 padding: 0.5rem;
                 border-radius: 5px;
                 text-align:center;
+            }
+
+            ul {
+                padding: 2rem;
+                color: var(--secondary);
+
+                li {
+                    font-size: 1.2rem;
+                }
             }
 
             h2 {
@@ -133,7 +141,6 @@ export const SlideTwo = styled.div`
     .description {
         width: 100%;
         max-width: 1120px;
-        border-left: 5px solid var(--secondary);
         border-radius: 10px;
         padding-left: 1rem;
         
@@ -145,6 +152,15 @@ export const SlideTwo = styled.div`
             
             padding: 1rem;
             cursor: default;
+
+            ul {
+                padding: 2rem;
+                color: var(--secondary);
+
+                li {
+                    font-size: 1.2rem;
+                }
+            }
 
             h3 {
                 background: var(--secondary);

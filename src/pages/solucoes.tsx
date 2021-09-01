@@ -1,6 +1,6 @@
 import {Container, Header, Description, ButtonContato, CardProduct, SectionDesc, Grade, Sistema} from '../styles/styles.solucoes'
 import {carouselItems} from '../components/Home/Solucoes/Carousel/assets/carouselItems'
-
+import Link from 'next/link'
 
 
 export default function Solucoes() {
@@ -28,7 +28,9 @@ export default function Solucoes() {
                 <h3>FICOU COM ALGUMA</h3>
                 <h1>DÚVIDA?</h1>
 
-                <ButtonContato>FALE COM UM CONSULTOR <img src="/img/icons/whatsapp.png" alt="whatsapp"/></ButtonContato>
+                <Link href="https://api.whatsapp.com/send?phone=5511976789680&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20para%20minha%20empresa.">
+                    <ButtonContato>FALE COM UM CONSULTOR <img src="/img/icons/whatsapp.png" alt="whatsapp"/></ButtonContato>
+                </Link>
             </SectionDesc>
 
 
@@ -44,8 +46,10 @@ export default function Solucoes() {
                             <h3>
                               {item.title.toUpperCase()}
                             </h3>
-                            <button>Saiba Mais <img src="img/icons/right-white.png"/></button>
 
+                            <Link href={item.url}>
+                            <button>Saiba Mais <img src="img/icons/right-white.png"/></button>
+                            </Link>
                             </div>
                         
                       
@@ -82,8 +86,9 @@ export default function Solucoes() {
                                     <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico especializado</li>
                                     <li> <img src="/img/icons/check.png" alt=""/> Constante atualização</li>
                                 </ul>
-
-                                <button>saiba mais <img src="img/icons/right.png"/></button>
+                                <Link href="/sistema">
+                                    <button>Saiba Mais <img src="img/icons/right.png"/></button>
+                                </Link>
                                 </div>
 
                             <img className="imgSistema" src="/img/sistema.jpg" alt=""/>

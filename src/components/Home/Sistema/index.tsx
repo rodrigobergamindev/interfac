@@ -2,13 +2,14 @@ import {Container, Content, Topic, ButtonSaibaMais} from './styles'
 import {topics} from './assets/topics'
 import Typical from 'react-typical'
 
+import Link from 'next/link'
 
 
 export function Sistema() {
 
     
 
-    const frase = 'Atuamos no mercado a mais de dez anos no segmento automotivo, industrial e de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
+    const frase = 'Atuamos no mercado há mais de dez anos no segmento automotivo, industrial e de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
 
 
     return (
@@ -32,7 +33,10 @@ export function Sistema() {
                                 <img src={topic.img} alt="topic"/>
                                 <div className="description">
                                     <h3>{topic.title.toUpperCase()}</h3>
+                                    <Link href="/sistema">
+                                   
                                     <ButtonSaibaMais>Saiba mais</ButtonSaibaMais>
+                                    </Link>
                                 </div>
                             </Topic>
                         )
