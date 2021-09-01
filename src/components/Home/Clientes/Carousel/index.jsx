@@ -19,7 +19,6 @@ export function CarouselProducts() {
       spaceBetween={10}
       slidesPerView={4}
       navigation
-      pagination={{clickable: true }}
       scrollbar={{ draggable: true }}
       autoplay={{delay: 2000,  disableOnInteraction: false}}
       speed={1200}
