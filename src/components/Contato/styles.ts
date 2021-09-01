@@ -16,14 +16,14 @@ export const Form = styled.form`
     align-items: center;
     gap: 0rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
-    background: var(--primary);
+    background: var(--secondary);
     
 
-    border-radius: 10px;
+    border: 1px solid var(--primary);
     margin-bottom: 7rem;
 
     .campos {
-        border-left: 1px solid var(--secondary);
+        border-left: 1px solid var(--primary);
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@ export const Form = styled.form`
             border: 0;
             font-size: 1.05rem;
             padding: 0.5rem;
-            border: 2px solid transparent;
+            border: 2px solid var(--primary);
         }
         
         transition: all 0.3s ease-in-out;
@@ -50,7 +50,7 @@ export const Form = styled.form`
             margin-top: 2rem;
             width: 8rem;
             font-size: 1.2rem;
-            color: var(--primary);
+            color: var(--secondary);
             font-weight: 600;
             display: flex;
             justify-content: space-evenly;
@@ -59,6 +59,7 @@ export const Form = styled.form`
             padding: 0.3rem;
 
             border-radius: 5px;
+            background: var(--primary);
             img {
                 width: 30px;
             }
@@ -66,7 +67,7 @@ export const Form = styled.form`
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                filter: brightness(0.9);
+                filter: brightness(0.8);
             }
 
         }
@@ -77,7 +78,7 @@ export const Form = styled.form`
             font-size: 1.05rem;
             padding: 0.5rem;
             transition: all 0.3s ease-in-out;
-            border: 2px solid transparent;
+            border: 2px solid var(--primary);
         }
 
         textarea:focus {
@@ -85,12 +86,12 @@ export const Form = styled.form`
         }
 
         label {
-            color: var(--secondary);
+            color: var(--primary);
         }
         header {
             margin-bottom: 2rem;
             h2 {
-                color: var(--secondary);
+                color: var(--primary);
                 font-size: 2.5rem;
                 font-weight: 600;
             }
@@ -98,7 +99,7 @@ export const Form = styled.form`
 
 
         .segmento {
-            color: var(--secondary);
+            color: var(--primary);
             font-size: 1.04rem;
             margin-bottom: 1rem;
         }
@@ -198,7 +199,7 @@ export const Card = styled.div`
 
 
     span {
-        color: var(--secondary);
+        color: var(--primary);
         max-width: 350px;
         text-align:center;
         font-size: 0.9rem;

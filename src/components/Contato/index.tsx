@@ -86,7 +86,7 @@ function handleInputChange(event){
                 <div className="information">
                     <Link href="https://goo.gl/maps/NH9ngnasmSPZr7e57">
                     <Card>
-                        <img src="/img/contato/address.png" alt="icon"/>
+                        <img src="/img/contato/address-color.png" alt="icon"/>
                         <span>Rua Caraipe das Águas, 1194 - São Paulo, SP</span>
 
                     </Card>
@@ -94,21 +94,21 @@ function handleInputChange(event){
                     
                     <Link href="tel:551120588586">
                     <Card>
-                        <img src="/img/contato/phone.png" alt="icon"/>
+                        <img src="/img/contato/phone-color.png" alt="icon"/>
                         <span>+55 11 2058-8586</span>
                     </Card>
                     </Link>
 
                     <Link href="mailto: interfac@interfac.com.br">
                     <Card>
-                        <img src="/img/contato/mail.png" alt="icon"/>
+                        <img src="/img/contato/mail-color.png" alt="icon"/>
                         <span>interfac@interfac.com.br</span>
                     </Card>
                     </Link>
 
                     <Link href="https://api.whatsapp.com/send?phone=5511976789680&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20para%20minha%20empresa.">
                     <Card>
-                        <img src="/img/contato/whatsapp.png" alt="icon"/>
+                        <img src="/img/contato/whatsapp-color.png" alt="icon"/>
                         <span>+55 11 97678-9680</span>
                     </Card>
                     </Link>
@@ -165,7 +165,7 @@ function handleInputChange(event){
                  <label htmlFor="mensagem">Mensagem</label>
                  <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." className="textArea" onChange={handleInputChange}></textarea>
   
-                 <button type="submit" value="Enviar">ENVIAR <img src="/img/icons/right.png" alt="enviar"/> </button>
+                 <button type="submit" value="Enviar">ENVIAR <img src="/img/icons/right-white.png" alt="enviar"/> </button>
                 </div>
                 
                  </Form>
