@@ -31,17 +31,17 @@ export default function sendMail(req,res) {
 
     transport.sendMail({
         from: process.env.MAIL_FROM,
-        to: email,
+        to: process.env.MAIL_FROM,
         subject: `Obrigado pelo interesse!`,
-        html: `<h1>Olá ${nome}, desde já agradecemos o seu interesse, recebemos os seus dados e em breve entraremos em contato!</h1>`
+        html: `<h1>Olá, meu nome é <strong>${nome}</strong>, e-mail: <strong>${email}</strong>, telefone: ${telefone}, empresa: ${empresa}, segmento: ${segmento}  <br /> <p>${mensagem}</p>`
     }).then(response => {
         if(response) {
             transport.sendMail({
                 from: process.env.MAIL_FROM,
-                to: process.env.MAIL_FROM,
+                to: email,
                 replyTo: email,
                 subject: 'CONTATO ATRAVÉS DO SITE ✔️ ',
-                html: `<h1>Olá, meu nome é <strong>${nome}</strong>, e-mail: <strong>${email}</strong>, telefone: ${telefone}, empresa: ${empresa}, segmento: ${segmento}  <br /> <p>${mensagem}</p>`
+                html: `<h1>Olá ${nome}, desde já agradecemos o seu interesse, recebemos os seus dados e em breve entraremos em contato!</h1>`
             })
         }
         res.send(response)
