@@ -35,7 +35,7 @@ export default function sendMail(req,res) {
         replyTo: email,
         subject: `CONTATO ATRAVÉS DO SITE! ✔️`,
         html: `
-        <h3>Olá, meu nome é <strong>${nome}</strong> <br /> e-mail: <strong>${email}</strong> <br />telefone: ${telefone} <br /> empresa: ${empresa} <br /> segmento: ${segmento}</h3>  <br /> Mensagem: <br /> <p>${mensagem}</p>
+        <h3>Olá, meu nome é <strong>${nome}</strong> <br /> e-mail: <strong>${email}</strong> <br />telefone: ${telefone} <br /> empresa: ${empresa} <br /> segmento: ${segmento}</h3>  <br /> <p>Mensagem:</p> <br /> <p>${mensagem}</p>
         
         `
     }).then(response => {
