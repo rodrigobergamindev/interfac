@@ -3,6 +3,8 @@ const nodemailer = require('nodemailer')
 
 export default function sendMail(req,res) {
 
+    res.send('tá chegando')
+
 
     const {nome} = req.body.campos
     const {email} = req.body.campos
