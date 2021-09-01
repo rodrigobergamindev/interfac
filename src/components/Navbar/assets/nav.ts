@@ -15,6 +15,11 @@ export const menu = [
         img: '/img/menu/buy.png'
     },
     {
+        title: 'Sistema',
+        url: '/sistema',
+        img: '/img/menu/faq.png'
+    },
+    {
         title: 'Contato',
         url: '/contato',
         img: '/img/menu/faq.png'

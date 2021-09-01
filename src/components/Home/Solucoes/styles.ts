@@ -9,9 +9,9 @@ export const Container = styled.div`
         display: flex;
         justify-content:center;
 
-        background-image: url("/img/slider/slide03.png");
+        background-image: url("/img/background.jpg");
         background-attachment: fixed;
-        background-position: bottom;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
 

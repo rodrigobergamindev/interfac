@@ -194,6 +194,11 @@ export const Card = styled.div`
     img {
         margin-bottom: 1rem;
         max-width: 60px;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            transform: rotateZ(360deg);
+        }
     }
 
 

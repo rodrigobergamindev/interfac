@@ -33,8 +33,9 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   max-width:1120px;
-  padding: 1rem;
 
+
+  
   .logo {
     cursor: pointer;
     img {
@@ -53,17 +54,32 @@ export const ContainerNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex: 0.97;
+  flex: 1;
+
+
+  color: var(--grey-100);
 
   a {
+    padding: 2rem;
     cursor: pointer;
     font-weight: 500;
-    transition: 0.2s ease-in-out;
-    font-size: 1.2rem;
+    
+    font-size: 1.3rem;
+
+    border-bottom: 3px solid var(--secondary);
+    border-radius: 2px;
     &:hover {
       color: var(--primary);
-      transition: 0.2s ease-in-out;
+      
     }
+
+    &.active {
+      font-weight: 600;
+      color: var(--primary);
+      border-bottom: 4px solid var(--primary);
+      border-radius: 2px;
+}
+
   }
   
 `
