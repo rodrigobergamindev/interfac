@@ -32,6 +32,7 @@ export default function sendMail(req,res) {
     transport.sendMail({
         from: process.env.MAIL_FROM,
         to: process.env.MAIL_FROM,
+        replyTo: email,
         subject: `Obrigado pelo interesse!`,
         html: `
         <h3>Olá, meu nome é <strong>${nome}</strong>, e-mail: <strong>${email}</strong>, telefone: ${telefone}, empresa: ${empresa}, segmento: ${segmento}</h3>  <br /> <p>${mensagem}</p>
