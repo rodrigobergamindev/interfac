@@ -4,6 +4,39 @@ import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle `
 
+@keyframes scaleZ {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  80% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 
 @-webkit-keyframes bounceInDown {
             0% {
@@ -39,6 +72,23 @@ export const GlobalStyle = createGlobalStyle `
             }
          }
 
+         @keyframes bounceInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(30px);
+            }
+            80% {
+               transform: translateX(-10px);
+            }
+            100% {
+               transform: translateX(0);
+            }
+         }
+
     :root {
         --primary: #130f40;
         --secondary: #FFFFFF;
@@ -58,10 +108,10 @@ export const GlobalStyle = createGlobalStyle `
         
     }
     html {
-        -webkit-animation: bounceInDown 5s ease-in-out;
-        -moz-animation: bounceInDown 5s ease-in-out;
-        -o-animation: bounceInDown 5s ease-in-out;
-        animation: bounceInDown 5s ease-in-out;
+        -webkit-animation: bounceInDown 4s ease-in-out;
+        -moz-animation: bounceInDown 4s ease-in-out;
+        -o-animation: bounceInDown 4s ease-in-out;
+        animation: bounceInDown 4s ease-in-out;
         
         @media(max-width:1080px) {
             font-size: 93.75%;

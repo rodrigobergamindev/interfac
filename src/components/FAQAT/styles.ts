@@ -25,6 +25,11 @@ export const Container = styled.div`
         }
             }
         }
+
+        -webkit-animation: scaleZ 4s ease-in-out;
+        -moz-animation: scaleZ 4s ease-in-out;
+        -o-animation: scaleZ 4s ease-in-out;
+        animation: scaleZ 4s ease-in-out;
         
 `
 

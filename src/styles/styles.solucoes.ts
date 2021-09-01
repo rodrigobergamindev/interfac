@@ -12,9 +12,19 @@ export const Grade = styled.section`
     border-left: 2px solid var(--primary);
     padding: 2rem;
 
+    -webkit-animation: translateX 3s ease-in-out;
+        -moz-animation: translateX 3s ease-in-out;
+        -o-animation: translateX 3s ease-in-out;
+        animation: translateX 3s ease-in-out;
+
 `
 
 export const SectionDesc = styled.section`
+
+    -webkit-animation: translateX 3s ease-in-out;
+        -moz-animation: translateX 3s ease-in-out;
+        -o-animation: translateX 3s ease-in-out;
+        animation: translateX 3s ease-in-out;
 
     text-align:right;
     display: flex;

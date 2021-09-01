@@ -16,7 +16,7 @@ export function TabSix() {
     <Container>
 
     <Tab active={active} onClick={()=> {setActive(!active)}} >
-      <span> <img src="/img/topics/servicos.png" alt="nfe" className="icon"/> SERVIÇOS</span>
+      <span> <img src="/img/topics/servico.png" alt="servicos" className="icon"/> SERVIÇOS</span>
       <img src="/img/icons/down.png" alt=""/>
     </Tab>
 
