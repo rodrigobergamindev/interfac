@@ -2,7 +2,7 @@ import FormContato from '../components/Contato'
 import { Faq } from '../components/FAQ'
 import { Clientes } from '../components/Home/Clientes'
 import {Container, Header, Description, Tab, Card} from '../styles/styles.segmento'
-
+import Head from 'next/head'
 
 
 export default function Centro() {
@@ -11,6 +11,11 @@ export default function Centro() {
 
     return (
         <Container>
+
+        <Head>
+            <title>Centro Automotivo</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <Header>
                 <div>

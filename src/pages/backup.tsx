@@ -1,6 +1,6 @@
 import FormContato from '../components/Contato'
 import {Container, Header, Description} from '../styles/styles.servicos'
-
+import Head from 'next/head'
 
 
 export default function Backup() {
@@ -9,6 +9,11 @@ export default function Backup() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Bacula - Backup</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <Header>
                 <div>

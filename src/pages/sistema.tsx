@@ -2,7 +2,7 @@ import FormContato from '../components/Contato'
 import { Clientes } from '../components/Home/Clientes'
 import {Container, Header, Description, Tab, Card} from '../styles/styles.sistema'
 import Link from 'next/link'
-
+import Head from 'next/head'
 
 export default function Sistema() {
 
@@ -10,6 +10,11 @@ export default function Sistema() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Sistema INterfac</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <Header>
                 <div>

@@ -4,7 +4,7 @@ import { FaqAT } from '../components/FAQAT'
 import { FaqCT } from '../components/FAQCT'
 import { Clientes } from '../components/Home/Clientes'
 import {Container, HeaderConstrucao, Description, Tab, Card} from '../styles/styles.segmento'
-
+import Head from 'next/head'
 
 
 export default function Construcao() {
@@ -13,6 +13,11 @@ export default function Construcao() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Material de Construção</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <HeaderConstrucao>
                 <div>

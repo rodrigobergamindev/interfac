@@ -1,7 +1,7 @@
 
 import FormContato from '../components/Contato'
 import {Container, SectionMap, ContainerContato} from '../styles/styles.contato'
-
+import Head from 'next/head'
 
 
 export default function Contato() {
@@ -10,6 +10,11 @@ export default function Contato() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Contato</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
            <ContainerContato>
 

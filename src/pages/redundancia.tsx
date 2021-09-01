@@ -1,6 +1,6 @@
 import FormContato from '../components/Contato'
 import {Container, Header, Description} from '../styles/styles.servicos'
-
+import Head from 'next/head'
 
 
 export default function Redundancia() {
@@ -9,6 +9,12 @@ export default function Redundancia() {
 
     return (
         <Container>
+            
+            <Head>
+                <title>Redundancia</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
+
            
             <Header>
                 <div>

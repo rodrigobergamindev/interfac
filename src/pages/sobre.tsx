@@ -1,6 +1,6 @@
 
 import {Container, Header, SectionDesc, CardPerson} from '../styles/styles.sobre'
-
+import Head from 'next/head'
 
 
 export default function Sobre() {
@@ -9,6 +9,11 @@ export default function Sobre() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Sobre</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <Header>
                 <div className="container">

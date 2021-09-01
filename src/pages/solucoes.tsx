@@ -1,7 +1,7 @@
 import {Container, Header, Description, ButtonContato, CardProduct, SectionDesc, Grade, Sistema} from '../styles/styles.solucoes'
 import {carouselItems} from '../components/Home/Solucoes/Carousel/assets/carouselItems'
 import Link from 'next/link'
-
+import Head from 'next/head'
 
 export default function Solucoes() {
 
@@ -9,6 +9,11 @@ export default function Solucoes() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Soluções</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <Header>
                 <div>

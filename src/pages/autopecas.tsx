@@ -3,7 +3,7 @@ import { Faq } from '../components/FAQ'
 import { FaqAT } from '../components/FAQAT'
 import { Clientes } from '../components/Home/Clientes'
 import {Container, HeaderAutoPecas, Description, Tab, Card} from '../styles/styles.segmento'
-
+import Head from 'next/head'
 
 
 export default function AutoPecas() {
@@ -12,6 +12,11 @@ export default function AutoPecas() {
 
     return (
         <Container>
+
+            <Head>
+                <title>Auto Peças</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            
             <HeaderAutoPecas>
                 <div>
