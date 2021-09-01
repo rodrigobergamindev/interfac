@@ -12,8 +12,6 @@ export default function sendMail(req,res) {
     const {empresa} = req.body.campos
     const {segmento} = req.body.campos
 
-    console.log(req.body.campos)
-    console.log(process.env.MAIL_HOST)
 
     const transport = nodemailer.createTransport({
 
