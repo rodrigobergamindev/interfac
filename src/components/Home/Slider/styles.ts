@@ -68,6 +68,11 @@ export const Slide = styled.div`
         max-width: 1120px;
         border-radius: 10px;
         padding-left: 1rem;
+
+        -webkit-animation: bounceInRight 4s ease-in-out;
+        -moz-animation: bounceInRight 4s ease-in-out;
+        -o-animation: bounceInRight 4s ease-in-out;
+        animation: bounceInRight 4s ease-in-out;
         
        
         .text {
@@ -127,6 +132,9 @@ export const Slide = styled.div`
 `
 
 export const SlideTwo = styled.div`
+
+
+
     height: 100vh;
     background: url('/img/slider/slide04.png');
  
@@ -139,6 +147,9 @@ export const SlideTwo = styled.div`
     justify-content:center;
 
     .description {
+
+ 
+
         width: 100%;
         max-width: 1120px;
         border-radius: 10px;

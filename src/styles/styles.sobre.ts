@@ -94,7 +94,12 @@ export const CardPerson = styled.div `
 
 export const Header = styled.header`
 
-       
+    -webkit-animation: bounceInRight 5s ease;
+        -moz-animation: bounceInRight 5s ease;
+        -o-animation: bounceInRight 5s ease;
+        animation: bounceInRight 5s ease;
+
+
        margin-top: 6rem;
        width: 100%;
        display: flex;

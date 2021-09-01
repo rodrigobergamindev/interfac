@@ -29,7 +29,7 @@ export default function AutoPecas() {
 
             
             <p>Buscamos oferecer a melhoria de processos da sua empresa através do nosso sistema. O sistema INterfac é o sistema mais robusto e ágil para o gerenciamento de processos do seu negócio, 
-        contamos com uma gama de serviços automatizados, como controle de estoque, venda direta, emissão de nota fiscal, importação das informações, cotação dentre outros.
+        contamos com uma gama de serviços automatizados, como controle de estoque, venda direta, emissão de nota fiscal, importação das informações, cotação entre outras funcionalidades.
         
         Confira a baixo alguns dos setores em que atuamos e também as funcionalidades do sistema em cada segmento:</p>
 

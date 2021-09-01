@@ -8,4 +8,9 @@ export const Container = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
 
+    -webkit-animation: bounceInDown 5s ease;
+        -moz-animation: bounceInDown 5s ease;
+        -o-animation: bounceInDown 5s ease;
+        animation: bounceInDown 5s ease;
+
 `

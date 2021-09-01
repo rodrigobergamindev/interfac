@@ -8,6 +8,11 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    -webkit-animation: bounceInRight 5s ease;
+        -moz-animation: bounceInRight 5s ease;
+        -o-animation: bounceInRight 5s ease;
+        animation: bounceInRight 5s ease;
     
 `
 
