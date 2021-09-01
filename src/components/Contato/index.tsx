@@ -3,6 +3,9 @@ import {Form, Card, Section} from './styles'
 import { useState } from 'react'
 import Link from 'next/link'
 
+import * as EmailValidator from 'email-validator';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 
 export default function FormContato() {
@@ -27,12 +30,24 @@ function handleInputChange(event){
 
    async function handleFormSubmit(event){
         event.preventDefault();
+        const email = campos.email
 
+        
         try {
-            await axios.post('/api/api', {
-                campos
-            })
-            setSent(true)
+            if(EmailValidator.validate(email)){
+                console.log(event.target)
+            }else {
+                toast.error('Formato de e-mail inválido', {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark"
+                    });
+            }
         } catch (error) {
             console.log(error)
         }
@@ -46,7 +61,8 @@ function handleInputChange(event){
 
             {!sent ? (
                 <Form onSubmit={handleFormSubmit}>
-
+                    
+                   
                 <div className="information">
                     <Link href="https://goo.gl/maps/NH9ngnasmSPZr7e57">
                     <Card>
@@ -142,6 +158,8 @@ function handleInputChange(event){
             )
 
             }
+
+    <ToastContainer/>
             </>
 
       
