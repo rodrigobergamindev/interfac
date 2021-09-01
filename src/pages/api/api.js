@@ -33,7 +33,7 @@ export default function sendMail(req,res) {
         from: process.env.MAIL_FROM,
         to: process.env.MAIL_FROM,
         replyTo: email,
-        subject: `Obrigado pelo interesse!`,
+        subject: `CONTATO ATRAVÉS DO SITE! ✔️`,
         html: `
         <h3>Olá, meu nome é <strong>${nome}</strong> <br /> e-mail: <strong>${email}</strong> <br />telefone: ${telefone} <br /> empresa: ${empresa} <br /> segmento: ${segmento}</h3>  <br /> Mensagem: <br /> <p>${mensagem}</p>
         
