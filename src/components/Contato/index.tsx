@@ -35,7 +35,19 @@ function handleInputChange(event){
         
         try {
             if(EmailValidator.validate(email)){
-                console.log(event.target)
+                await axios.post('/api/api', {
+                    campos
+                })
+                setSent(true)
+                toast.success('Obrigado pelo interesse, em breve entraremos em contato!', {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
             }else {
                 toast.error('Formato de e-mail inválido', {
                     position: "bottom-center",
