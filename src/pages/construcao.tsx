@@ -1,6 +1,4 @@
 import FormContato from '../components/Contato'
-import { Faq } from '../components/FAQ'
-import { FaqAT } from '../components/FAQAT'
 import { FaqCT } from '../components/FAQCT'
 import { Clientes } from '../components/Home/Clientes'
 import {Container, HeaderConstrucao, Description, Tab, Card} from '../styles/styles.segmento'
