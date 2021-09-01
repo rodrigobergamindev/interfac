@@ -31,10 +31,16 @@ function handleInputChange(event){
    async function handleFormSubmit(event){
         event.preventDefault();
         const email = campos.email
+        const nome = campos.nome
+        const telefone = campos.telefone
+        const empresa = campos.empresa
+        const segmento = campos.segmento
 
+        const condition = email === '' || nome === '' || telefone === '' || empresa === '' || segmento === ''
+       
         
         try {
-            if(EmailValidator.validate(email)){
+            if(EmailValidator.validate(email) === true && condition === false){
                 await axios.post('/api/api', {
                     campos
                 })
@@ -47,9 +53,10 @@ function handleInputChange(event){
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
+                    theme: "dark"
                     });
             }else {
-                toast.error('Formato de e-mail inválido', {
+                toast.error('Preencha o(s) campo(s) corretamente', {
                     position: "bottom-center",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -60,6 +67,7 @@ function handleInputChange(event){
                     theme: "dark"
                     });
             }
+            
         } catch (error) {
             console.log(error)
         }
