@@ -39,8 +39,8 @@ export default function sendMail(req,res) {
     }).then(
             transport.sendMail({
             from: process.env.MAIL_FROM,
-            to: process.env.MAIL_FROM,
-            replyTo: email,
+            to: email,
+            replyTo: process.env.MAIL_FROM,
             subject: `INterfac agradece seu contato ✔️`,
             html: `
             <h3>Olá <strong>${nome}!</strong>, agradecemos o interesse e em breve entraremos em contato. <br /></h3>
