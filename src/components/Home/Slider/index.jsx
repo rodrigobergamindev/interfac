@@ -81,24 +81,7 @@ export function Slider() {
     </SliderContainerDesktop>
 
 
-    <SliderContainerMobile>
-        <Swiper
-          style={{'--swiper-navigation-color': '#ff3838','--swiper-pagination-color': '#ff3838', zIndex:0}}
-          spaceBetween={0}
-          slidesPerView={1}
-          pagination={{ clickable: true}}
-          scrollbar={{ draggable: true }}
-          autoplay={{delay: 4000,  disableOnInteraction: false}}
-          speed={2000}
-          >
-     
-
-    <SwiperSlide style={{height: '100%'}}><img src="/img/slider/mobileslider01.png"/></SwiperSlide>
-    <SwiperSlide style={{height: '100%'}}><img src="/img/slider/mobileslider02.png"/></SwiperSlide>
-    <SwiperSlide style={{height: '100%'}}><a href="https://t.me/joinchat/KeCpRayleIc5MGMx" target="_blank"><img src="/img/slider/mobileslider03.png"/></a></SwiperSlide>
     
-    </Swiper>
-    </SliderContainerMobile>
 
 
 

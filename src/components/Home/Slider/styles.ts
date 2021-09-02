@@ -10,17 +10,6 @@ export const SliderContainerDesktop = styled.div`
     }
 
     @media only screen and (max-width: 900px) {
-        display: none;
-    }
-
-
-    `
-
-
-export const SliderContainerMobile = styled.div`
-    width: 100%;
-    display: none;
-    @media only screen and (max-width: 900px) {
         display: flex;
         height: 50vh;
         margin-top: 4rem;
@@ -34,6 +23,7 @@ export const SliderContainerMobile = styled.div`
 
     `
 
+
 export const Container = styled.div`
 margin-top: 6rem;
 
@@ -42,8 +32,8 @@ max-width:1920px;
 
 
 @media only screen and (max-width: 900px) {
-        margin-top: 0
-           
+        margin-top: 0;
+
         }
 
 
@@ -62,6 +52,11 @@ export const Slide = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
+
+    @media only screen and (max-width: 900px) {
+            max-height: 20;
+
+            }
 
     .description {
         width: 100%;
@@ -93,8 +88,9 @@ export const Slide = styled.div`
                 padding: 0.5rem;
                 border-radius: 5px;
                 text-align:center;
-            }
 
+            }
+            
             ul {
                 padding: 2rem;
                 color: var(--secondary);
@@ -108,18 +104,34 @@ export const Slide = styled.div`
                 margin-bottom: 2rem;
                 color: var(--secondary);
                 font-weight: 400;
+
+                @media only screen and (max-width: 900px) {
+                    
+                    margin-bottom: 0rem;
+                    font-size: 1.1rem;
+                    }
             }
 
             h1 {
             font-size: 7rem;
             color: var(--secondary);
             font-weight: 600;
+
+            @media only screen and (max-width: 900px) {
+                    font-size: 2.8rem;
+                    
+                    }
         }
 
         span {
             font-size: 1.2rem;
             font-weight: 400;
             color: var(--secondary);
+
+            @media only screen and (max-width: 900px) {
+                    font-size: 1rem;
+                    max-width: 250px;
+                    }
 
             strong {
                 color: #fbc531;
@@ -145,6 +157,11 @@ export const SlideTwo = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
+
+    @media only screen and (max-width: 900px) {
+            height: 50vh;
+
+            }
 
     .description {
 
@@ -202,6 +219,11 @@ export const SlideTwo = styled.div`
             font-weight: 400;
             color: var(--secondary);
 
+            @media only screen and (max-width: 900px) {
+                    font-size: 1rem;
+                    max-width: 250px;
+                    }
+
             strong {
                 color: #fbc531;
             }
@@ -241,5 +263,16 @@ export const ButtonSaibaMais = styled.button`
         filter: brightness(0.9);
 
     }
+
+
+    @media only screen and (max-width: 900px) {
+            font-size: 1rem;
+            margin-top: 0;
+            max-width: 10rem;
+            img {
+               max-width: 2rem;
+               max-height: 2rem;
+            }
+            }
 
 `
