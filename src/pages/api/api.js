@@ -31,12 +31,12 @@ export default function sendMail(req,res) {
         from: process.env.MAIL_FROM,
         to: process.env.MAIL_FROM,
         replyTo: email,
-        subject: `CONTATO ATRAVÉS DO SITE! ✔️`,
+        subject: `CONTATO ATRAVÉS DO SITE! ✔️`,  
         html: `
         <h3>Olá, meu nome é <strong>${nome}</strong> <br /> e-mail: <strong>${email}</strong> <br />telefone: ${telefone} <br /> empresa: ${empresa} <br /> segmento: ${segmento}</h3>  <br /> <p>Mensagem:</p> <br /> <p>${mensagem}</p>
         
         `
-    }).then(response => {
+    }).then(
             transport.sendMail({
             from: process.env.MAIL_FROM,
             to: process.env.MAIL_FROM,
@@ -47,8 +47,11 @@ export default function sendMail(req,res) {
             
             `
         })
+    ).then(response => {
         res.send(response)
-    }).catch(error => [
+    })
+    
+    .catch(error => [
         res.send(error)
     ])
   
