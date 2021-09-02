@@ -37,19 +37,17 @@ export default function sendMail(req,res) {
         
         `
     }).then(response => {
-        if(response.status === 200) {
             transport.sendMail({
-                from: process.env.MAIL_FROM,
-                to: email,
-                replyTo: process.env.MAIL_FROM,
-                subject: `INterfac - Obrigado pelo Interesse! ✔️`,
-                html: `
-                <h3>Olá ${nome}, agradecemos o seu interesse e em breve entraremos em contato!</h3>
-                
-                `
-            })
-        }
-        res.send("OK")
+            from: process.env.MAIL_FROM,
+            to: process.env.MAIL_FROM,
+            replyTo: email,
+            subject: `INterfac agradece seu contato ✔️`,
+            html: `
+            <h3>Olá <strong>${nome}!</strong>, agradecemos o interesse e em breve entraremos em contato. <br /></h3>
+            
+            `
+        })
+        res.send(response)
     }).catch(error => [
         res.send(error)
     ])
