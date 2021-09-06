@@ -281,6 +281,10 @@ export const Card = styled.div`
 
 export const Section = styled.section`
 
+@media only screen and (max-width: 900px) {
+        margin-top: 0rem;
+            }
+
     margin-top: 15rem;
     
     width: 100%;
@@ -303,6 +307,10 @@ export const Section = styled.section`
         font-size: 2.5rem;
         font-weight: 600;
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: 900px) {
+            font-size: 1.5rem;
+            }
 
     }
 
