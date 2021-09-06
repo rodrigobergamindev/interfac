@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {Form, Card, Section} from './styles'
+import {Form, Card, Section, Container} from './styles'
 import { useState } from 'react'
 import Link from 'next/link'
 
@@ -77,7 +77,7 @@ function handleInputChange(event){
 
     return (
         
-            <>
+            <Container>
 
             {!sent ? (
                 <Form onSubmit={handleFormSubmit}>
@@ -180,7 +180,7 @@ function handleInputChange(event){
             }
 
     <ToastContainer/>
-            </>
+            </Container>
 
       
     )

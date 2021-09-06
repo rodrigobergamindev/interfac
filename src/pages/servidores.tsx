@@ -17,7 +17,7 @@ export default function Servidores() {
            
             <Header>
                 <div>
-                <h1>SERVIDORES LINUX</h1>
+                <h1 className="servidores">SERVIDORES LINUX</h1>
                 </div>
             </Header>
         

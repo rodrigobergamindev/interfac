@@ -1,5 +1,5 @@
 import {Container} from './styles'
-
+import Link from 'next/link'
 
 
 
@@ -8,11 +8,11 @@ export function Logo() {
    
 
     return (
-        <a href="/">
+        <Link href="/">
             <Container>
-                <img src='/img/logo.png' alt="" />
+                <img src='/img/logo.jpeg' alt="" />
             </Container>
-        </a>
+        </Link>
         
     )
 }

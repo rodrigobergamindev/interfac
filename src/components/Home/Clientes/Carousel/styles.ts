@@ -8,7 +8,6 @@ export const CarouselContainer = styled.div`
             padding: 1rem;
             width: 300px;
             justify-self: center;
-            grid-area:item2;
         }
    
     `

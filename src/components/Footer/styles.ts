@@ -16,7 +16,13 @@ export const Container = styled.footer`
             color: var(--grey-100);
             font-weight: 600;
             margin-bottom: 0.5rem;
+
+            @media only screen and (max-width: 900px) {
+               font-size: 0.7rem;
+               padding: 0.5rem;
+            }
         }
+
 `
 
 
@@ -40,10 +46,17 @@ export const StyledFooter = styled.div`
 
         @media only screen and (max-width: 900px) {
                 flex-direction: column;
-       
+                border-bottom: 1px solid #ccc;
+                margin-top: 1rem;
+                padding-bottom: 0;
+                margin-bottom: 0.5rem;
             }
 
         .mapa{
+
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 2rem;
+            }
 
             h4 {
                 font-weight: 700;
@@ -72,7 +85,10 @@ export const StyledFooter = styled.div`
         .description {
             display: flex;
             flex-direction: column;
-            
+
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 3rem;
+            }
             
             span {
                 font-size: 1.1rem;
@@ -84,6 +100,8 @@ export const StyledFooter = styled.div`
                 cursor: pointer;
                 margin-bottom: 2rem;
                 max-width: 350px;
+
+               
             }
         }
 

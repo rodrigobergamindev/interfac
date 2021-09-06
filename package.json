@@ -8,12 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@mui-treasury/components": "^1.10.1",
-    "@mui-treasury/styles": "^1.13.1",
     "@react-spring/web": "^9.1.2",
-    "@types/material-ui": "^0.21.8",
     "@types/react-slick": "^0.23.4",
     "@types/react-swipeable-views": "^0.13.0",
     "@types/swiper": "^5.4.2",

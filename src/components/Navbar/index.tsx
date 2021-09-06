@@ -11,6 +11,7 @@ export function Navbar() {
   return (
     
     <Container>
+
       <Nav>
 
       <Link href="/">

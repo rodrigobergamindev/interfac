@@ -11,15 +11,26 @@ export const Description = styled.section`
     margin-top: 3rem;
     margin-bottom: 4rem;
 
+    @media only screen and (max-width: 900px) {
+                 margin-top: 2rem;
+                 margin-bottom: 0;
+                }
+    
+
     header {
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
 
+        @media only screen and (max-width: 900px) {
+                 display: none;
+                }
+
         h1 {
             font-weight: 400;
             margin-left: 2rem;
             font-size: 3rem;
+
         }
 
         div {
@@ -37,6 +48,10 @@ export const Description = styled.section`
             p{
                 text-align: justify;
                 padding: 0.25rem;
+
+                @media only screen and (max-width: 900px) {
+                   padding: 1.5rem;
+           }
             }
 
             h2 {
@@ -46,6 +61,10 @@ export const Description = styled.section`
                 background-color: var(--primary);
                 color: var(--secondary);
                 border-radius: 5px;
+
+                @media only screen and (max-width: 900px) {
+                    border-radius: 0;
+                }
             }
             
             ul {
@@ -79,10 +98,18 @@ export const Header = styled.header`
        align-items: center;
        justify-content: center;
 
+       @media only screen and (max-width: 900px) {
+                  padding: 2rem;
+                }
+
        div {
            padding: 2rem;
            width: 100%;
            max-width: 1120px;
+
+           @media only screen and (max-width: 900px) {
+                  padding: 0;
+                }
 
            h1 {
                color: var(--secondary);
@@ -93,6 +120,19 @@ export const Header = styled.header`
                border: 1px solid var(--secondary);
                cursor: default;
 
+               @media only screen and (max-width: 900px) {
+                   font-size: 3.5rem;
+                   padding: 1rem;
+                   margin-bottom: 0;
+                }
+
+           }
+
+           .servidores {
+            @media only screen and (max-width: 900px) {
+                
+                   font-size: 2.8rem;
+                }
            }
        }
    

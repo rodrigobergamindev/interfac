@@ -41,10 +41,19 @@ export const Content = styled.section`
                 font-size: 5rem;
                 font-weight: 500;
                 color: var(--primary);
+
+                @media only screen and (max-width: 900px) {
+                    font-size: 2rem;
+                   
+                }
             }
             h4 {
                 font-weight: 400;
                 max-width:850px;
+
+                @media only screen and (max-width: 900px) {
+                    text-align: justify;
+                }
             }
         }
         
@@ -56,6 +65,10 @@ export const Content = styled.section`
             grid-template-columns: repeat(2, 1fr);
 
             gap: 2rem;
+
+            @media only screen and (max-width: 900px) {
+                grid-template-columns: repeat(1, 1fr);
+                }
         }
         
     
@@ -79,6 +92,19 @@ export const Topic = styled.div`
         margin-right: 1rem;
         max-width: 70px;
     }
+
+    @media only screen and (max-width: 900px) {
+        img {
+            max-width: 4.2rem;
+            max-height: 4.2rem;
+        }
+
+        h3 {
+            font-size: 0.93rem;
+        }
+    }
+
+    padding: 0.5rem;
     
 `
 

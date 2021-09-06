@@ -8,6 +8,11 @@ export const Container = styled.div`
         padding:3rem;
         display: flex;
         justify-content:center;
+        align-items: center;
+
+        @media only screen and (max-width: 900px) {
+               padding: 0.76rem;
+            }
        
 
         .clientesContainer {
@@ -20,10 +25,11 @@ export const Container = styled.div`
             gap: 1rem;
 
             @media only screen and (max-width: 900px) {
-                
-                grid-template-columns: repeat(1, 1fr);
-                gap: 3rem;
-                padding: 2rem;
+                grid-template-rows: repeat(1, 1fr);
+                gap: 0;
+                justify-items: center;
+                align-items: center;
+               
             }
 
 
@@ -47,7 +53,28 @@ export const Container = styled.div`
 
                     }
                 }
+
+
+                @media only screen and (max-width: 900px) {
+                    
+                    margin-top: 3rem;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;    
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+
+                    span {
+                        text-align: center;
+                        font-size: 1.1rem;
+                    }
+
+                    
+               
                 }
+                }
+
 
         
         }

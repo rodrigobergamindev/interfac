@@ -45,7 +45,7 @@ a {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   html {
       font-size: 87.5%;
   }
@@ -60,6 +60,19 @@ button {
 .carousel-clients {
   max-width: 1120px;
   width: 100%;
+
+  @media only screen and (max-width: 900px) {
+    display: none;
+}
+
+
+}
+
+.mobile {
+  display: none;
+  @media only screen and (max-width: 900px) {
+    display: auto;
+}
 }
 
 

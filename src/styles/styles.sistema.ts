@@ -9,6 +9,14 @@ export const Tab = styled.div`
     align-items: center;
     padding: 2rem;
     justify-content: center;
+
+
+
+    @media only screen and (max-width: 900px) {
+           margin-top: 2rem;
+            padding: 1rem;
+             }
+
     
     
     
@@ -30,6 +38,11 @@ export const Tab = styled.div`
         gap: 1rem;
         
         padding: 1rem;
+
+        @media only screen and (max-width: 900px) {
+            place-items: center;
+            grid-template-columns: repeat(1, 1fr);
+             }
         
 
         ul {
@@ -43,6 +56,15 @@ export const Tab = styled.div`
                 color: var(--secondary);
                 display: flex;
                 align-items: center;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 0.8rem;
+                   margin-top: 1rem;
+             }
+
+             &:first-child {
+                 margin-top: 0;
+             }
                
                 img {
                     padding: 0.5rem;
@@ -61,13 +83,28 @@ export const Tab = styled.div`
                 color:var(--secondary);
                 font-size: 7rem;
                 align-self: flex-end;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 3rem;
+                   
+             }
             }
 
             .limite {
                 font-size: 4rem;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 2rem;
+
+                   
+                   
+             }
+
+           
             }
 
         }
+
     }
    
     :last-child {
@@ -165,21 +202,39 @@ export const Description = styled.section`
     margin-top: 3rem;
     margin-bottom: 4rem;
 
+    @media only screen and (max-width: 900px) {
+               margin-bottom: 2rem;
+             }
+
     header {
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
 
+        @media only screen and (max-width: 900px) {
+               margin-bottom: 1rem;
+             }
+
         h1 {
             font-weight: 400;
             margin-left: 2rem;
             font-size: 3rem;
+
+            @media only screen and (max-width: 900px) {
+                font-size: 1.6rem;
+                margin-left: 1rem;
+             }
         }
 
         div {
         width: 90px;
         height: 2px;
         background: var(--primary);
+
+        @media only screen and (max-width: 900px) {
+                width: 50px;
+                margin-left: 1rem;
+             }
     }
 
     }
@@ -188,6 +243,11 @@ export const Description = styled.section`
             text-align:justify;
             line-height: 1.9rem;
             padding: 2rem;
+
+            @media only screen and (max-width: 900px) {
+                
+                margin-bottom: 2rem;
+             }
             
             }
             img {
@@ -202,6 +262,15 @@ export const Description = styled.section`
         display: flex;
         flex-direction: column;
 
+        .containerCards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media only screen and (max-width: 900px) {
+                padding: 1rem;
+             }
+        }
         h1 {
             font-size: 1.8rem;
             color: var(--secondary);
@@ -209,6 +278,10 @@ export const Description = styled.section`
             background: var(--primary);
             border-radius: 5px;
             font-weight: 500;
+            width: 100%;
+            @media only screen and (max-width: 900px) {
+                
+             }
         }
     }
 
@@ -233,6 +306,11 @@ export const Header = styled.header`
        align-items: center;
        justify-content: center;
 
+       @media only screen and (max-width: 900px) {
+                padding: 2rem;
+                margin-top: 3rem;
+             }
+
        div {
            padding: 2rem;
            width: 100%;
@@ -247,6 +325,10 @@ export const Header = styled.header`
                border: 1px solid var(--secondary);
                cursor: default;
                transition: all 0.3s ease-in-out;
+
+               @media only screen and (max-width: 900px) {
+                    font-size: 2.8rem;
+             }
 
                &:hover{
                 
@@ -308,6 +390,8 @@ export const Card = styled.div`
     border-radius: 2px;
     padding: 2rem;
     margin-top: 3rem;
+    width: 100%;
+  
 
     .icon {
         border-radius: 100%;
@@ -315,6 +399,11 @@ export const Card = styled.div`
         margin-right: 2rem;
         padding: 0.5rem;
         max-width: 90px;
+
+        @media only screen and (max-width: 900px) {
+            max-width: 60px;
+            max-height: 60px;
+             }
     }
 
     .description{
@@ -323,6 +412,10 @@ export const Card = styled.div`
             color: var(--primary);
             font-size: 1.7rem;
             margin-bottom: 0.5rem;
+
+            @media only screen and (max-width: 900px) {
+                font-size: 1.3rem;
+             }
         }
 
         h4{

@@ -3,38 +3,35 @@ import styled from 'styled-components'
 
 export const CarouselContainer = styled.div`
 
-    display: flex;
+   
     width: 100%;
     max-width: 620px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: center;
-    
+    gap: 4rem;
 
 
     @media only screen and (max-width: 900px) {
-            height: auto;
-            padding: 1rem;
-            width: 300px;
-            justify-self: center;
-            grid-area:item2;
+        margin-top: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 3rem;
         }
    
     `
 
 export const CardProduct = styled.div`
     cursor: pointer;
-    width: 90%;
-    display:flex;
-  
-    height: 250px;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     justify-content: space-between;
-
-
+   
 
   
     border: 1px solid var(--secondary);
@@ -47,7 +44,7 @@ export const CardProduct = styled.div`
             color: var(--secondary);
             
             h3{
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
 
         }
@@ -89,5 +86,7 @@ export const CardProduct = styled.div`
             filter: brightness(0.9);
         }
     }
+
+  
     
 `

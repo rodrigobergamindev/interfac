@@ -1,4 +1,4 @@
-import {Container, Header, Description, ButtonContato, CardProduct, SectionDesc, Grade, Sistema} from '../styles/styles.solucoes'
+import {Container, Header, Description, ButtonContato, CardProduct, SectionDesc, Grade, Sistema, GradeMobile} from '../styles/styles.solucoes'
 import {carouselItems} from '../components/Home/Solucoes/Carousel/assets/carouselItems'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -20,6 +20,10 @@ export default function Solucoes() {
                 <h1>SOLUÇÕES</h1>
                 <h3>Nossa missão é alavancar o seu negócio através das nossas soluções em TI, contamos com uma equipe especializada e pronta para atender as suas necessidades.</h3>
                 </div>
+
+                <h1 className="headerMobile">
+                    SOLUÇÕES
+                </h1>
             </Header>
         
 
@@ -29,6 +33,33 @@ export default function Solucoes() {
                 <h1>SERVIÇOS</h1>
 
                 <p>Nossa missão é identificar as necessidades da sua empresa e entregar excelência e qualidade através das nossas soluções, agregando ainda mais valor ao seu negócio.</p>
+
+                <GradeMobile>
+            {carouselItems.map((item, index) =>{
+                return (
+                          <a href={item.url} key={index}>
+                          <CardProduct>
+                          
+                              <img src={item.iconColor} alt="" />
+                            <div className="title">
+
+                            <h3>
+                              {item.title.toUpperCase()}
+                            </h3>
+
+                            <Link href={item.url}>
+                            <button>Saiba Mais <img src="img/icons/right-white.png"/></button>
+                            </Link>
+                            </div>
+                        
+                      
+                            
+                          </CardProduct>
+                          </a>
+                 
+                )
+      })}
+            </GradeMobile>
 
                 <h3>FICOU COM ALGUMA</h3>
                 <h1>DÚVIDA?</h1>
@@ -74,8 +105,8 @@ export default function Solucoes() {
                                 <h2>Sistema INterfac</h2>
                             </div>
                             <div>
-                                <h2>conheça a mais robusta</h2>
-                                <h4>e completa <strong>aplicação</strong> para sua empresa</h4>
+                                <h2 className="subtitle">conheça a mais completa</h2>
+                                <h4>e robusta <strong>aplicação</strong> para sua empresa</h4>
                             </div>
                         </header>
 
@@ -97,6 +128,8 @@ export default function Solucoes() {
                                 </div>
 
                             <img className="imgSistema" src="/img/sistema.jpg" alt=""/>
+
+                            <button className="buttonMobile">Saiba Mais <img src="img/icons/right.png"/></button>
                         </section>
 
                     </div>

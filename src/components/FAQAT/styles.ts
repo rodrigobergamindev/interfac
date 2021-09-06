@@ -37,4 +37,8 @@ export const ContainerAsks = styled.div`
     width: 100%;
     max-width:1120px;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 900px) {
+            padding: 1rem;
+        }
 `

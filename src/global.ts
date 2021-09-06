@@ -148,13 +148,6 @@ export const GlobalStyle = createGlobalStyle `
   }
     }
 
-    .react-carousel {
-        display: auto;
-        @media only screen and (max-width: 900px) {
-            display: none;
-        }
-
-    }
 
     .mobile {
         display: none;

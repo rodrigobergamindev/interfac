@@ -1,5 +1,5 @@
 
-import {Container, Header, SectionDesc, CardPerson} from '../styles/styles.sobre'
+import {Container, Header, AboutMobile} from '../styles/styles.sobre'
 import Head from 'next/head'
 
 
@@ -36,19 +36,19 @@ export default function Sobre() {
 
                     <div className="cardMetric">
                         <img src="/img/metrics/experiencia.png" alt="icon"/>
-                        <h4>10<strong>+</strong></h4>
+                        <h4>20<strong>+</strong></h4>
                         <span>anos de experiência no setor industrial e automotivo</span>
                     </div>
 
                     <div className="cardMetric">
                         <img src="/img/metrics/colaboradores.png" alt="icon"/>
-                        <h4>8</h4>
+                        <h4>10</h4>
                         <span>colaboradores capacitados para te atender</span>
                     </div>
 
                     <div className="cardMetric">
                         <img src="/img/metrics/clientes.png" alt="icon"/>
-                        <h4>20<strong>+</strong></h4>
+                        <h4>100<strong>+</strong></h4>
                         <span>clientes impactados pelas nossas soluções</span>
                     </div>
                 </div>
@@ -56,94 +56,52 @@ export default function Sobre() {
                 </div>
                 
             </Header>
-        
 
-        <SectionDesc>
 
-            <div className="containerColaboradores">
-                <h1>NOSSOS COLABORADORES</h1>
 
-                <div className="containerCards">
+            <AboutMobile>
 
-                    <CardPerson>
-                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
-                        
-                        <div className="descriptionCard">
-                        <div className="bar"/>
-                            <h3>Marcio</h3>
-                            <h5>CEO</h5>
-                            <span>interfac@interfac.com.br</span>
-                        </div>
-                       
-                    </CardPerson>
+            <div className="container">
+                    <img src="/img/sobre/about.jpg" alt="" className="about"/>
+                
+                <div className="description">
+                    <h2>SOBRE NÓS</h2>
+                    <h3>conectamos empresas e pessoas</h3>
+                    <h3>através da nossa <strong>tecnologia</strong></h3>
 
-                    <CardPerson>
-                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
-                        
-                        <div className="descriptionCard">
-                        <div className="bar"/>
-                            <h3>Marcio</h3>
-                            <h5>CEO</h5>
-                            <span>interfac@interfac.com.br</span>
-                        </div>
-                       
-                    </CardPerson>
 
-                    <CardPerson>
-                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
-                        
-                        <div className="descriptionCard">
-                        <div className="bar"/>
-                            <h3>Marcio</h3>
-                            <h5>CEO</h5>
-                            <span>interfac@interfac.com.br</span>
-                        </div>
-                       
-                    </CardPerson>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.</p>
 
-                    <CardPerson>
-                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
-                        
-                        <div className="descriptionCard">
-                        <div className="bar"/>
-                            <h3>Marcio</h3>
-                            <h5>CEO</h5>
-                            <span>interfac@interfac.com.br</span>
-                        </div>
-                       
-                    </CardPerson>
+                <div className="metrics">
 
-                    <CardPerson>
-                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
-                        
-                        <div className="descriptionCard">
-                        <div className="bar"/>
-                            <h3>Marcio</h3>
-                            <h5>CEO</h5>
-                            <span>interfac@interfac.com.br</span>
-                        </div>
-                       
-                    </CardPerson>
+                    <div className="cardMetric">
+                        <img src="/img/metrics/experiencia.png" alt="icon"/>
+                        <h4>20<strong>+</strong></h4>
+                        <span>anos de experiência no setor industrial e automotivo</span>
+                    </div>
 
-                    <CardPerson>
-                        <img src="/img/avatar.jpg" alt="avatar" className="avatar"/>
-                        
-                        <div className="descriptionCard">
-                        <div className="bar"/>
-                            <h3>Marcio</h3>
-                            <h5>CEO</h5>
-                            <span>interfac@interfac.com.br</span>
-                        </div>
-                       
-                    </CardPerson>
+                    <div className="cardMetric">
+                        <img src="/img/metrics/colaboradores.png" alt="icon"/>
+                        <h4>10</h4>
+                        <span>colaboradores capacitados para te atender</span>
+                    </div>
 
+                    <div className="cardMetric">
+                        <img src="/img/metrics/clientes.png" alt="icon"/>
+                        <h4>100<strong>+</strong></h4>
+                        <span>clientes impactados pelas nossas soluções</span>
+                    </div>
                 </div>
-            </div>
-            
+                </div>
+                </div>
 
-
-        </SectionDesc>
- 
+            </AboutMobile>
+        
 
         </Container>
     )

@@ -15,6 +15,12 @@ export const Container = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
 
+        @media only screen and (max-width: 900px) {
+            padding: 1rem;
+            padding-top: 3rem;
+            padding-bottom: 5.5rem;
+            }
+
         .servicesContainer {
             width: 100%;
             max-width: 1120px;
@@ -30,8 +36,8 @@ export const Container = styled.div`
             @media only screen and (max-width: 900px) {
                 
                 grid-template-columns: repeat(1, 1fr);
-                gap: 3rem;
-                padding: 2rem;
+                gap: 0rem;
+                padding: 0rem;
             }
 
 
@@ -54,6 +60,9 @@ export const Container = styled.div`
                 }
                 }
 
+                @media only screen and (max-width: 900px) {
+                    padding: 0;
+
         
         }
 
@@ -64,5 +73,5 @@ export const Container = styled.div`
             }
 
 
-       
+        }   
 `

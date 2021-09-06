@@ -1,15 +1,25 @@
 import styled from 'styled-components';
 
 
+export const Container = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+
+
+    
+
+`
+
 
 
 export const Form = styled.form`
 
  
-    margin-top: 5rem;
-    width: 100%;
     max-width:1120px;
-
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -17,27 +27,40 @@ export const Form = styled.form`
     gap: 0rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
     background: var(--secondary);
-    
-
     border: 1px solid var(--primary);
     margin-bottom: 7rem;
+
+
+    @media only screen and (max-width: 900px) {
+            grid-template-columns: repeat(1, 1fr);
+            border-left: 0px;
+            box-shadow: none;
+            border-radius: 5px;
+            background: var(--primary);
+            }
+
 
     .campos {
         border-left: 1px solid var(--primary);
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        
+        @media only screen and (max-width: 900px) {
+            padding: 1rem;
+            max-width: 100%;
+            }
 
         input {
             margin-bottom: 1.2rem;
             border-radius: 2px;
-            height: 2.5rem;
             outline: 0;
             border: 0;
             font-size: 1.05rem;
             padding: 0.5rem;
             border: 2px solid var(--primary);
+
+            
         }
         
         transition: all 0.3s ease-in-out;
@@ -57,7 +80,7 @@ export const Form = styled.form`
             border: 0;
             outline: 0;
             padding: 0.3rem;
-
+            align-items: center;
             border-radius: 5px;
             background: var(--primary);
             img {
@@ -68,6 +91,14 @@ export const Form = styled.form`
 
             &:hover {
                 filter: brightness(0.8);
+            }
+
+            @media only screen and (max-width: 900px) {
+               
+                border: 1px solid var(--secondary);
+                width: 10rem;
+                justify-content: space-around;
+                
             }
 
         }
@@ -87,13 +118,26 @@ export const Form = styled.form`
 
         label {
             color: var(--primary);
+
+            @media only screen and (max-width: 900px) {
+                color: var(--secondary);
+            }
         }
         header {
             margin-bottom: 2rem;
+            
             h2 {
                 color: var(--primary);
                 font-size: 2.5rem;
                 font-weight: 600;
+
+                @media only screen and (max-width: 900px) {
+                    font-size: 1.8rem;
+                    background: var(--primary);
+                    padding:0;
+                    border-radius: 5px;
+                    color: var(--secondary);
+            }
             }
         }
 
@@ -102,6 +146,10 @@ export const Form = styled.form`
             color: var(--primary);
             font-size: 1.04rem;
             margin-bottom: 1rem;
+
+            @media only screen and (max-width: 900px) {
+                color: var(--secondary);
+            }
         }
 
         .option {
@@ -113,10 +161,18 @@ export const Form = styled.form`
         display: flex; 
         margin-bottom: 1rem;
         width: 100%;
-
+        
         justify-content:space-around;
         align-items: center;
 
+
+        @media only screen and (max-width: 900px) {
+                    justify-content: flex-start;
+               
+                    flex-wrap: wrap;
+             
+            
+            }
         input[type="radio"] {
             display: none;
         }
@@ -181,6 +237,11 @@ export const Form = styled.form`
         grid-template-columns: repeat(2, 1fr);
         
         gap: 2rem;
+
+        @media only screen and (max-width: 900px) {
+            display: none;
+
+            }
     }
 
 

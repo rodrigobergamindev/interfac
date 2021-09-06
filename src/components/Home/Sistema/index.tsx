@@ -9,7 +9,7 @@ export function Sistema() {
 
     
 
-    const frase = 'Atuamos no mercado há mais de dez anos no segmento automotivo, industrial e de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
+    const frase = 'Atuamos no mercado há mais de vinte anos no segmento automotivo, industrial e de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
 
 
     return (

@@ -41,6 +41,34 @@ export function CarouselProducts() {
                 )
       })}
     </Swiper>
+
+    <Swiper
+      style={{'--swiper-navigation-color': '#051e3c','--swiper-pagination-color': '#051e3c', zIndex: 0}}
+      spaceBetween={0}
+      slidesPerView={1}
+      pagination
+      scrollbar={{ draggable: true }}
+      autoplay={{delay: 2000,  disableOnInteraction: false}}
+      speed={1200}
+      className="mobile"
+    >
+      {carouselItems.map((item, index) =>{
+                return (
+
+                        <SwiperSlide key={index}>
+                          <a href={item.url} target="_blank">
+                          <CardProduct>
+                          
+                              <img src={item.icon} alt="" />
+                      
+                            
+                          </CardProduct>
+                          </a>
+                          </SwiperSlide>
+                 
+                )
+      })}
+    </Swiper>
     
        
         </CarouselContainer>

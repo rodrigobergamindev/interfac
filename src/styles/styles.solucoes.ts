@@ -13,9 +13,39 @@ export const Grade = styled.section`
     padding: 2rem;
 
     -webkit-animation: translateX 3s ease-in-out;
+    -moz-animation: translateX 3s ease-in-out;
+    -o-animation: translateX 3s ease-in-out;
+     animation: translateX 3s ease-in-out;
+
+
+     @media only screen and (max-width: 900px) {
+            display: none;
+            }
+
+`
+
+export const GradeMobile = styled.section`
+
+    display: none;
+
+    @media only screen and (max-width: 900px) { 
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+        place-items: center;
+        border: none;
+        gap: 2rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        -webkit-animation: translateX 3s ease-in-out;
         -moz-animation: translateX 3s ease-in-out;
         -o-animation: translateX 3s ease-in-out;
         animation: translateX 3s ease-in-out;
+
+     }
+
 
 `
 
@@ -30,6 +60,17 @@ export const SectionDesc = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media only screen and (max-width: 900px) {
+                
+        text-align: center;
+        align-items: center;
+
+        p {
+            padding: 1rem;
+            text-align: justify;
+        }
+        }
 
     h1 {
         font-size: 4rem;
@@ -67,6 +108,14 @@ export const Description = styled.section`
     align-items: center;
     gap: 3rem;
 
+    @media only screen and (max-width: 900px) {
+                
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        place-content: center;
+
+        }
+
    
 
 `
@@ -97,6 +146,10 @@ export const ButtonContato = styled.button`
     &:hover {
         filter: brightness(0.9);
     }
+
+    @media only screen and (max-width: 900px) {
+        max-width: 22rem;
+        }
 `
 
 
@@ -118,17 +171,51 @@ export const Header = styled.header`
        align-items: center;
        justify-content: center;
 
+       .headerMobile {
+           display: none;
+           @media only screen and (max-width: 900px) {
+               display: flex;
+                color: var(--secondary);
+               font-size: 3rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               border: 1px solid var(--secondary);
+               padding: 1rem;
+           }
+       }
+
+       @media only screen and (max-width: 900px) {
+            height: auto;
+        
+    }
+
        div {
            padding: 2rem;
            width: 100%;
            max-width: 1120px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           
 
+            @media only screen and (max-width: 900px) {
+                
+              padding: 0;
+                 
+             }
            h1 {
                color: var(--secondary);
                font-size: 5rem;
                text-align: center;
                margin-bottom: 1.5rem;
                letter-spacing: 2px;
+
+               @media only screen and (max-width: 900px) {
+                    display: none;
+                   font-size: 4rem;
+                    
+                }
            }
            h3 {
                color: var(--secondary);
@@ -140,6 +227,9 @@ export const Header = styled.header`
                cursor: pointer;
                transition: all 0.3s ease-in-out;
 
+               @media only screen and (max-width: 900px) {
+                  display: none;
+               }
                &:hover{
                 
                    transform: scale(1.04);
@@ -263,6 +353,8 @@ export const Sistema = styled.section`
        
        padding-top: 4rem;
        padding-bottom: 4rem;
+
+
        
         header {
             margin-bottom: 2rem;
@@ -271,23 +363,52 @@ export const Sistema = styled.section`
             gap: 1rem;
             align-items: center;
 
+            @media only screen and (max-width: 900px) {
+           
+                grid-template-columns: repeat(1,1fr);
+                place-items: center;
+                place-content: center;
+                text-align: center;
+                gap: 0.5rem;
+            
+            }
+
             div {
                 text-align:right;
                 color: var(--secondary);
                 border-right: 2px solid var(--secondary);
                 padding-right: 1rem;
+
+                @media only screen and (max-width: 900px) { 
+                    padding-right: 0;
+                    text-align: center;
+                    border:none;
+                    padding-right: auto;
+
+                }
       
                 
 
                 h2 {
                     font-size: 4rem;
                     font-weight: 400;
+
+                    @media only screen and (max-width: 900px) {
+                        text-align: center;
+                        font-size: 2.5rem;
+                     }
                    
                 }
+
 
                 h4 {
                     font-size: 2rem;
                     font-weight: 600;
+
+                    @media only screen and (max-width: 900px) {
+                        text-align: center;
+                    
+                     }
 
 
                 }
@@ -301,6 +422,11 @@ export const Sistema = styled.section`
                     h2 {
                         font-size: 2rem;
                         font-weight: 400;
+
+                        @media only screen and (max-width: 900px) { 
+                            font-size: 1.1rem;
+                            
+                        }
                     }
                     
                     h4 {
@@ -308,7 +434,10 @@ export const Sistema = styled.section`
                         font-size: 1.4rem;
                         strong {
                             font-weight: 700;
-                            
+                        }
+
+                        @media only screen and (max-width: 900px) { 
+                            font-size: 1.1rem;
                         }
                     }
                 }
@@ -324,12 +453,22 @@ export const Sistema = styled.section`
         justify-items: center;
         padding: 1rem;
 
+        @media only screen and (max-width: 900px) { 
+
+            grid-template-columns: repeat(1,1fr);
+
+        }
+
         .topics {
             
             display: flex;
             flex-direction: column;
             align-items: space-around;
             justify-content:space-around;
+
+            @media only screen and (max-width: 900px) {
+                display: none;
+             }
     
 
             button {
@@ -398,9 +537,54 @@ export const Sistema = styled.section`
         width: 450px;
         object-fit: cover;
         box-shadow: 20px  20px  var(--secondary);
+
+        @media only screen and (max-width: 900px) { 
+            max-width: 250px;
+            box-shadow: 10px  10px  var(--secondary);
+         }
         
     }
 
     }
+
+
+    .buttonMobile {
+
+                display: none;
+
+                @media only screen and (max-width: 900px) { 
+                margin-top: 2.5rem;
+                outline: none;
+                border: none;
+                padding: 0.2rem;
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+                color: var(--primary);
+                border: 1px solid var(--secondary);
+
+                font-weight: 600;
+                font-size: 1.5rem;
+
+                border-radius: 5px;
+                width: 250px;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                transition: all 0.3s ease-in-out;
+
+
+                img {
+                    max-width: 30px;
+                    max-height: 30px;
+                    margin-left: 1rem;
+                    
+                }
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+                        }
+                
+        }
 
 `

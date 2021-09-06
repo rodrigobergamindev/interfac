@@ -20,15 +20,26 @@ export const Tab = styled.div`
 
     span {
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         font-size: 1.5rem;
+
+        @media only screen and (max-width: 900px) {
+            font-size: 1.2rem;
+                    
+        }
 
     .icon {
         width: 40px;
         height: 40px;
         margin-right: 1rem;
         transform:none;
+
+        @media only screen and (max-width: 900px) {
+            width: 30px;
+            height: 30px;
+                    
+        }
     }
     }
 
@@ -68,7 +79,7 @@ export const ContainerTable = styled.div`
     
 
     @media only screen and (max-width: 900px) {
-        height: ${props => props.active ? "300px" : "0px"};
+        height: ${props => props.active ? "34rem" : "0px"};
        
         }
 `

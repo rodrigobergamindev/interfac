@@ -44,7 +44,7 @@ max-width:1920px;
 export const Slide = styled.div`
     height: 100vh;
     background: url('/img/slider/slide02.png');
- 
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,8 +54,8 @@ export const Slide = styled.div`
     justify-content:center;
 
     @media only screen and (max-width: 900px) {
-            max-height: 20;
-
+            height: 100%;
+            width: 100%;
             }
 
     .description {
@@ -68,6 +68,10 @@ export const Slide = styled.div`
         -moz-animation: bounceInRight 4s ease-in-out;
         -o-animation: bounceInRight 4s ease-in-out;
         animation: bounceInRight 4s ease-in-out;
+
+        @media only screen and (max-width: 900px) {
+                padding: 1rem;
+            }
         
        
         .text {
@@ -77,26 +81,21 @@ export const Slide = styled.div`
             
             padding: 1rem;
             cursor: default;
-
-            h3 {
-                background: var(--secondary);
-                margin-top: 0.7rem;
-                max-width: 200px;
-                font-size: 1.2rem;
-                font-weight: 600;
-                color: black;
-                padding: 0.5rem;
-                border-radius: 5px;
-                text-align:center;
-
-            }
-            
+            justify-content: space-around;
             ul {
                 padding: 2rem;
                 color: var(--secondary);
 
+                @media only screen and (max-width: 900px) {
+                    padding: 1rem;
+                    }
                 li {
                     font-size: 1.2rem;
+                    font-weight: 600;
+
+                    @media only screen and (max-width: 900px) {
+                        font-size: 0.8rem;
+                    }
                 }
             }
 
@@ -118,8 +117,7 @@ export const Slide = styled.div`
             font-weight: 600;
 
             @media only screen and (max-width: 900px) {
-                    font-size: 2.8rem;
-                    
+                    font-size: 2.1rem;
                     }
         }
 
@@ -129,8 +127,9 @@ export const Slide = styled.div`
             color: var(--secondary);
 
             @media only screen and (max-width: 900px) {
-                    font-size: 1rem;
+                    font-size: 0.7rem;
                     max-width: 250px;
+                    display: none;
                     }
 
             strong {
@@ -149,7 +148,7 @@ export const SlideTwo = styled.div`
 
     height: 100vh;
     background: url('/img/slider/slide04.png');
- 
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,59 +158,71 @@ export const SlideTwo = styled.div`
     justify-content:center;
 
     @media only screen and (max-width: 900px) {
-            height: 50vh;
-
+            height: 100%;
+            width: 100%;
             }
 
     .description {
-
- 
-
         width: 100%;
         max-width: 1120px;
         border-radius: 10px;
         padding-left: 1rem;
+
+        -webkit-animation: bounceInRight 4s ease-in-out;
+        -moz-animation: bounceInRight 4s ease-in-out;
+        -o-animation: bounceInRight 4s ease-in-out;
+        animation: bounceInRight 4s ease-in-out;
+
+        @media only screen and (max-width: 900px) {
+                padding: 1rem;
+            }
         
        
         .text {
-            max-width:700px;
+            max-width:1000px;
             display: flex;
             flex-direction: column;
             
             padding: 1rem;
             cursor: default;
-
+            justify-content: space-around;
             ul {
                 padding: 2rem;
                 color: var(--secondary);
 
+                @media only screen and (max-width: 900px) {
+                    padding: 1rem;
+                    }
                 li {
                     font-size: 1.2rem;
-                }
-            }
+                    font-weight: 600;
 
-            h3 {
-                background: var(--secondary);
-                margin-top: 0.7rem;
-                max-width: 320px;
-                font-size: 1.2rem;
-                font-weight: 600;
-                color: black;
-                padding: 0.5rem;
-                border-radius: 5px;
-                text-align:center;
+                    @media only screen and (max-width: 900px) {
+                        font-size: 0.8rem;
+                    }
+                }
             }
 
             h2 {
                 margin-bottom: 2rem;
                 color: var(--secondary);
                 font-weight: 400;
+
+                @media only screen and (max-width: 900px) {
+                    
+                    margin-bottom: 0rem;
+                    font-size: 1.1rem;
+                    }
             }
 
             h1 {
             font-size: 7rem;
             color: var(--secondary);
             font-weight: 600;
+
+            @media only screen and (max-width: 900px) {
+                    font-size: 2.1rem;
+                    }
         }
 
         span {
@@ -220,8 +231,9 @@ export const SlideTwo = styled.div`
             color: var(--secondary);
 
             @media only screen and (max-width: 900px) {
-                    font-size: 1rem;
+                    font-size: 0.7rem;
                     max-width: 250px;
+                    display: none;
                     }
 
             strong {
@@ -266,12 +278,14 @@ export const ButtonSaibaMais = styled.button`
 
 
     @media only screen and (max-width: 900px) {
-            font-size: 1rem;
+            font-size: 0.8rem;
             margin-top: 0;
             max-width: 10rem;
+            justify-content: space-evenly;
+            max-width: 8rem;
             img {
-               max-width: 2rem;
-               max-height: 2rem;
+               max-width: 1rem;
+               max-height: 1rem;
             }
             }
 

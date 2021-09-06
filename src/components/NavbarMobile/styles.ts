@@ -4,7 +4,7 @@ export const Container = styled.div`
 
   width: 100%;
   height: auto;
-  background: var(--primary);
+  background: var(--secondary);
   position: fixed;
   z-index: 999999;
   display: flex;
@@ -37,7 +37,7 @@ export const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.15rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border-radius: 20px;
     transform-origin: 1px;
     transition: all 0.3s linear;
