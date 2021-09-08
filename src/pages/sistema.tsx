@@ -27,7 +27,7 @@ export default function Sistema() {
             <header>
                 <div></div>
 
-                <h1>APLICAÇÃO INterfac</h1>
+                <h1>Sistema INterfac</h1>
             </header>
 
         
