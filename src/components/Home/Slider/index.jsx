@@ -6,6 +6,8 @@ import Link from 'next/link'
 
 export function Slider() {
 
+  
+
     return (
         <Container>
 
@@ -17,8 +19,8 @@ export function Slider() {
           slidesPerView={1}
           pagination={{ clickable: true}}
           scrollbar={{ draggable: true }}
-          autoplay={{delay: 4000,  disableOnInteraction: false}}
-          speed={1500}
+          autoplay={{delay: 10000,  disableOnInteraction: false}}
+          speed={2200}
           >
      
 
@@ -33,15 +35,16 @@ export function Slider() {
 
           <h2>Atuamos nos seguintes segmentos:</h2>
 
-          <ul>
-            <li>AUTO PEÇAS</li>
-            <li>CENTRO AUTOMOTIVO</li>
-            <li>CONSTRUÇÃO</li>
-          </ul>
-
-          <Link href="/sistema">
-          <ButtonSaibaMais>Saiba Mais <img src="/img/icons/right.png" alt=""/> </ButtonSaibaMais>
-          </Link>
+          <nav>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/autopecas"> AUTO PEÇAS</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/centroautomotivo">CENTRO AUTOMOTIVO</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/materialdeconstrucao">MATERIAL DE CONSTRUÇÃO</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/distribuidora_de_autopecas">DISTRIBUIDORA DE AUTO PEÇAS</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/motopecas">MOTO PEÇAS</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/comercio_de_aviamentos">COMERCIO DE AVIAMENTOS</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/loja_de_ferragens">LOJA DE FERRAGENS</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/loja_de_racao">LOJA DE RAÇÃO</Link></span>
+          </nav>
           </div>
           
         </div>
@@ -59,17 +62,12 @@ export function Slider() {
 
           <h2>Conheça nossos serviços:</h2>
 
-          <ul>
-            <li>SERVIDOR LINUX (DEBIAN)</li>
-            <li>SERVIDOR DE BACKUP BACULA</li>
-          </ul>
-
-          <Link href="/solucoes">
-
-        
-          <ButtonSaibaMais>Saiba Mais <img src="/img/icons/right.png" alt=""/> </ButtonSaibaMais>
-
-          </Link>
+          <nav>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/servidores"> SERVIDORES LINUX</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/virtualizacao">VIRTUALIZAÇÃO DE SERVIDORES</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/backup">SERVIDOR BACKUP BACULA</Link></span>
+            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/manutencao_em_rede">MANUTENÇÃO EM REDE</Link></span>
+          </nav>
           </div>
           
         </div>

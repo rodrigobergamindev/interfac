@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const SliderContainerDesktop = styled.div`
     width: 100%;
-    max-width:1920px;
+    max-width:1120px;
 
     img {
         width: 100%;
@@ -25,12 +25,12 @@ export const SliderContainerDesktop = styled.div`
 
 
 export const Container = styled.div`
-margin-top: 6rem;
+        margin-top: 6rem;
 
-width: 100%;
-max-width:1920px;
-
-
+        width: 100%;
+        max-width:1920px;
+        display: flex;
+        justify-content:center;
 @media only screen and (max-width: 900px) {
         margin-top: 0;
 
@@ -42,7 +42,7 @@ max-width:1920px;
 `
 
 export const Slide = styled.div`
-    height: 100vh;
+    height: 60vh;
     background: url('/img/slider/slide02.png');
     
     background-position: center;
@@ -52,7 +52,7 @@ export const Slide = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
-
+    padding: 3rem;
     @media only screen and (max-width: 900px) {
             height: 100%;
             width: 100%;
@@ -63,7 +63,7 @@ export const Slide = styled.div`
         max-width: 1120px;
         border-radius: 10px;
         padding-left: 1rem;
-
+        padding-top: 2rem;
         -webkit-animation: bounceInRight 4s ease-in-out;
         -moz-animation: bounceInRight 4s ease-in-out;
         -o-animation: bounceInRight 4s ease-in-out;
@@ -78,23 +78,41 @@ export const Slide = styled.div`
             max-width:1000px;
             display: flex;
             flex-direction: column;
-            
             padding: 1rem;
             cursor: default;
-            justify-content: space-around;
-            ul {
-                padding: 2rem;
+            justify-content: center;
+            nav {
                 color: var(--secondary);
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.3s ease-in-out;
 
+                span {
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                    img {
+                        max-width:20px;
+                    }
+                }
                 @media only screen and (max-width: 900px) {
                     padding: 1rem;
                     }
-                li {
+                a {
                     font-size: 1.2rem;
                     font-weight: 600;
-
+                    line-height: 2rem;
+                    border-bottom: 1px solid transparent;
                     @media only screen and (max-width: 900px) {
                         font-size: 0.8rem;
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid var(--secondary);
                     }
                 }
             }
@@ -112,7 +130,7 @@ export const Slide = styled.div`
             }
 
             h1 {
-            font-size: 7rem;
+            font-size: 5rem;
             color: var(--secondary);
             font-weight: 600;
 
@@ -125,7 +143,7 @@ export const Slide = styled.div`
             font-size: 1.2rem;
             font-weight: 400;
             color: var(--secondary);
-
+            
             @media only screen and (max-width: 900px) {
                     font-size: 0.7rem;
                     max-width: 250px;
@@ -144,9 +162,8 @@ export const Slide = styled.div`
 
 export const SlideTwo = styled.div`
 
-
-
-    height: 100vh;
+  
+    height: 60vh;
     background: url('/img/slider/slide04.png');
     
     background-position: center;
@@ -156,6 +173,7 @@ export const SlideTwo = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
+    padding: 3rem;
 
     @media only screen and (max-width: 900px) {
             height: 100%;
@@ -178,27 +196,47 @@ export const SlideTwo = styled.div`
             }
         
        
-        .text {
+            .text {
             max-width:1000px;
             display: flex;
             flex-direction: column;
-            
             padding: 1rem;
             cursor: default;
-            justify-content: space-around;
-            ul {
-                padding: 2rem;
+            justify-content: center;
+          
+            nav {
+                
                 color: var(--secondary);
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.3s ease-in-out;
 
+                span {
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                    img {
+                        max-width:20px;
+                    }
+                }
                 @media only screen and (max-width: 900px) {
                     padding: 1rem;
                     }
-                li {
+                a {
                     font-size: 1.2rem;
                     font-weight: 600;
-
+                    line-height: 2rem;
+                    border-bottom: 1px solid transparent;
                     @media only screen and (max-width: 900px) {
                         font-size: 0.8rem;
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid var(--secondary);
                     }
                 }
             }
@@ -216,7 +254,7 @@ export const SlideTwo = styled.div`
             }
 
             h1 {
-            font-size: 7rem;
+            font-size: 5rem;
             color: var(--secondary);
             font-weight: 600;
 
@@ -229,7 +267,7 @@ export const SlideTwo = styled.div`
             font-size: 1.2rem;
             font-weight: 400;
             color: var(--secondary);
-
+            
             @media only screen and (max-width: 900px) {
                     font-size: 0.7rem;
                     max-width: 250px;

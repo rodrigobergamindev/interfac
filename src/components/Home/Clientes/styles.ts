@@ -9,7 +9,7 @@ export const Container = styled.div`
         display: flex;
         justify-content:center;
         align-items: center;
-
+        
         @media only screen and (max-width: 900px) {
                padding: 0.76rem;
             }
@@ -22,7 +22,7 @@ export const Container = styled.div`
             grid-template-rows: repeat(2, 1fr);
             justify-items: center;
             align-items: center;
-            gap: 1rem;
+
 
             @media only screen and (max-width: 900px) {
                 grid-template-rows: repeat(1, 1fr);
@@ -37,15 +37,16 @@ export const Container = styled.div`
                 display: flex;
                 flex-direction: column;
                 color: var(--primary);
-
+               
                 h1 {
+                    
                     font-weight: 600;
                     font-size: 5rem;
                     
                 }
 
                 span {
-                    text-align: right;
+                    text-align: center;
                     font-size: 1.5rem;
 
                     strong {

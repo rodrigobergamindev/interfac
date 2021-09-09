@@ -158,8 +158,13 @@ export const Header = styled.header`
             p {
                 color: var(--secondary);
                 font-weight: 300;
-                margin-top: 3rem;
                 text-align:justify;
+                margin-top: 1rem;
+            }
+
+
+            .textDescription {
+                margin-top: 3rem;
             }
 
 

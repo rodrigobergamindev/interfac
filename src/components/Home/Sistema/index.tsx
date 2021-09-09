@@ -9,7 +9,7 @@ export function Sistema() {
 
     
 
-    const frase = 'Atuamos no mercado há mais de vinte anos no segmento automotivo, industrial e de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
+    const frase = 'Atuamos no mercado há mais de vinte anos no segmento automotivo, industrial e de material de construção. Conheça mais sobre as funcionalidades do nosso sistema:'
 
 
     return (
@@ -25,7 +25,9 @@ export function Sistema() {
                     />
                 </div>
 
+                
                 <div className="topics">
+
 
                     {topics.map((topic, index) => {
                         return (
@@ -33,6 +35,9 @@ export function Sistema() {
                                 <img src={topic.img} alt="topic"/>
                                 <div className="description">
                                     <h3>{topic.title.toUpperCase()}</h3>
+                                    <p>
+                                        {topic.description}
+                                    </p>
                                     <Link href="/sistema">
                                    
                                     <ButtonSaibaMais>Saiba mais</ButtonSaibaMais>
@@ -43,6 +48,70 @@ export function Sistema() {
                     })}
 
                 </div>
+           
+
+           <div className="segmentos">
+               <h3>Segmentos que atuamos</h3>
+
+               <div className="containerSegmentos">
+                   <div className="cardap">
+
+                    
+
+                        <span>Auto Peças</span>
+                   </div>
+
+                   <div className="cardca">
+
+                       
+
+                        <span>Centro Automotivo</span>
+                    </div>
+
+                    <div className="cardmt">
+
+                   
+
+                        <span>Material de Construção</span>
+                    </div>
+
+                    <div className="cardda">
+
+                   
+
+                        <span>Distribuidora de Auto Peças</span>
+                    </div>
+
+                    <div className="cardmp">
+
+                   
+
+                        <span>Moto Peças</span>
+                    </div>
+
+                    <div className="cardcm">
+
+                   
+
+                        <span>Comércio de Aviamentos</span>
+                    </div>
+
+                    <div className="cardlf">
+
+                   
+
+                        <span>Loja de Ferragens</span>
+                    </div>
+
+                    <div className="cardlr">
+
+                   
+
+                        <span>Loja de Ração</span>
+                    </div>
+               </div>
+           </div>
+           
            </Content>
 
         </Container>

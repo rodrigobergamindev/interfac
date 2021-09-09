@@ -3,22 +3,11 @@ import styled from 'styled-components'
 
 export const CarouselContainer = styled.div`
 
-   
-    width: 100%;
-    max-width: 620px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 4rem;
-
+    max-width: 600px;
 
     @media only screen and (max-width: 900px) {
         margin-top: 4rem;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        align-items: center;
-        gap: 3rem;
+        
         }
    
     `
@@ -30,16 +19,18 @@ export const CardProduct = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    justify-content: space-between;
-   
+    justify-content: center;
 
   
     border: 1px solid var(--secondary);
-    display: flex;
     border-radius: 5px;
 
     .title {
-            text-align: left;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             padding: 1rem;
             color: var(--secondary);
             
@@ -59,6 +50,7 @@ export const CardProduct = styled.div`
 
 
     button {
+        
         outline: none;
         border: none;
         padding: 0.2rem;
@@ -76,6 +68,7 @@ export const CardProduct = styled.div`
         display: flex;
         justify-content:space-around;
         transition: all 0.3s ease-in-out;
+        align-self: center;
         img {
             max-width: 20px;
             max-height: 20px;
