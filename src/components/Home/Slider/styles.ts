@@ -94,6 +94,9 @@ export const Slide = styled.div`
                     align-items: center;
                     transition: all 0.3s ease-in-out;
                     cursor: pointer;
+                    @media only screen and (max-width: 900px) {
+                        font-size: 1rem;
+                    }
                     &:hover {
                         transform: scale(1.05);
                     }
@@ -110,9 +113,7 @@ export const Slide = styled.div`
                     font-weight: 600;
                     line-height: 2rem;
                     border-bottom: 1px solid transparent;
-                    @media only screen and (max-width: 900px) {
-                        font-size: 0.8rem;
-                    }
+                   
 
                     &:hover {
                         border-bottom: 1px solid var(--secondary);
@@ -219,6 +220,10 @@ export const SlideTwo = styled.div`
                     display: flex;
                     align-items: center;
                     transition: all 0.3s ease-in-out;
+
+                    @media only screen and (max-width: 900px) {
+                        font-size: 1rem;
+                    }
                     &:hover {
                         transform: scale(1.05);
                     }
@@ -234,9 +239,7 @@ export const SlideTwo = styled.div`
                     font-weight: 600;
                     line-height: 2rem;
                     border-bottom: 1px solid transparent;
-                    @media only screen and (max-width: 900px) {
-                        font-size: 0.8rem;
-                    }
+    
 
                     &:hover {
                         border-bottom: 1px solid var(--secondary);
