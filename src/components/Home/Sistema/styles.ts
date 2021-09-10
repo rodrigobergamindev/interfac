@@ -375,7 +375,7 @@ export const Content = styled.section`
                
                 padding: 1rem;
                 @media only screen and (max-width: 900px) {
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                    
                 }
             }
@@ -391,6 +391,8 @@ export const Content = styled.section`
                 box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
                 @media only screen and (max-width: 900px) {
                     text-align: justify;
+                    margin-top: -1rem;
+                    font-size: 1rem;
                 }
             }
         }
