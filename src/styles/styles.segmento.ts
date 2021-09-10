@@ -111,7 +111,109 @@ export const Tab = styled.div`
 
 `
 
+export const SecondTab = styled.div`
 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+
+
+
+    @media only screen and (max-width: 900px) {
+           margin-top: 1rem;
+            padding: 1rem;
+            margin-bottom: 3rem;
+             }
+
+    .containerTab {
+        cursor: default;
+
+        width:100%;
+        max-width: 1120px;
+        border-radius: 7px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        
+        
+
+        @media only screen and (max-width: 900px) {
+            place-items: center;
+            grid-template-columns: repeat(1, 1fr);
+             }
+        
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+       
+
+            li {
+                font-size: 1.4rem;
+                strong {
+                    color: #eb2f06;
+                    
+                }
+                @media only screen and (max-width: 900px) {
+                   font-size: 0.8rem;
+                   margin-top: 1rem;
+             }
+
+             &:first-child {
+                 margin-top: 0;
+             }
+               
+                img {
+                    padding: 0.5rem;
+                    width: 35px;
+                }
+            }
+        }
+
+
+        .title {
+           
+            text-align:center;
+            h2 {
+                
+                font-weight: 600;
+                color:#eb2f06;
+                font-size: 11rem;
+                align-self: flex-end;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 3rem;
+                   
+             }
+            }
+
+            .limite {
+                font-size: 4rem;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 2rem;
+
+                   
+                   
+             }
+
+           
+            }
+
+        }
+
+    }
+   
+    :last-child {
+        margin-bottom: 5rem;
+    }
+
+
+`
 
 
 
@@ -270,7 +372,7 @@ export const Header = styled.header`
        margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-
+        max-width: 1120px;
        background: url("/img/topics/centroautomotivo.png");
        background-attachment: fixed;
        background-position: center;
@@ -294,7 +396,7 @@ export const Header = styled.header`
 
            h1 {
                color: var(--secondary);
-               font-size: 5rem;
+               font-size: 3.5rem;
                text-align: center;
                margin-bottom: 1.5rem;
                letter-spacing: 2px;
@@ -350,7 +452,7 @@ export const HeaderAutoPecas = styled.header`
 
            h1 {
                color: var(--secondary);
-               font-size: 5rem;
+               font-size: 3.5rem;
                text-align: center;
                margin-bottom: 1.5rem;
                letter-spacing: 2px;
@@ -359,7 +461,7 @@ export const HeaderAutoPecas = styled.header`
                transition: all 0.3s ease-in-out;
 
                @media only screen and (max-width: 900px) {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                    
              }
 
@@ -405,7 +507,7 @@ export const HeaderConstrucao = styled.header`
 
            h1 {
                color: var(--secondary);
-               font-size: 5rem;
+               font-size: 3.5rem;
                text-align: center;
                margin-bottom: 1.5rem;
                letter-spacing: 2px;
@@ -414,7 +516,7 @@ export const HeaderConstrucao = styled.header`
                transition: all 0.3s ease-in-out;
 
                @media only screen and (max-width: 900px) {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                    
              }
 
@@ -432,6 +534,290 @@ export const HeaderConstrucao = styled.header`
 
 `
 
+export const HeaderDistribuidora = styled.header`
+
+       
+       margin-top: 6rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+       max-width: 1120px;
+       background: url("/img/topics/distribuidoraheader.png");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       @media only screen and (max-width: 900px) {
+                padding: 2rem;
+                margin-top: 3rem;
+                background-size: cover;
+             }
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 3.5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               @media only screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                   
+             }
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
+
+export const HeaderRacao = styled.header`
+
+       
+       margin-top: 6rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+       max-width: 1120px;
+       background: url("/img/topics/racaoheader.png");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       @media only screen and (max-width: 900px) {
+                padding: 2rem;
+                margin-top: 3rem;
+                background-size: cover;
+             }
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 3.5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               @media only screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                   
+             }
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
+
+export const HeaderFerragens = styled.header`
+
+       
+       margin-top: 6rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+       max-width: 1120px;
+       background: url("/img/topics/ferragensheader.png");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       @media only screen and (max-width: 900px) {
+                padding: 2rem;
+                margin-top: 3rem;
+                background-size: cover;
+             }
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 3.5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               @media only screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                   
+             }
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
+
+export const HeaderAviamentos = styled.header`
+
+       
+       margin-top: 6rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+       max-width: 1120px;
+       background: url("/img/topics/aviamentosheader.png");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       @media only screen and (max-width: 900px) {
+                padding: 2rem;
+                margin-top: 3rem;
+                background-size: cover;
+             }
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 3.5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               @media only screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                   
+             }
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
+
+export const HeaderMotopecas = styled.header`
+
+       
+       margin-top: 6rem;
+       width: 100%;
+       height: calc(60vh - 5rem);
+       max-width: 1120px;
+       background: url("/img/topics/motopecasheader.png");
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+
+       padding: 5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       @media only screen and (max-width: 900px) {
+                padding: 2rem;
+                margin-top: 3rem;
+                background-size: cover;
+             }
+
+       div {
+           padding: 2rem;
+           width: 100%;
+           max-width: 1120px;
+
+           h1 {
+               color: var(--secondary);
+               font-size: 3.5rem;
+               text-align: center;
+               margin-bottom: 1.5rem;
+               letter-spacing: 2px;
+               border: 1px solid var(--secondary);
+               cursor: default;
+               transition: all 0.3s ease-in-out;
+
+               @media only screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                   
+             }
+
+               &:hover{
+                
+                   transform: scale(1.04);
+           }
+           
+           }
+       }
+   
+
+
+
+`
 
 
 export const Container = styled.section`

@@ -42,12 +42,20 @@ export const Content = styled.section`
                 margin-top: 3rem;
                 margin-bottom: 3rem;
                 border-radius: 4px;
+
+                @media only screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                }
             }
 
             .containerSegmentos {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 2rem;
+
+                @media only screen and (max-width: 900px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
 
                 .cardap {
 

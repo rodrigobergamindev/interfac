@@ -4,10 +4,11 @@ import styled from 'styled-components'
 export const CarouselContainer = styled.div`
 
     max-width: 600px;
-
+   
     @media only screen and (max-width: 900px) {
-        margin-top: 4rem;
-        
+            height: auto;
+            padding: 1rem;
+            width: 300px;
         }
    
     `
@@ -24,6 +25,11 @@ export const CardProduct = styled.div`
   
     border: 1px solid var(--secondary);
     border-radius: 5px;
+
+  @media only screen and (max-width: 900px) {
+      align-self: center;
+    
+    }
 
     .title {
 

@@ -36,7 +36,7 @@ export const Container = styled.div`
             @media only screen and (max-width: 900px) {
                 
                 grid-template-columns: repeat(1, 1fr);
-                gap: 0rem;
+                gap: 2rem;
                 padding: 0rem;
             }
 

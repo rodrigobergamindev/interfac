@@ -89,9 +89,11 @@ export const Slide = styled.div`
                 transition: all 0.3s ease-in-out;
 
                 span {
+                    
                     display: flex;
                     align-items: center;
                     transition: all 0.3s ease-in-out;
+                    cursor: pointer;
                     &:hover {
                         transform: scale(1.05);
                     }
@@ -103,6 +105,7 @@ export const Slide = styled.div`
                     padding: 1rem;
                     }
                 a {
+                  
                     font-size: 1.2rem;
                     font-weight: 600;
                     line-height: 2rem;

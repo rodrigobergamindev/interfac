@@ -1,6 +1,6 @@
 import FormContato from '../components/Contato'
 import { Clientes } from '../components/Home/Clientes'
-import {Container, Header, Description, Tab, Card} from '../styles/styles.sistema'
+import {Container, Header, Description, Tab, Card, SecondTab} from '../styles/styles.sistema'
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -41,48 +41,133 @@ export default function Sistema() {
 
 
              <section>
-                
+             <h1>MODELOS DE NEGÓCIO</h1>
              <div className="containerCards">
-                 <h1>MODELOS DE NEGÓCIO</h1>
-
                  
+
+                 <Link href="/centroautomotivo">
                  <Card>
                     <img src="/img/topics/centroauto.png" alt="icon" className="icon"/>
 
                     
                     <div className="description">
                         <h3>Centro Automotivo</h3>
-                        <Link href="/centroautomotivo">
+                        
                             <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
-                        </Link>
+                        
                     </div>
                  </Card>
+                 </Link>
 
+                 <Link href="/autopecas">
                  <Card>
                     <img src="/img/topics/autopecas.png" alt="icon" className="icon"/>
 
                     
                     <div className="description">
                         <h3>Auto Peças</h3>
-                        <Link href="/autopecas">
+                       
                             <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
-                        </Link>
+                        
                     </div>
                  </Card>
-
+                 </Link>
+                
+                 <Link href="/material_de_construcao">
                  <Card>
                     <img src="/img/topics/construcao.png" alt="icon" className="icon"/>
 
                     
                     <div className="description">
-                        <h3>Construção</h3>
-                        <Link href="/construcao">
+                        <h3>Material de Construção</h3>
+                        
 
                         
                             <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
-                        </Link>
+                        
                     </div>
                  </Card>
+                 </Link>
+
+                 <Link href="/distribuidora_de_autopecas">
+                 <Card>
+                    <img src="/img/topics/distribuidora.png" alt="icon" className="icon"/>
+
+                    
+                    <div className="description">
+                        <h3>Distribuidora de Auto Peças</h3>
+                        
+
+                        
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        
+                    </div>
+                 </Card>
+                 </Link>
+
+                 <Link href="/loja_de_racao">
+                 <Card>
+                    <img src="/img/topics/racao.png" alt="icon" className="icon"/>
+
+                    
+                    <div className="description">
+                        <h3>Loja de Ração</h3>
+                        
+
+                        
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        
+                    </div>
+                 </Card>
+                 </Link>
+
+                 <Link href="/loja_de_ferragens">
+                 <Card>
+                    <img src="/img/topics/ferragens.png" alt="icon" className="icon"/>
+
+                    
+                    <div className="description">
+                        <h3>Loja de Ferragens</h3>
+                        
+
+                        
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        
+                    </div>
+                 </Card>
+                 </Link>
+
+                 <Link href="/comercio_de_aviamentos">
+                 <Card>
+                    <img src="/img/topics/aviamentos.png" alt="icon" className="icon"/>
+
+                    
+                    <div className="description">
+                        <h3>Comércio de Aviamentos</h3>
+                        
+
+                        
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        
+                    </div>
+                 </Card>
+                 </Link>
+
+                 <Link href="/motopecas">
+                 <Card>
+                    <img src="/img/topics/motopecas.png" alt="icon" className="icon"/>
+
+                    
+                    <div className="description">
+                        <h3>Motopeças</h3>
+                        
+
+                        
+                            <h4>Saiba Mais <img src="img/icons/right.png" alt="right" /> </h4>
+                        
+                    </div>
+                 </Card>
+                 </Link>
                  </div>
              </section>
           
@@ -101,9 +186,9 @@ export default function Sistema() {
                 </div>
 
                 <ul>
-                    <li> <img src="/img/icons/check.png" alt=""/> Treinamento horário de início e término pré-agendado </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico via telefone </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico via acesso remoto</li>
+                    <li> ✓ Treinamento horário de início e término pré-agendado </li>
+                    <li> ✓ Suporte técnico via telefone </li>
+                    <li> ✓ Suporte técnico via acesso remoto</li>
                 </ul>
 
 
@@ -111,22 +196,22 @@ export default function Sistema() {
                 </div>
         </Tab>
 
-        <Tab>
+        <SecondTab>
             <div className="containerTab">
                 <div className="title">
                     <h2>0%</h2>
                 </div>
 
                 <ul>
-                    <li> <img src="/img/icons/check.png" alt=""/> Taxa de cancelamento </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Cobrança por atendimento telefônico </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Cobrança por atendimento por conexão remota</li>
+                    <li> <strong>✖</strong> Taxa de cancelamento </li>
+                    <li> <strong>✖</strong> Cobrança por atendimento telefônico </li>
+                    <li> <strong>✖</strong> Cobrança por atendimento por conexão remota</li>
                 </ul>
 
 
                 
                 </div>
-        </Tab>
+        </SecondTab>
 
 
         <FormContato/>

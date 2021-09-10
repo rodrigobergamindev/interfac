@@ -27,7 +27,7 @@ export default function Backup() {
             <header>
                 <div></div>
 
-                <h1>SERVIDOR DE BACKUP BACULA</h1>
+                <h1>Servidor de Backup (Bacula)</h1>
             </header>
 
             <article>

@@ -1,7 +1,7 @@
 import FormContato from '../components/Contato'
 import { FaqAT } from '../components/FAQAT'
 import { Clientes } from '../components/Home/Clientes'
-import {Container, HeaderAutoPecas, Description, Tab, Card} from '../styles/styles.segmento'
+import {Container, HeaderAutoPecas, Description, Tab, Card, SecondTab} from '../styles/styles.segmento'
 import Head from 'next/head'
 
 
@@ -56,9 +56,9 @@ export default function AutoPecas() {
                 </div>
 
                 <ul>
-                    <li> <img src="/img/icons/check.png" alt=""/> Treinamento horário de início e término pré-agendado </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico via telefone </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Suporte técnico via acesso remoto</li>
+                    <li> ✓ Treinamento horário de início e término pré-agendado </li>
+                    <li> ✓ Suporte técnico via telefone </li>
+                    <li> ✓ Suporte técnico via acesso remoto</li>
                 </ul>
 
 
@@ -66,22 +66,22 @@ export default function AutoPecas() {
                 </div>
         </Tab>
 
-        <Tab>
+        <SecondTab>
             <div className="containerTab">
                 <div className="title">
                     <h2>0%</h2>
                 </div>
 
                 <ul>
-                    <li> <img src="/img/icons/check.png" alt=""/> Taxa de cancelamento </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Cobrança por atendimento telefônico </li>
-                    <li> <img src="/img/icons/check.png" alt=""/> Cobrança por atendimento por conexão remota</li>
+                    <li> <strong>✖</strong> Taxa de cancelamento </li>
+                    <li> <strong>✖</strong> Cobrança por atendimento telefônico </li>
+                    <li> <strong>✖</strong> Cobrança por atendimento por conexão remota</li>
                 </ul>
 
 
                 
                 </div>
-        </Tab>
+        </SecondTab>
 
 
         <FormContato/>

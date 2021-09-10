@@ -21,12 +21,13 @@ export function CarouselProducts() {
       scrollbar={{ draggable: true }}
       autoplay={{delay: 2000,  disableOnInteraction: false}}
       speed={1200}
+      className="carousel-solucoes"
     >
       
       {carouselItems.map((item, index) =>{
                 return (
 
-                          <a href={item.url} key={index}>
+                          <Link href={item.url} key={index}>
                           <SwiperSlide key={index}>
                           <CardProduct>
                           
@@ -45,7 +46,47 @@ export function CarouselProducts() {
                             
                           </CardProduct>
                           </SwiperSlide>
-                          </a>
+                          </Link>
+                 
+                )
+      })}
+
+      
+       </Swiper>
+
+       <Swiper
+      style={{'--swiper-navigation-color': '#051e3c','--swiper-pagination-color': '#051e3c', zIndex: 0}}
+      spaceBetween={0}
+      slidesPerView={1}
+      scrollbar={{ draggable: true }}
+      autoplay={{delay: 2000,  disableOnInteraction: false}}
+      speed={1200}
+      className="mobile"
+    >
+      
+      {carouselItems.map((item, index) =>{
+                return (
+
+                          <Link href={item.url} key={index}>
+                          <SwiperSlide key={index}>
+                          <CardProduct>
+                          
+                              <img src={item.iconWhite} alt="" />
+                            <div className="title">
+
+                            <h3>
+                              {item.title.toUpperCase()}
+                            </h3>
+                            <Link href={item.url}>
+                            <button>Saiba Mais <img src="img/icons/right.png"/></button>
+                            </Link>
+                            </div>
+                        
+                      
+                            
+                          </CardProduct>
+                          </SwiperSlide>
+                          </Link>
                  
                 )
       })}

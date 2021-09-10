@@ -26,7 +26,7 @@ export default function Servidores() {
             <header>
                 <div></div>
 
-                <h1>SERVIDORES LINUX (DEBIAN)</h1>
+                <h1>Servidores Linux (DEBIAN)</h1>
             </header>
 
             <article>

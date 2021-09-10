@@ -158,6 +158,7 @@ export const Header = styled.header`
        
        margin-top: 6rem;
        width: 100%;
+       max-width: 1120px;
        height: calc(60vh - 5rem);
 
        background-image: url("/img/server.png");
@@ -266,13 +267,13 @@ export const CardProduct = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: center;
 
 
 
   
     border: 1px solid var(--primary);
-    display: flex;
+
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 
@@ -282,8 +283,9 @@ export const CardProduct = styled.div`
     }
 
     .title {
-            text-align: left;
-            padding: 1rem;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             color: var(--primary);
             
             h3{
@@ -303,6 +305,7 @@ export const CardProduct = styled.div`
 
 
     button {
+        align-self: center;
         outline: none;
         border: none;
         padding: 0.2rem;

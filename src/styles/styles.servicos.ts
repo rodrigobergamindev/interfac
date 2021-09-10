@@ -100,6 +100,7 @@ export const Header = styled.header`
 
        @media only screen and (max-width: 900px) {
                   padding: 2rem;
+                  margin-top: 3rem;
                 }
 
        div {
@@ -131,7 +132,7 @@ export const Header = styled.header`
            .servidores {
             @media only screen and (max-width: 900px) {
                 
-                   font-size: 2.8rem;
+                   font-size: 1.8rem;
                 }
            }
        }

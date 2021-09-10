@@ -114,84 +114,109 @@ export const Tab = styled.div`
 
 `
 
-
-
-
-export const Contato = styled.div`
+export const SecondTab = styled.div`
 
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
-    margin-bottom: 5rem;
-    
 
-    .containerContato {
-        
-        box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
-        background-image: url("/img/solucoes/contato.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+
+    @media only screen and (max-width: 900px) {
+           margin-top: 2rem;
+            padding: 1rem;
+            margin-bottom: 3rem;
+             }
+
+    .containerTab {
+        cursor: default;
 
         width:100%;
         max-width: 1120px;
-        background-color: var(--primary);
         border-radius: 7px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
         gap: 1rem;
-        padding: 2rem;
+        
+        
 
+        @media only screen and (max-width: 900px) {
+            place-items: center;
+            grid-template-columns: repeat(1, 1fr);
+             }
+        
 
-        .title {
+        ul {
+            list-style: none;
             display: flex;
             flex-direction: column;
-            padding: 1rem;
+            justify-content:center;
+       
 
-            
-            
+            li {
+                font-size: 1.4rem;
+                strong {
+                    color: #eb2f06;
+                    
+                }
+                @media only screen and (max-width: 900px) {
+                   font-size: 0.8rem;
+                   margin-top: 1rem;
+             }
 
-            h2 {
-                font-weight: 600;
-                color:var(--secondary);
-                font-size: 3rem;
-            }
-
-            h4 {
-                font-weight: 400;
-                color: var(--secondary);
-                margin-bottom: 1rem;
-            }
-
-
-            nav {
-                max-width: 150px;
-                display: flex;
-                justify-content:space-evenly;
-                align-items: flex-end;
-                
-                a {
-                    img {
-                        transform: scale(1.0);
-                        transition: all 0.2s ease-in-out;
-                        &:hover {
-                            transform: scale(1.2);
-                        }
-                        width:25px;
-                    }
+             &:first-child {
+                 margin-top: 0;
+             }
+               
+                img {
+                    padding: 0.5rem;
+                    width: 35px;
                 }
             }
         }
+
+
+        .title {
+           
+            text-align:center;
+            h2 {
+                
+                font-weight: 600;
+                color:#eb2f06;
+                font-size: 11rem;
+                align-self: flex-end;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 3rem;
+             }
+            }
+
+            .limite {
+                font-size: 4rem;
+
+                @media only screen and (max-width: 900px) {
+                   font-size: 2rem;
+
+                   
+                   
+             }
+
+           
+            }
+
+        }
+
     }
    
-
+    :last-child {
+        margin-bottom: 5rem;
+    }
 
 
 `
+
 
 
 export const Description = styled.section`
@@ -242,8 +267,9 @@ export const Description = styled.section`
         p {
             text-align:justify;
             line-height: 1.9rem;
-            padding: 2rem;
-
+            padding-right: 2rem;
+            padding-left: 2rem;
+            padding-bottom: 3rem;
             @media only screen and (max-width: 900px) {
                 
                 margin-bottom: 2rem;
@@ -262,13 +288,19 @@ export const Description = styled.section`
         display: flex;
         flex-direction: column;
 
+        @media only screen and (max-width: 900px) {
+                padding: 1rem;
+            }
+
         .containerCards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
 
             @media only screen and (max-width: 900px) {
-                padding: 1rem;
+                
+                grid-template-columns: repeat(1,1fr);
              }
         }
         h1 {
@@ -294,12 +326,14 @@ export const Header = styled.header`
        margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-
+       max-width: 1120px;
        background: url("/img/headersistema.png");
        background-attachment: fixed;
-       background-position: center;
+       background-position: end;
        background-repeat: no-repeat;
-       background-size: cover;
+       background-size: auto;
+       
+       
 
        padding: 5rem;
        display: flex;
@@ -389,7 +423,6 @@ export const Card = styled.div`
     border: 1px solid var(--grey-100);
     border-radius: 2px;
     padding: 2rem;
-    margin-top: 3rem;
     width: 100%;
   
 
@@ -410,7 +443,7 @@ export const Card = styled.div`
         
         h3 {
             color: var(--primary);
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             margin-bottom: 0.5rem;
 
             @media only screen and (max-width: 900px) {

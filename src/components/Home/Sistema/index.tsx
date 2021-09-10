@@ -118,7 +118,7 @@ export function Sistema() {
                     </div>
                     </Link>
 
-                    <Link href="/materialdeconstrucao">
+                    <Link href="/material_de_construcao">
                     <div className="cardmt">
 
                    

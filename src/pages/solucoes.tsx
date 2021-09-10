@@ -127,7 +127,7 @@ export default function Solucoes() {
                                 </Link>
                                 </div>
 
-                            <img className="imgSistema" src="/img/sistema.jpg" alt=""/>
+                            <img className="imgSistema" src="/img/sistema.png" alt=""/>
 
                             <button className="buttonMobile">Saiba Mais <img src="img/icons/right.png"/></button>
                         </section>

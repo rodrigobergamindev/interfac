@@ -55,6 +55,12 @@ button {
   cursor: pointer;
 }
 
+.carousel-solucoes {
+  display: auto;
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
+}
 
 
 .carousel-clients {

@@ -15,13 +15,13 @@ export const carouselItems = [
         url: '/virtualizacao',
         title: 'Virtualização',
         iconWhite: '/img/solucoes/redundancia.png',
-        iconColor: '/img/solucoes/backup-color.png'
+        iconColor: '/img/solucoes/redundancia-color.png'
     },
     {   
         url: '/manutencao_em_rede',
         title: 'Manutenção em Rede',
         iconWhite: '/img/solucoes/rede.png',
-        iconColor: '/img/solucoes/backup-color.png'
+        iconColor: '/img/solucoes/rede-color.png'
     }
 
 ]

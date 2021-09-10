@@ -36,14 +36,14 @@ export function Slider() {
           <h2>Atuamos nos seguintes segmentos:</h2>
 
           <nav>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/autopecas"> AUTO PEÇAS</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/centroautomotivo">CENTRO AUTOMOTIVO</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/materialdeconstrucao">MATERIAL DE CONSTRUÇÃO</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/distribuidora_de_autopecas">DISTRIBUIDORA DE AUTO PEÇAS</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/motopecas">MOTO PEÇAS</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/comercio_de_aviamentos">COMERCIO DE AVIAMENTOS</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/loja_de_ferragens">LOJA DE FERRAGENS</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/loja_de_racao">LOJA DE RAÇÃO</Link></span>
+          <Link href="/autopecas"><span> ▸ AUTO PEÇAS</span></Link>
+          <Link href="/centroautomotivo"><span> ▸ CENTRO AUTOMOTIVO</span></Link>
+          <Link href="/material_de_construcao"><span> ▸ MATERIAL DE CONSTRUÇÃO</span></Link>
+          <Link href="/distribuidora_de_autopecas"><span> ▸ DISTRIBUIDORA DE AUTO PEÇAS</span></Link>
+          <Link href="/loja_de_racao"><span> ▸ LOJA DE RAÇÃO</span></Link>
+          <Link href="/loja_de_ferragens"><span> ▸ LOJA DE FERRAGENS</span></Link>
+          <Link href="/comercio_de_aviamentos"><span> ▸ COMÉRCIO DE AVIAMENTOS</span></Link>
+          <Link href="/motopecas"><span> ▸ MOTOPEÇAS</span></Link>
           </nav>
           </div>
           
@@ -63,10 +63,10 @@ export function Slider() {
           <h2>Conheça nossos serviços:</h2>
 
           <nav>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/servidores"> SERVIDORES LINUX</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/virtualizacao">VIRTUALIZAÇÃO DE SERVIDORES</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/backup">SERVIDOR BACKUP BACULA</Link></span>
-            <span><img src="/img/slider/arrow.png" alt="" srcset="" /><Link href="/manutencao_em_rede">MANUTENÇÃO EM REDE</Link></span>
+            <Link href="/servidores"><span> ▸ SERVIDORES LINUX</span></Link>
+            <Link href="/backup"><span> ▸ BACULA (BACKUP)</span></Link>
+            <Link href="/virtualizacao"><span> ▸ VIRTUALIZAÇÃO</span></Link>
+            <Link href="/manutencao_em_rede"><span> ▸ MANUTENÇÃO EM REDE</span></Link>
           </nav>
           </div>
           
