@@ -47,7 +47,7 @@ export const Container = styled.div`
 
                 span {
                     text-align: center;
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
 
                     strong {
                         color: #4abfcf;

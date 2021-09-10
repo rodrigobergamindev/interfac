@@ -1,18 +1,18 @@
 export const carouselItems = [
     {   
-        url: '/',
+        url: 'https://agaisom.com.br/',
         icon: '/img/clientes/agaisom.png'
     },
     {   
-        url: '/',
+        url: 'https://anelibandejas.com.br/',
         icon: '/img/clientes/aneli.jpg'
     },
     {   
-        url: '/',
+        url: 'https://www.facebook.com/carburely/',
         icon: '/img/clientes/carburely.png'
     },
     {   
-        url: '/',
+        url: 'https://www.aluminiojangada.com.br/',
         icon: '/img/clientes/jangada.jpg'
     },
     {   
@@ -24,11 +24,11 @@ export const carouselItems = [
         icon: '/img/clientes/mineirao.png'
     },
     {   
-        url: '/',
+        url: 'https://monegato-e-guelfe-materiais-p.negocio.site/',
         icon: '/img/clientes/monegato.png'
     },
     {   
-        url: '/',
+        url: 'https://pt-br.facebook.com/autopecasmreis/',
         icon: '/img/clientes/mreis.png'
     },
     {   
@@ -36,23 +36,23 @@ export const carouselItems = [
         icon: '/img/clientes/multivarejo.jpg'
     },
     {   
-        url: '/',
+        url: 'https://www.depositomuralha.com.br/?utm_source=GMB&utm_medium=Referral',
         icon: '/img/clientes/muralha.jpg'
     },
     {   
-        url: '/',
+        url: 'https://www.perezmateriaiseletricos.com.br/',
         icon: '/img/clientes/perez.jpeg'
     },
     {   
-        url: '/',
+        url: 'https://www.rodrigotto.com.br/',
         icon: '/img/clientes/rodrigotto.jpg'
     },
     {   
-        url: '/',
+        url: 'https://www.facebook.com/BoschServiceSWInjecaoEletronica/',
         icon: '/img/clientes/sw.jpg'
     },
     {   
-        url: '/',
+        url: 'https://autotni.com.br/',
         icon: '/img/clientes/tnn.jpeg'
     },
 ]

@@ -1,11 +1,25 @@
-import {Container, Content, Topic, ButtonSaibaMais} from './styles'
+import {Container, Content, Topic, ButtonSaibaMais, ContainerModal, BodyModal, HeaderModal} from './styles'
 import {topics} from './assets/topics'
 import Typical from 'react-typical'
+import {useState} from 'react'
+import Modal from 'react-modal';
 
 import Link from 'next/link'
 
 
+
 export function Sistema() {
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+      }
+
+      function closeModal() {
+        setIsOpen(false);
+      }
+
 
     
 
@@ -28,6 +42,37 @@ export function Sistema() {
                 
                 <div className="topics">
 
+                <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Example Modal"
+                overlayClassName="react-modal-overlay"
+                className="react-modal-content"
+                >
+
+            <ContainerModal>
+
+        
+            <HeaderModal>
+                 <h2>Selecione seu <strong>segmento</strong></h2>
+                <img src="/img/icons/close.png" alt="" onClick={closeModal}/>
+            </HeaderModal>
+
+            <BodyModal>
+                <nav>
+                    <Link href="/autopecas">Auto Peças</Link>
+                    <Link href="/centroautomotivo">Centro Automotivo</Link>
+                    <Link href="/material_de_construcao">Material de Construção</Link>
+                    <Link href="/distribuidora_de_autopecas">Distribuidora de Auto Peças</Link>
+                    <Link href="/motopecas">Moto Peças</Link>
+                    <Link href="/comercio_de_aviamentos">Comércio de Aviamentos</Link>
+                    <Link href="/loja_de_ferragens">Loja de Ferragens</Link>
+                    <Link href="/loja_de_racao">Loja de Ração</Link>
+                </nav>
+
+            </BodyModal>
+            </ContainerModal>
+                </Modal>
 
                     {topics.map((topic, index) => {
                         return (
@@ -38,10 +83,10 @@ export function Sistema() {
                                     <p>
                                         {topic.description}
                                     </p>
-                                    <Link href="/sistema">
+                                  
                                    
-                                    <ButtonSaibaMais>Saiba mais</ButtonSaibaMais>
-                                    </Link>
+                                    <ButtonSaibaMais onClick={openModal}>Saiba mais</ButtonSaibaMais>
+                                    
                                 </div>
                             </Topic>
                         )
@@ -54,61 +99,78 @@ export function Sistema() {
                <h3>Segmentos que atuamos</h3>
 
                <div className="containerSegmentos">
+
+                   <Link href="/autopecas">
                    <div className="cardap">
 
                     
 
                         <span>Auto Peças</span>
                    </div>
+                    </Link>
 
+                    <Link href="/centroautomotivo">
                    <div className="cardca">
 
                        
 
                         <span>Centro Automotivo</span>
                     </div>
+                    </Link>
 
+                    <Link href="/materialdeconstrucao">
                     <div className="cardmt">
 
                    
 
                         <span>Material de Construção</span>
                     </div>
+                    </Link>
 
+                    <Link href="/distribuidora_de_autopecas">
                     <div className="cardda">
 
                    
 
                         <span>Distribuidora de Auto Peças</span>
                     </div>
+                    </Link>
 
+                    <Link href="/motopecas">
                     <div className="cardmp">
 
                    
 
                         <span>Moto Peças</span>
                     </div>
+                    </Link>
 
+                    <Link href="/comercio_de_aviamentos">
                     <div className="cardcm">
 
                    
 
                         <span>Comércio de Aviamentos</span>
                     </div>
+                    </Link>
 
+                    <Link href="/loja_de_ferragens">
                     <div className="cardlf">
 
                    
 
                         <span>Loja de Ferragens</span>
                     </div>
+                    </Link>
 
+                    <Link href="/loja_de_racao">
                     <div className="cardlr">
 
                    
 
                         <span>Loja de Ração</span>
                     </div>
+                    </Link>
                </div>
            </div>
            

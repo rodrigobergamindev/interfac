@@ -148,13 +148,13 @@ function handleInputChange(event){
                 </div>
                  
                 <div className="option">
-                 <input type="radio" id="construcao" name="segmento" value="Construção" onChange={handleInputChange}/>
-                 <label htmlFor="construcao">Construção</label>
+                 <input type="radio" id="construcao" name="segmento" value="Material de Construção" onChange={handleInputChange}/>
+                 <label htmlFor="construcao">Material de Construção</label>
                 </div>
 
                 <div className="option">
-                 <input type="radio" id="outro" name="segmento" value="Outro" onChange={handleInputChange}/>
-                 <label htmlFor="outro">Outro</label>
+                 <input type="radio" id="outro" name="segmento" value="Outros" onChange={handleInputChange}/>
+                 <label htmlFor="outro">Outros</label>
                 </div>
 
                 </div>
