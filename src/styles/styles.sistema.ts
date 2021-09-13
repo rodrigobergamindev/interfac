@@ -2,151 +2,44 @@ import styled from 'styled-components';
 
 
 
+export const ContainerTabs = styled.div`
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    width:100%;
+    max-width: 1120px;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+`
+
+
 export const Tab = styled.div`
 
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 2rem;
     justify-content: center;
-
 
 
     @media only screen and (max-width: 900px) {
            margin-top: 2rem;
-            padding: 1rem;
              }
-
     
     
     
 
     .containerTab {
         cursor: default;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
-        background: var(--primary);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        
 
         width:100%;
         max-width: 1120px;
-        background-color: var(--primary);
+        border: 1px solid var(--grey-100);
         border-radius: 7px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
-
-        @media only screen and (max-width: 900px) {
-            place-items: center;
-            grid-template-columns: repeat(1, 1fr);
-             }
-        
-
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-
-            li {
-                font-size: 1.1rem;
-                color: var(--secondary);
-                display: flex;
-                align-items: center;
-
-                @media only screen and (max-width: 900px) {
-                   font-size: 0.8rem;
-                   margin-top: 1rem;
-             }
-
-             &:first-child {
-                 margin-top: 0;
-             }
-               
-                img {
-                    padding: 0.5rem;
-                    width: 35px;
-                }
-            }
-        }
-
-
-        .title {
-           
-            text-align:center;
-            h2 {
-                
-                font-weight: 600;
-                color:var(--secondary);
-                font-size: 7rem;
-                align-self: flex-end;
-
-                @media only screen and (max-width: 900px) {
-                   font-size: 3rem;
-                   
-             }
-            }
-
-            .limite {
-                font-size: 4rem;
-
-                @media only screen and (max-width: 900px) {
-                   font-size: 2rem;
-
-                   
-                   
-             }
-
-           
-            }
-
-        }
-
-    }
-   
-    :last-child {
-        margin-bottom: 5rem;
-    }
-
-
-`
-
-export const SecondTab = styled.div`
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    justify-content: center;
-
-
-
-    @media only screen and (max-width: 900px) {
-           margin-top: 2rem;
-            padding: 1rem;
-            margin-bottom: 3rem;
-             }
-
-    .containerTab {
-        cursor: default;
-
-        width:100%;
-        max-width: 1120px;
-        border-radius: 7px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        
-        
-
-        @media only screen and (max-width: 900px) {
-            place-items: center;
-            grid-template-columns: repeat(1, 1fr);
-             }
-        
 
         ul {
             list-style: none;
@@ -156,11 +49,19 @@ export const SecondTab = styled.div`
        
 
             li {
-                font-size: 1.4rem;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                
                 strong {
-                    color: #eb2f06;
-                    
+                    color: red;
+                    padding-right: 0.5rem;
                 }
+
+                .green {
+                    color: #25D366;
+                }
+
                 @media only screen and (max-width: 900px) {
                    font-size: 0.8rem;
                    margin-top: 1rem;
@@ -179,23 +80,27 @@ export const SecondTab = styled.div`
 
 
         .title {
+
+            .zero {
+                color: red;
+            }
            
             text-align:center;
             h2 {
                 
                 font-weight: 600;
-                color:#eb2f06;
-                font-size: 11rem;
-                align-self: flex-end;
+                font-size: 4rem;
+               
 
                 @media only screen and (max-width: 900px) {
                    font-size: 3rem;
+                   
              }
             }
 
             .limite {
                 font-size: 4rem;
-
+                color: #25D366;
                 @media only screen and (max-width: 900px) {
                    font-size: 2rem;
 
@@ -210,12 +115,10 @@ export const SecondTab = styled.div`
 
     }
    
-    :last-child {
-        margin-bottom: 5rem;
-    }
 
 
 `
+
 
 
 
@@ -231,19 +134,25 @@ export const Description = styled.section`
                margin-bottom: 2rem;
              }
 
-    header {
+            
+             header {
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
+        
 
         @media only screen and (max-width: 900px) {
                margin-bottom: 1rem;
              }
-
+            
         h1 {
-            font-weight: 400;
-            margin-left: 2rem;
-            font-size: 3rem;
+            font-size: 2rem;
+            color: var(--secondary);
+            padding: 0.65rem;
+            background: var(--primary);
+            border-radius: 5px;
+            font-weight: 500;
+            width: 100%;
 
             @media only screen and (max-width: 900px) {
                 font-size: 1.6rem;
@@ -263,7 +172,6 @@ export const Description = styled.section`
     }
 
     }
-
         p {
             text-align:justify;
             line-height: 1.9rem;

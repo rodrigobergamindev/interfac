@@ -1,7 +1,7 @@
 import FormContato from '../components/Contato'
 import { FaqAT } from '../components/FAQAT'
 import { Clientes } from '../components/Home/Clientes'
-import {Container, HeaderAutoPecas, Description, Tab, Card, SecondTab} from '../styles/styles.segmento'
+import {Container, HeaderAutoPecas, Description, Tab, Card, ContainerTabs} from '../styles/styles.segmento'
 import Head from 'next/head'
 
 
@@ -18,24 +18,24 @@ export default function AutoPecas() {
             </Head>
            
             <HeaderAutoPecas>
-                <div>
+            <div>
+                <h4>SEGMENTO</h4>
                 <h1>AUTO PEÇAS</h1>
-                </div>
+                <h3>INterfac • Tecnologia e Informática</h3>
+            </div>
             </HeaderAutoPecas>
         
 
         <Description>
             <header>
-                <div></div>
-
                 <h1>Sistema INterfac</h1>
             </header>
 
             
             <p>Buscamos oferecer melhoria de processos de sua empresa através do nosso sistema, com robustez e agilidade no gerenciamento. O sistema INterfac é o sistema mais robusto para o gerenciamento de processos do seu negócio, 
         contamos com uma gama de serviços automatizados, como controle de estoque, venda direta, emissão de nota fiscal, importação das informações, cotação entre outras funcionalidades.
-        
-        Confira a baixo alguns dos setores em que atuamos e também as funcionalidades do sistema em cada segmento:</p>
+        </p>
+        <p>Confira abaixo algumas das funcionalidades do nosso sistema para o segmento de Auto Peças:</p>
 
             
           
@@ -47,6 +47,7 @@ export default function AutoPecas() {
 
         <Clientes/>
 
+        <ContainerTabs>
 
         <Tab>
             <div className="containerTab">
@@ -56,9 +57,9 @@ export default function AutoPecas() {
                 </div>
 
                 <ul>
-                    <li> ✓ Treinamento horário de início e término pré-agendado </li>
-                    <li> ✓ Suporte técnico via telefone </li>
-                    <li> ✓ Suporte técnico via acesso remoto</li>
+                    <li> <strong className="green">✓</strong> Treinamento horário de início e término pré-agendado </li>
+                    <li> <strong className="green">✓</strong> Suporte técnico via telefone </li>
+                    <li> <strong className="green">✓</strong> Suporte técnico via acesso remoto</li>
                 </ul>
 
 
@@ -66,10 +67,10 @@ export default function AutoPecas() {
                 </div>
         </Tab>
 
-        <SecondTab>
+        <Tab>
             <div className="containerTab">
                 <div className="title">
-                    <h2>0%</h2>
+                    <h2 className="zero">0%</h2>
                 </div>
 
                 <ul>
@@ -81,7 +82,11 @@ export default function AutoPecas() {
 
                 
                 </div>
-        </SecondTab>
+        </Tab>
+
+        </ContainerTabs>
+
+       
 
 
         <FormContato/>

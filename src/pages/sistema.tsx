@@ -1,6 +1,6 @@
 import FormContato from '../components/Contato'
 import { Clientes } from '../components/Home/Clientes'
-import {Container, Header, Description, Tab, Card, SecondTab} from '../styles/styles.sistema'
+import {Container, Header, Description, Tab, Card, ContainerTabs} from '../styles/styles.sistema'
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -25,8 +25,6 @@ export default function Sistema() {
 
         <Description>
             <header>
-                <div></div>
-
                 <h1>Sistema INterfac</h1>
             </header>
 
@@ -178,40 +176,44 @@ export default function Sistema() {
         <Clientes/>
 
 
-        <Tab>
-            <div className="containerTab">
-                <div className="title">
-                    <h2 className="limite">SEM LIMITE</h2>
+        <ContainerTabs>
+
+<Tab>
+    <div className="containerTab">
+        <div className="title">
+            <h2 className="limite">SEM LIMITE</h2>
+
+        </div>
+
+        <ul>
+            <li> <strong className="green">✓</strong> Treinamento horário de início e término pré-agendado </li>
+            <li> <strong className="green">✓</strong> Suporte técnico via telefone </li>
+            <li> <strong className="green">✓</strong> Suporte técnico via acesso remoto</li>
+        </ul>
+
+
         
-                </div>
+        </div>
+</Tab>
 
-                <ul>
-                    <li> ✓ Treinamento horário de início e término pré-agendado </li>
-                    <li> ✓ Suporte técnico via telefone </li>
-                    <li> ✓ Suporte técnico via acesso remoto</li>
-                </ul>
+<Tab>
+    <div className="containerTab">
+        <div className="title">
+            <h2 className="zero">0%</h2>
+        </div>
 
-
-                
-                </div>
-        </Tab>
-
-        <SecondTab>
-            <div className="containerTab">
-                <div className="title">
-                    <h2>0%</h2>
-                </div>
-
-                <ul>
-                    <li> <strong>✖</strong> Taxa de cancelamento </li>
-                    <li> <strong>✖</strong> Cobrança por atendimento telefônico </li>
-                    <li> <strong>✖</strong> Cobrança por atendimento por conexão remota</li>
-                </ul>
+        <ul>
+            <li> <strong>✖</strong> Taxa de cancelamento </li>
+            <li> <strong>✖</strong> Cobrança por atendimento telefônico </li>
+            <li> <strong>✖</strong> Cobrança por atendimento por conexão remota</li>
+        </ul>
 
 
-                
-                </div>
-        </SecondTab>
+        
+        </div>
+</Tab>
+
+</ContainerTabs>
 
 
         <FormContato/>
