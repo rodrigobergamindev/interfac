@@ -220,7 +220,7 @@ export const SlideTwo = styled.div`
                     display: flex;
                     align-items: center;
                     transition: all 0.3s ease-in-out;
-
+                    cursor: pointer;
                     @media only screen and (max-width: 900px) {
                         font-size: 1rem;
                     }
