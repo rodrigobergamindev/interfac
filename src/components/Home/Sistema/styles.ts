@@ -507,7 +507,7 @@ export const HeaderModal = styled.div`
         border-bottom: 1px solid var(--primary);
         padding: 0.75rem;
         @media only screen and (max-width: 900px) {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
         }
         
         strong {
