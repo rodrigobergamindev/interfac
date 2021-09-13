@@ -11,6 +11,7 @@ export const ContainerTabs = styled.div`
     max-width: 1120px;
     margin-bottom: 7rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 `
 
 
