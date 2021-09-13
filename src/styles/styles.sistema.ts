@@ -146,7 +146,7 @@ export const Description = styled.section`
              }
             
         h1 {
-            font-size: 2rem;
+            font-size: 2.1rem;
             color: var(--secondary);
             padding: 0.65rem;
             background: var(--primary);
