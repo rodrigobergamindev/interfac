@@ -11,7 +11,12 @@ export const ContainerTabs = styled.div`
     max-width: 1120px;
     margin-bottom: 7rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
+    
+
+    @media only screen and (max-width: 900px) {
+           grid-template-columns: (1,1fr);
+           gap: 1.5rem;
+             }
 `
 
 
