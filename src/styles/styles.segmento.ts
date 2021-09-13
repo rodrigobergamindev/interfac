@@ -425,8 +425,9 @@ export const Header = styled.header`
 export const HeaderAutoPecas = styled.header`
 
        
-    margin-top: 6rem;
+        margin-top: 6rem;
        width: 100%;
+       max-width: 1120px;
        height: calc(60vh - 5rem);
 
        background: url("/img/topics/autopecas.jpg");
