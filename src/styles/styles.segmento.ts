@@ -13,8 +13,9 @@ export const ContainerTabs = styled.div`
     
 
     @media only screen and (max-width: 900px) {
-           grid-template-columns: (1,1fr);
+           grid-template-columns: repeat(1,1fr);
            gap: 1.5rem;
+           padding: 1rem;
              }
 `
 
@@ -376,9 +377,7 @@ export const HeaderAutoPecas = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
@@ -438,9 +437,7 @@ export const HeaderConstrucao = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
@@ -466,7 +463,6 @@ export const HeaderConstrucao = styled.header`
                  
              }
        }
-   
 
 
 
@@ -503,9 +499,7 @@ export const HeaderDistribuidora = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
@@ -567,9 +561,7 @@ export const HeaderRacao = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
@@ -631,9 +623,7 @@ export const HeaderFerragens = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
@@ -759,9 +749,7 @@ export const HeaderMotopecas = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
