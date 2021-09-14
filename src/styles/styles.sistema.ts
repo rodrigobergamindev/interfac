@@ -14,7 +14,8 @@ export const ContainerTabs = styled.div`
     
 
     @media only screen and (max-width: 900px) {
-           grid-template-columns: (1,1fr);
+        padding: 1rem;
+           grid-template-columns: repeat(1,1fr);
            gap: 1.5rem;
              }
 `
@@ -149,6 +150,7 @@ export const Description = styled.section`
 
         @media only screen and (max-width: 900px) {
                margin-bottom: 1rem;
+               padding: 1rem;
              }
             
         h1 {
@@ -161,8 +163,8 @@ export const Description = styled.section`
             width: 100%;
 
             @media only screen and (max-width: 900px) {
-                font-size: 1.6rem;
-                margin-left: 1rem;
+                font-size: 1.8rem;
+                
              }
         }
 
