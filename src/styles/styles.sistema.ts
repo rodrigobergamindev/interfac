@@ -242,7 +242,6 @@ export const Header = styled.header`
        margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-       max-width: 1120px;
        background: url("/img/headersistema.png");
        background-attachment: fixed;
        background-position: end;

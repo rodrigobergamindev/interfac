@@ -290,7 +290,6 @@ export const Header = styled.header`
        margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-        max-width: 1120px;
        background: url("/img/topics/centroautomotivo.png");
        background-attachment: fixed;
        background-position: center;
@@ -352,7 +351,6 @@ export const HeaderAutoPecas = styled.header`
        
         margin-top: 6rem;
        width: 100%;
-       max-width: 1120px;
        height: calc(60vh - 5rem);
 
        background: url("/img/topics/autopecas.jpg");
@@ -471,16 +469,15 @@ export const HeaderConstrucao = styled.header`
 
 export const HeaderDistribuidora = styled.header`
 
-       
-       margin-top: 6rem;
+margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-       max-width: 1120px;
+
        background: url("/img/topics/distribuidoraheader.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
-       background-size: contain;
+       background-size: cover;
 
        padding: 5rem;
        display: flex;
@@ -490,7 +487,6 @@ export const HeaderDistribuidora = styled.header`
        @media only screen and (max-width: 900px) {
                 padding: 2rem;
                 margin-top: 3rem;
-                background-size: cover;
              }
 
              div {
@@ -525,7 +521,7 @@ export const HeaderDistribuidora = styled.header`
                  
              }
        }
-   
+
 
 
 
@@ -533,16 +529,15 @@ export const HeaderDistribuidora = styled.header`
 
 export const HeaderRacao = styled.header`
 
-       
-       margin-top: 6rem;
+margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-       max-width: 1120px;
+
        background: url("/img/topics/racaoheader.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
-       background-size: contain;
+       background-size: cover;
 
        padding: 5rem;
        display: flex;
@@ -552,7 +547,6 @@ export const HeaderRacao = styled.header`
        @media only screen and (max-width: 900px) {
                 padding: 2rem;
                 margin-top: 3rem;
-                background-size: cover;
              }
 
              div {
@@ -587,7 +581,8 @@ export const HeaderRacao = styled.header`
                  
              }
        }
-   
+
+
 
 
 
@@ -595,16 +590,15 @@ export const HeaderRacao = styled.header`
 
 export const HeaderFerragens = styled.header`
 
-       
-       margin-top: 6rem;
+margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-       max-width: 1120px;
+
        background: url("/img/topics/ferragensheader.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
-       background-size: contain;
+       background-size: cover;
 
        padding: 5rem;
        display: flex;
@@ -614,7 +608,6 @@ export const HeaderFerragens = styled.header`
        @media only screen and (max-width: 900px) {
                 padding: 2rem;
                 margin-top: 3rem;
-                background-size: cover;
              }
 
              div {
@@ -649,24 +642,23 @@ export const HeaderFerragens = styled.header`
                  
              }
        }
-   
+
+
 
 
 
 `
 
 export const HeaderAviamentos = styled.header`
-
-       
-       margin-top: 6rem;
+margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-       max-width: 1120px;
+
        background: url("/img/topics/aviamentosheader.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
-       background-size: contain;
+       background-size: cover;
 
        padding: 5rem;
        display: flex;
@@ -676,7 +668,6 @@ export const HeaderAviamentos = styled.header`
        @media only screen and (max-width: 900px) {
                 padding: 2rem;
                 margin-top: 3rem;
-                background-size: cover;
              }
 
              div {
@@ -685,9 +676,7 @@ export const HeaderAviamentos = styled.header`
            max-width: 1120px;
 
            h4 {
-               color: var(--primary);
-               background-color: var(--secondary);
-               max-width: 95px;
+               color: var(--secondary);
                border-radius: 5px;
                padding: 0.2rem;
                font-weight: 600;
@@ -713,24 +702,21 @@ export const HeaderAviamentos = styled.header`
                  
              }
        }
-   
 
 
 
 `
 
 export const HeaderMotopecas = styled.header`
-
-       
-       margin-top: 6rem;
+margin-top: 6rem;
        width: 100%;
        height: calc(60vh - 5rem);
-       max-width: 1120px;
+
        background: url("/img/topics/motopecasheader.png");
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
-       background-size: contain;
+       background-size: cover;
 
        padding: 5rem;
        display: flex;
@@ -740,7 +726,6 @@ export const HeaderMotopecas = styled.header`
        @media only screen and (max-width: 900px) {
                 padding: 2rem;
                 margin-top: 3rem;
-                background-size: cover;
              }
 
              div {
@@ -775,7 +760,7 @@ export const HeaderMotopecas = styled.header`
                  
              }
        }
-   
+
 
 
 
