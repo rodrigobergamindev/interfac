@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const SliderContainerDesktop = styled.div`
     width: 100%;
-    max-width:1120px;
+    
 
     img {
         width: 100%;
@@ -28,7 +28,7 @@ export const Container = styled.div`
         margin-top: 6rem;
 
         width: 100%;
-        max-width:1920px;
+        
         display: flex;
         justify-content:center;
 @media only screen and (max-width: 900px) {
@@ -69,6 +69,7 @@ export const Slide = styled.div`
         -o-animation: bounceInRight 4s ease-in-out;
         animation: bounceInRight 4s ease-in-out;
 
+
         @media only screen and (max-width: 900px) {
                 padding: 1rem;
             }
@@ -107,24 +108,14 @@ export const Slide = styled.div`
                 @media only screen and (max-width: 900px) {
                     padding: 1rem;
                     }
-                a {
-                  
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    line-height: 2rem;
-                    border-bottom: 1px solid transparent;
-                   
 
-                    &:hover {
-                        border-bottom: 1px solid var(--secondary);
-                    }
-                }
             }
 
             h2 {
                 margin-bottom: 2rem;
                 color: var(--secondary);
                 font-weight: 400;
+                
 
                 @media only screen and (max-width: 900px) {
                     
@@ -137,6 +128,8 @@ export const Slide = styled.div`
             font-size: 5rem;
             color: var(--secondary);
             font-weight: 600;
+          
+                
 
             @media only screen and (max-width: 900px) {
                     font-size: 2.1rem;
@@ -147,6 +140,7 @@ export const Slide = styled.div`
             font-size: 1.2rem;
             font-weight: 400;
             color: var(--secondary);
+            
             
             @media only screen and (max-width: 900px) {
                     font-size: 0.7rem;

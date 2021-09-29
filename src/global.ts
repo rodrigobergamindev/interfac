@@ -129,9 +129,8 @@ export const GlobalStyle = createGlobalStyle `
         width: 5rem;
         height: 5rem;
         filter: brightness(110%);
-        background-color: var(--secondary);
-        box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
-        border-radius: 50%;
+       
+        
         transition: all 0.3s ease-out;
         cursor: pointer;
         &:hover {
@@ -141,8 +140,6 @@ export const GlobalStyle = createGlobalStyle `
 
         @media only screen and (max-width: 900px) {
   
-            width: 3rem;
-            height: 3rem;
             bottom: 1.5rem;
             right: 1.5rem;
   }

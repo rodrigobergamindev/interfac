@@ -31,7 +31,7 @@ export function Slider() {
       <div className="description">
           <div className="text">
           <span>Conheça a aplicação mais robusta e <strong>ágil</strong> para o seu negócio</span>
-          <h1>SISTEMA INterfac</h1>
+          <h1>Sistema INterfac</h1>
 
           <h2>Atuamos nos seguintes segmentos:</h2>
 
