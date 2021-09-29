@@ -42,7 +42,7 @@ export const Container = styled.div`
 `
 
 export const Slide = styled.div`
-    height: 70vh;
+    height: 60vh;
     background: url('/img/slider/slide02.png');
     
     background-position: center;
@@ -159,7 +159,7 @@ export const Slide = styled.div`
 export const SlideTwo = styled.div`
 
   
-    height: 70vh;
+    height: 60vh;
     background: url('/img/slider/slide04.png');
     
     background-position: center;
