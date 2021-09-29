@@ -42,7 +42,7 @@ export const Container = styled.div`
 `
 
 export const Slide = styled.div`
-    height: 60vh;
+    height: 70vh;
     background: url('/img/slider/slide02.png');
     
     background-position: center;
@@ -62,8 +62,6 @@ export const Slide = styled.div`
         width: 100%;
         max-width: 1120px;
         border-radius: 10px;
-        padding-left: 1rem;
-        padding-top: 2rem;
         -webkit-animation: bounceInRight 4s ease-in-out;
         -moz-animation: bounceInRight 4s ease-in-out;
         -o-animation: bounceInRight 4s ease-in-out;
@@ -161,7 +159,7 @@ export const Slide = styled.div`
 export const SlideTwo = styled.div`
 
   
-    height: 60vh;
+    height: 70vh;
     background: url('/img/slider/slide04.png');
     
     background-position: center;
